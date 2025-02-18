@@ -3,9 +3,9 @@ import { styled } from "styled-components";
 const Section = styled.section`
   height: 100dvh;
 
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  overflow-y: hidden;
+  /* scroll-snap-align: start; */
+  /* scroll-snap-stop: always; */
+  /* overflow-y: hidden; */
 
   display: flex;
   flex-direction: row;
@@ -33,8 +33,7 @@ const ContentContainer = styled.div`
   /* background-color: #00ffff44; */
 
   @media (min-width: 768px) {
-    width: clamp(70dvw, 80dvw, 85dvw);
-    /* width: 70dvw; */
+    /* width: clamp(70dvw, 80dvw, 85dvw); */
     padding: 3dvh 2dvw;
   }
 `;
@@ -71,7 +70,7 @@ const SectionText = styled.div`
     font-size: clamp(18px, 3vw, 32px);
     padding: 0 1dvw;
     max-height: 90dvh;
-    max-width: 50dvw;
+    /* max-width: 50dvw; */
     &::-webkit-scrollbar {
       width: var(--scroll-bar-width-large);
     }

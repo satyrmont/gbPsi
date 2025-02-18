@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useRef, useState, useEffect, useContext } from "react";
 import { styled } from "styled-components";
 import {
   Section,
@@ -8,10 +8,11 @@ import {
 } from "../style/PageContainers";
 import { MobileContext } from "../context/mobileContext";
 
-function ComoAcontece() {
+function Intro() {
+  const text = useRef();
   const isMobile = useContext(MobileContext);
 
   return <div></div>;
 }
 
-export default ComoAcontece;
+export default Intro;
