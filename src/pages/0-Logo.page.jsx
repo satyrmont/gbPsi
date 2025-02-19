@@ -58,7 +58,7 @@ function Logo() {
         <img
           className="logo"
           type="image/svg+xml"
-          src="chao_logo_preto-no-branco.svg"
+          src="gbPsi_logo01-blackNoBG.svg"
           alt="Logo Instituto Chão"
         />
       </LogoPage>
@@ -76,7 +76,7 @@ const LogoPage = styled.div`
 
   img {
     width: 100%;
-    max-width: 400px; // Set maximum width for the logo
+    max-width: 350px; // Set maximum width for the logo
   }
 `;
 
@@ -84,9 +84,12 @@ const LogoSection = styled(Section)`
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  overflow: hidden;
+  overflow: visible;
+  max-height: 140px;
+  z-index: -1;
+
   @media (min-width: 768px) {
-    margin-top: var(--nav-height);
+    margin-top: calc(var(--nav-height) + 10px);
   }
 
   background-color: black;
