@@ -90,10 +90,10 @@ const LogoSection = styled(Section)`
   z-index: -1;
 
   @media (min-width: 768px) {
-    margin-top: calc(var(--nav-height) + 10px);
+    margin-top: calc(var(--nav-height) + 18px);
   }
 
-  background-color: black;
+  background-color: #1d3a6a;
   justify-content: center;
 `;
 
