@@ -7,11 +7,11 @@ import {
   ContentContainer,
 } from "../style/PageContainers";
 
-function oQueEsperar() {
+function QueEsperar() {
   const main = useRef();
   const title = useRef();
 
   return <div></div>;
 }
 
-export default oQueEsperar;
+export default QueEsperar;

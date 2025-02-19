@@ -13,7 +13,7 @@ const Section = styled.section`
     height: calc(100dvh - var(--nav-height));
     scroll-margin-top: var(--nav-height);
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: start;
     overflow-y: hidden;
   }

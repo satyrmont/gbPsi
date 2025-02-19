@@ -3,9 +3,9 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
 @font-face {
-  font-family: 'MDNichrome'; 
-  src: url('/fonts/MDNichrome-Dark.otf') format('opentype');
-  font-weight: normal;
+    font-family: "Atkinson Hyperlegible Next", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -56,7 +56,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Hanken Grotesk", sans-serif;
     font-weight: 400;
     width: 90%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     
 }

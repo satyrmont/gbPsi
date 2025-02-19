@@ -86,6 +86,7 @@ const LogoSection = styled(Section)`
   justify-content: start;
   overflow: visible;
   max-height: 140px;
+  max-width: 60%;
   z-index: -1;
 
   @media (min-width: 768px) {

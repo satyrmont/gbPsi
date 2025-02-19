@@ -75,7 +75,7 @@ function Nav() {
           />
           <MenuContent open={buttonMenuOpen}>
             <DrpDwnNavBtn onClick={() => scrollToSection("quem-somos")}>
-              Quem Somos?
+              Intro
             </DrpDwnNavBtn>
             <DrpDwnNavBtn onClick={() => scrollToSection("como-funciona")}>
               Como Funciona?
@@ -97,19 +97,22 @@ function Nav() {
       ) : (
         <NavBar>
           <NavButtonContainer ref={buttons}>
-            <NavBtn onClick={() => scrollToSection("quem-somos")}>
-              Quem Somos?
-            </NavBtn>
+            <NavBtn onClick={() => scrollToSection("quem-somos")}>Intro</NavBtn>
             <NavBtn onClick={() => scrollToSection("como-funciona")}>
-              Como Funciona?
+              Trajetória
             </NavBtn>
             <NavBtn onClick={() => scrollToSection("buscamos")}>
-              O Que Buscamos?
+              Como Ajuda?
             </NavBtn>
             <NavBtn onClick={() => scrollToSection("historico")}>
-              Histórico
+              Como Acontece?
             </NavBtn>
-            <NavBtn onClick={() => scrollToSection("balanco")}>Balanço</NavBtn>
+            <NavBtn onClick={() => scrollToSection("balanco")}>
+              O Que Esperar?
+            </NavBtn>
+            <NavBtn onClick={() => scrollToSection("balanco")}>
+              Perguntas Frequentes
+            </NavBtn>
             <NavBtn onClick={() => scrollToSection("contato")}>Contato</NavBtn>
           </NavButtonContainer>
         </NavBar>
@@ -162,13 +165,13 @@ const NavBar = styled.div`
   top: 0px;
   left: 0px;
   z-index: 10;
-  background-color: black;
+  background-color: #eee1b4;
 
   display: flex;
   flex-direction: row;
   justify-content: end;
   align-items: center;
-  color: white;
+  color: #5c5c5c;
 `;
 
 const NavButtonContainer = styled.div`

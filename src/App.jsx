@@ -6,7 +6,7 @@ import Intro from "./pages/1-Intro.page.jsx";
 import Trajetoria from "./pages/2-Trajetoria.page.jsx";
 import ComoAjuda from "./pages/3-ComoAjuda.page.jsx";
 import ComoAcontece from "./pages/4-ComoAcontece.page.jsx";
-import oQueEsperar from "./pages/5-oQueEsperar.page.jsx";
+import QueEsperar from "./pages/5-QueEsperar.page.jsx";
 import Contato from "./pages/6-Contato.page.jsx";
 import Mapa from "./pages/7-Mapa.page.jsx";
 
@@ -22,7 +22,7 @@ function App() {
         <Trajetoria />
         <ComoAjuda />
         <ComoAcontece />
-        <oQueEsperar />
+        <QueEsperar />
         <Contato />
         <Mapa />
       </MobileProvider>
