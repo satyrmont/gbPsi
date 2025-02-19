@@ -70,7 +70,7 @@ function Nav() {
           <img
             className="MenuButtonImage"
             type="image/svg+xml"
-            src="chao_burguerMenu-border.svg"
+            src="guidoBittencourt_favicon.svg"
             alt="Dropdown Menu"
           />
           <MenuContent open={buttonMenuOpen}>
@@ -194,6 +194,7 @@ const NavBtn = styled.div`
   display: inline-flex;
   align-items: center;
   height: 100%;
+  padding: 0px 5px 0px 5px;
   /* background-color: #f0ffff55; */
   &:hover {
     background-color: white;

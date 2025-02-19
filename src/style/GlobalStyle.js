@@ -21,10 +21,12 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root {
+        /* background-color: lightgray; */
+        
         
     --nav-height: 5dvh;
 
-    --color-gray: #ded6d0;
+    --color-gray: #f9f9f9;
     --title-font-size-horz: clamp(10dvw, 4dvw, 2dvw);
 
     --scroll-bar-width: 6px;
@@ -41,7 +43,11 @@ const GlobalStyle = createGlobalStyle`
 
 
 body{
-    
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 500px; */
 
     font-family: "Atkinson Hyperlegible Next", serif;
     font-weight: 200;

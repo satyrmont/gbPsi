@@ -60,9 +60,9 @@ function Intro() {
 }
 
 const IntroSection = styled(Section)`
-  background-color: #849bbf;
-  fill: white;
+  background: radial-gradient(circle at 100%, #ebb9a7, #acbbd2);
   margin-top: 24px;
+  /* mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
 
   &::before {
     content: "";
@@ -76,7 +76,7 @@ const IntroSection = styled(Section)`
     background-size: contain;
     background-position: center;
     transform: translate(80%, 20%) rotate(30deg) scale(250%); /* Rotate by 45 degrees */
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
     overflow: hidden;
   }
