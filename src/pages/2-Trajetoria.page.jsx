@@ -38,7 +38,7 @@ const Section_SobreMim = styled(Section)`
   /* background-color: #7ca6d; */
 
   margin-top: 18px;
-  background-color: #adbbd1;
+  background-color: #ebb9a7;
 `;
 
 export default Trajetoria;

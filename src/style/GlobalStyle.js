@@ -32,8 +32,8 @@ const GlobalStyle = createGlobalStyle`
         --scroll-bar-width-large: 8px;
         
         
-        --title-font: "Atkinson Hyperlegible Next", serif;
-        --title-font-weight: 200;
+        --title-font: "Lato", serif;
+        /* --title-font-weight: 500; */
         
         
         --sm-screen: 768px;
@@ -54,6 +54,8 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    margin-bottom: 50px;
 
     
 }
@@ -66,6 +68,8 @@ const GlobalStyle = createGlobalStyle`
     color: white;
     text-decoration: none;
 }
+
+
     
 `;
 
