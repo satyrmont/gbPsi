@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 const Section = styled.section`
   height: fit-content;
   width: 80dvw;
+  padding: 10px;
 
   display: flex;
   flex-direction: row;
@@ -23,10 +24,9 @@ const ContentContainer = styled.div`
   flex-direction: column;
   /* justify-content: center; */
   /* align-content: center; */
-  padding: 2dvh 0.5dvw;
 
   @media (min-width: 768px) {
-    padding: 3dvh 2dvw;
+    /* padding: 3dvh 2dvw; */
   }
 `;
 
@@ -73,9 +73,10 @@ const Title = styled.h1`
   color: black;
   white-space: nowrap;
   text-decoration-line: underline;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 2px;
 
   margin-top: 40px;
+  margin-bottom: 20px;
 
   word-wrap: break-word;
 
@@ -90,7 +91,7 @@ const Title = styled.h1`
 
   @media (min-width: 768px) {
     white-space: normal;
-    font-size: clamp(60px, 5dvw, 100px);
+    font-size: clamp(60px, 1dvw, 70px);
     line-height: 0.8em;
     margin-top: 0;
     flex-direction: column;
@@ -98,7 +99,8 @@ const Title = styled.h1`
 
   @media (min-width: 768px) and (max-height: 600px) {
     white-space: normal;
-    font-size: clamp(35px, 7dvh, 80px);
+    font-size: clamp(30px, 1dvw, 70px);
+    /* font-size: clamp(35px, 7dvh, 80px); */
     line-height: 0.8em;
     margin-top: 0;
     flex-direction: column;

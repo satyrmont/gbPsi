@@ -35,10 +35,10 @@ function Trajetoria() {
 }
 
 const Section_SobreMim = styled(Section)`
-  background: #7ca6d;
+  /* background-color: #7ca6d; */
 
   margin-top: 18px;
-  background-color: #5884ca;
+  background-color: #adbbd1;
 `;
 
 export default Trajetoria;

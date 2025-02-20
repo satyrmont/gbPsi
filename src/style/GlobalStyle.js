@@ -21,32 +21,31 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root {
-        /* background-color: lightgray; */
         
         
-    --nav-height: 5dvh;
-
-    --color-gray: #f9f9f9;
-    --title-font-size-horz: clamp(10dvw, 4dvw, 2dvw);
-
-    --scroll-bar-width: 6px;
-    --scroll-bar-width-large: 8px;
+        --nav-height: 5dvh;
+        
+        --color-gray: #f9f9f9;
+        --title-font-size-horz: clamp(10dvw, 4dvw, 2dvw);
+        
+        --scroll-bar-width: 6px;
+        --scroll-bar-width-large: 8px;
+        
+        
+        --title-font: "Atkinson Hyperlegible Next", serif;
+        --title-font-weight: 200;
+        
+        
+        --sm-screen: 768px;
+    }
     
-
-    --title-font: "Atkinson Hyperlegible Next", serif;
-    --title-font-weight: 200;
-
-
-    --sm-screen: 768px;
-}
-
-
-
-body{
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    
+    
+    body{
+    /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: center; */
         /* margin-left: 500px; */
 
     font-family: "Atkinson Hyperlegible Next", serif;
