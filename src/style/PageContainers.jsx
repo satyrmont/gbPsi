@@ -4,6 +4,7 @@ const Section = styled.section`
   height: fit-content;
   width: 80dvw;
   padding: 10px;
+  overflow: hidden;
 
   display: flex;
   flex-direction: row;
@@ -12,7 +13,6 @@ const Section = styled.section`
 
   @media (min-width: 768px) {
     /* height: calc(100dvh - var(--nav-height)); */
-    scroll-margin-top: var(--nav-height);
     flex-direction: column;
     justify-content: start;
     overflow-y: hidden;
@@ -36,7 +36,8 @@ const SectionText = styled.div`
   word-wrap: break-word;
   height: fit-content;
   max-height: 96dvh;
-  margin-top: 16px;
+  /* margin-top: 16px; */
+  /* width: 100dvw; */
   /* text-align: justify; */
 
   display: flex;
@@ -56,7 +57,7 @@ const SectionText = styled.div`
   }
 
   @media (min-width: 768px) {
-    font-size: clamp(16px, 1vw, 18px);
+    /* font-size: clamp(16px, 1vw, 18px); */
     max-height: 90dvh;
     &::-webkit-scrollbar {
       width: var(--scroll-bar-width-large);
@@ -67,15 +68,23 @@ const SectionText = styled.div`
 const Title = styled.h1`
   /* background-color: brown; */
 
-  font-family: var(--title-font);
-  font-weight: var(--title-font-weight);
+  /* font-family: var(--title-font); */
+  /* font-weight: 200; */
   /* font-size: clamp(20px, 2dvw, 20px); */
   color: black;
   white-space: nowrap;
-  text-decoration-line: underline;
-  text-decoration-thickness: 2px;
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+  /* color: #0000007f; */
 
-  margin-top: 40px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+
+  font-size: clamp(60px, 1dvw, 70px);
+
+  /* margin-top: 40px; */
   margin-bottom: 20px;
 
   word-wrap: break-word;
@@ -89,7 +98,7 @@ const Title = styled.h1`
     margin-bottom: 2dvh;
   }
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     white-space: normal;
     font-size: clamp(60px, 1dvw, 70px);
     line-height: 0.8em;
@@ -100,11 +109,11 @@ const Title = styled.h1`
   @media (min-width: 768px) and (max-height: 600px) {
     white-space: normal;
     font-size: clamp(30px, 1dvw, 70px);
-    /* font-size: clamp(35px, 7dvh, 80px); */
+    font-size: clamp(35px, 7dvh, 80px);
     line-height: 0.8em;
     margin-top: 0;
     flex-direction: column;
-  }
+  } */
 `;
 
 export { Section, ContentContainer, SectionText, Title };

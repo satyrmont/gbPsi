@@ -15,8 +15,10 @@ function Intro() {
   return (
     <IntroSection>
       <ContentContainer>
-        <Title>Apresentação</Title>
-        <SectionText>
+        <Title>
+          <strong>Apresentação</strong>
+        </Title>
+        <IntroText>
           <p>
             A busca por renovação, a mudança de hábitos antigos, iniciar uma
             nova fase ou criar um estilo de vida diferente… iniciativas sofrem
@@ -53,15 +55,17 @@ function Intro() {
             concretamente nos diz respeito. Antecipe a consulta a um
             profissional para evitar complicações e dar vazão a seus planos.
           </p>
-        </SectionText>
+        </IntroText>
       </ContentContainer>
     </IntroSection>
   );
 }
 
 const IntroSection = styled(Section)`
-  background: radial-gradient(circle at 100%, #ebb9a7, #acbbd2);
+  background: #acbbd2;
+  /* background: radial-gradient(circle at 100%, #ebb9a7, #acbbd2); */
   margin-top: 24px;
+  overflow: hidden;
   /* mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
 
   &::before {
@@ -75,11 +79,15 @@ const IntroSection = styled(Section)`
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    transform: translate(80%, 20%) rotate(30deg) scale(250%); /* Rotate by 45 degrees */
-    opacity: 0.3;
-    z-index: -1;
+    transform: translate(20svw, -6svh) rotate(30deg) scale(350%); /* Rotate by 45 degrees */
+    opacity: 0.8;
+    /* z-index: -1; */
     overflow: hidden;
   }
+`;
+
+const IntroText = styled(SectionText)`
+  width: 50dvw;
 `;
 
 export default Intro;
