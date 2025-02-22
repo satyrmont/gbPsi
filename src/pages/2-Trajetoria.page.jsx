@@ -58,7 +58,6 @@ function Trajetoria() {
 }
 
 const Section_SobreMim = styled(Section)`
-  margin-top: 18px;
   background-color: #ebb9a7;
 `;
 
@@ -102,6 +101,7 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: end;
   /* align-items: end; */
+  font-size: clamp(18px, 2vw, 20px);
   a {
     /* background-color: blanchedalmond; */
     /* display: flex; */

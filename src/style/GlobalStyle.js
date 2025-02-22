@@ -57,6 +57,10 @@ const GlobalStyle = createGlobalStyle`
     
     margin-bottom: 50px;
 
+    > div {
+        margin-bottom: 12px;
+    }
+
     
 }
 
