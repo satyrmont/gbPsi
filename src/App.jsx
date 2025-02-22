@@ -3,7 +3,7 @@ import Nav from "./components/Nav.component.jsx";
 
 import Logo from "./pages/0-Logo.page.jsx";
 import Intro from "./pages/1-Intro.page.jsx";
-import Trajetoria from "./pages/2-Trajetoria.page.jsx";
+import Trajetoria from "./pages/2-SobreMim.page.jsx";
 import ComoAjuda from "./pages/3-ComoAjuda.page.jsx";
 import ComoAcontece from "./pages/4-ComoAcontece.page.jsx";
 import QueEsperar from "./pages/5-QueEsperar.page copy.jsx";
@@ -22,9 +22,9 @@ function App() {
           <Logo />
           <Intro />
           <Trajetoria />
-          <ComoAjuda />
-          <ComoAcontece />
-          <QueEsperar />
+          {/* <ComoAjuda /> */}
+          {/* <ComoAcontece /> */}
+          {/* <QueEsperar /> */}
           <PerguntasFrequentes />
           <Contato />
           <Mapa />
