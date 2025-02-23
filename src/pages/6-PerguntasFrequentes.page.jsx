@@ -199,7 +199,8 @@ const SectionContent = styled(ContentContainer)`
   width: 100%;
 
   display: flex;
-  flex-direction: column;
+  flex-flow: wrap;
+  /* flex-direction: column; */
 
   /* &::after {
     margin-bottom: 12px;
@@ -211,7 +212,8 @@ const CollapsibleButton = styled.button`
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: fit-content;
+
   border: none;
   text-align: left;
   outline: none;

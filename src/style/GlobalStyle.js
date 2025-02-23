@@ -55,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: center;
     
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 
     > div {
         margin-bottom: 12px;

@@ -106,6 +106,8 @@ const Section_QueEsperar = styled(Section)`
 const ContentContainer_QueEsperar = styled(ContentContainer)`
   display: flex;
   flex-flow: wrap;
+  justify-content: space-around;
+  width: 100%;
 `;
 
 const Title_QueEsperar = styled(Title)`
@@ -114,11 +116,12 @@ const Title_QueEsperar = styled(Title)`
 
 const Card = styled.div`
   padding: 10px;
-  margin-right: 2dvw;
+  /* margin-right: 2dvw; */
   margin-bottom: 2dvw;
   /* min-width: 15dvw; */
-  min-width: 360px;
-  max-width: 20dvw;
+  min-width: 30%;
+  max-width: 45%;
+  width: clamp();
   background-color: aliceblue;
   h2 {
     font-weight: 500;
@@ -129,6 +132,10 @@ const Card = styled.div`
     font-size: 1.2rem;
     font-weight: bold;
     color: brown;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 export default QueEsperar;
