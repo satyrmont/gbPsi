@@ -13,10 +13,11 @@ const Section = styled.section`
   align-items: start;
   z-index: 1;
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     justify-content: start;
     overflow-y: hidden;
+    width: 100dvw;
   }
 `;
 
@@ -66,7 +67,6 @@ const Title = styled.h1`
   font-family: "Roboto", serif;
   font-weight: 100;
   font-style: normal;
-
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;

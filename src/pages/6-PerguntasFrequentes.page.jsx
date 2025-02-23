@@ -191,6 +191,8 @@ function PerguntasFrequentes() {
 
 const Section_PerguntasFrequentes = styled(Section)`
   background-color: #f3e49e;
+  display: flex;
+  flex-direction: column;
 `;
 
 const SectionContent = styled(ContentContainer)`
@@ -205,7 +207,7 @@ const SectionContent = styled(ContentContainer)`
 `;
 
 const CollapsibleButton = styled.button`
-  background-color: #c0684b;
+  background-color: #bc4219;
   color: white;
   cursor: pointer;
   padding: 18px;

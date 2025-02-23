@@ -85,7 +85,7 @@ const LogoSection = styled(Section)`
   align-items: center;
   justify-content: start;
   overflow: visible;
-  max-height: 120px;
+  max-height: 110px;
   margin-bottom: 32px;
 
   filter: drop-shadow(30px 10px 20px #00000050);

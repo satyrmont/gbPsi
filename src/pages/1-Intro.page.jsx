@@ -64,7 +64,6 @@ function Intro() {
 const IntroSection = styled(Section)`
   background: #acbbd2;
   /* background: radial-gradient(circle at 100%, #ebb9a7, #acbbd2); */
-  /* margin-top: 24px; */
   overflow: hidden;
   /* mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
 

@@ -67,11 +67,16 @@ const Section_Contato = styled(Section)`
     text-decoration-thickness: 1px;
     text-underline-offset: 5px;
     font-size: clamp(60px, 1dvw, 70px);
+    margin-bottom: 16px;
   }
 `;
 
 const Left = styled.div`
   margin-left: 20px;
+  div {
+    min-height: fit-content;
+    margin-bottom: 50%;
+  }
 `;
 const Right = styled.div`
   justify-content: end;
