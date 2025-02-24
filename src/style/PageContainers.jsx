@@ -25,7 +25,7 @@ const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     /* padding: 3dvh 2dvw; */
   }
 `;

@@ -87,7 +87,7 @@ const LogoSection = styled(Section)`
   overflow: visible;
   max-height: 110px;
   margin-bottom: 32px;
-
+  /* background: radial-gradient(circle at 100%, #1d3a6a, black); */
   filter: drop-shadow(30px 10px 20px #00000050);
   /* max-width: 60%; */
   z-index: -1;
@@ -96,7 +96,13 @@ const LogoSection = styled(Section)`
     margin-top: calc(var(--nav-height) + 18px);
   }
 
-  background-color: #1d3a6a;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(29, 58, 106, 1) 53%,
+    rgba(29, 58, 106, 1) 100%
+  );
   justify-content: center;
 `;
 
