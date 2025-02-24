@@ -71,7 +71,7 @@ function Intro() {
           <TrajetoriaText>
             <p>Me chamo Guido, quero que você me conheça:</p>
             <p>
-              psicólogo pela Universidade de São Paulo (USP) e especialista em
+              Psicólogo pela Universidade de São Paulo (USP) e especialista em
               terapia comportamental e cognitiva pelo Instituto de Psiquiatria
               (IPq-FMUSP). Adquiri experiência em atendimento e no Hospital das
               Clínicas, maior hospital da América Latina.
@@ -153,15 +153,17 @@ const IntroSection = styled(Section)`
   &::before {
     content: "";
     position: absolute;
-    bottom: 200px;
-    right: 40%;
+
+    right: 100px;
+    top: 5dvw;
+
     width: 200px; /* Adjust as needed */
     height: 200px;
     background-image: url("hat.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    transform: translate(20svw, 20svh) rotate(30deg) scale(250%); /* Rotate by 45 degrees */
+    transform: rotate(30deg) scale(200%); /* Rotate by 45 degrees */
     opacity: 0.8;
     /* z-index: -1; */
     overflow: hidden;
@@ -178,12 +180,6 @@ const CarouselContainer = styled.div`
 
 const IntroText = styled(SectionText)`
   width: 50dvw;
-`;
-
-const Section_SobreMim = styled(Section)`
-  background-color: var(--color02);
-  flex-direction: column;
-  color: white;
 `;
 
 const ContentContainer_SobreMim = styled(ContentContainer)`
@@ -212,15 +208,16 @@ const PortraitSection = styled.div`
   position: absolute;
   color: white;
 
+  right: 20px;
+  top: 25%;
+
+  padding: 10px;
   border-radius: 1%;
   background-color: var(--color02);
   display: flex;
   flex-direction: column;
   justify-content: start;
   font-size: clamp(18px, 2vw, 20px);
-
-  right: 20px;
-  top: 150px;
 
   filter: drop-shadow(10px 10px 20px #00000047);
   a {

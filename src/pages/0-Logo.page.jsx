@@ -88,7 +88,6 @@ const LogoSection = styled(Section)`
   overflow: visible;
   height: 130px;
   margin-bottom: 32px;
-  right: 100px;
 
   /* background: radial-gradient(circle at 100%, #1d3a6a, black); */
   filter: drop-shadow(10px 10px 12px #0000002c);

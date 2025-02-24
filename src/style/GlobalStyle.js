@@ -53,7 +53,8 @@ const GlobalStyle = createGlobalStyle`
         --color14: #849bbf;
         --color15: #7aa7de;
 
-        
+        --title-font-size: clamp(60px, 65dvw, 70px);
+        --text-font-size: clamp(18px, 3vw, 20px);;
         
         --title-font: "Lato", serif;
         /* --title-font-weight: 500; */

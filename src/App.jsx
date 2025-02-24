@@ -23,7 +23,7 @@ function App() {
           <Intro />
           {/* <Trajetoria /> */}
           <ComoFunciona />
-          <Metodo />
+          {/* <Metodo /> */}
           <QueEsperar />
           <PerguntasFrequentes />
           <Contato />

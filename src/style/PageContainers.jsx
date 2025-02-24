@@ -31,11 +31,11 @@ const ContentContainer = styled.div`
 `;
 
 const SectionText = styled.div`
-  font-size: clamp(18px, 3vw, 20px);
+  font-size: var(--text-font-size);
   white-space: break-spaces;
   word-wrap: break-word;
   height: fit-content;
-  max-height: 96dvh;
+  /* max-height: 96dvh; */
 
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ const Title = styled.h1`
   text-decoration-thickness: 1.6px;
   text-underline-offset: 5px;
 
-  font-size: clamp(60px, 1dvw, 70px);
+  font-size: var(--title-font-size);
 
   margin-bottom: 20px;
 
