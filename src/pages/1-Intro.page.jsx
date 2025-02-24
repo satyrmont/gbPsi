@@ -59,9 +59,9 @@ function Intro() {
           </p>
         </IntroText>
       </ContentContainer>
-      <CarouselContainer>
+      {/* <CarouselContainer>
         <GBCarousel />
-      </CarouselContainer>
+      </CarouselContainer> */}
     </IntroSection>
   );
 }
@@ -95,7 +95,7 @@ const IntroSection = styled(Section)`
 `;
 
 const CarouselContainer = styled.div`
-  width: 100%;
+  width: 80%;
 `;
 
 const IntroText = styled(SectionText)`

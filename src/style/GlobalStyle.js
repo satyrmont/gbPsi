@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    overflow-x: hidden;
     /* margin-bottom: 50px; */
 
     > div {

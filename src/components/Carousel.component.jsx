@@ -7,20 +7,20 @@ import styled from "styled-components";
 class GBCarousel extends Component {
   render() {
     return (
-      <Carousel>
+      <StyledCarousel showThumbs={false}>
         <ImgHolder>
           <img src="/img01.jpg" />
-          <p className="legend">Legend 1</p>
+          {/* <p className="legend">Legend 1</p> */}
         </ImgHolder>
         <ImgHolder>
           <img src="/img02.jpg" />
-          <p className="legend">Legend 2</p>
+          {/* <p className="legend">Legend 2</p> */}
         </ImgHolder>
         <ImgHolder>
-          <img src="/image03.jpg" />
-          <p className="legend">Legend 3</p>
+          <img src="/img01.jpg" />
+          {/* <p className="legend">Legend 3</p> */}
         </ImgHolder>
-      </Carousel>
+      </StyledCarousel>
     );
   }
 }
@@ -28,6 +28,15 @@ class GBCarousel extends Component {
 const ImgHolder = styled.div`
   /* width: 100%; */
   /* height: 100px; */
+  img {
+    transform: scale(0.9);
+  }
+`;
+
+const StyledCarousel = styled(Carousel)`
+  filter: drop-shadow(30px 10px 20px #00000050);
+  /* background-color: antiquewhite; */
+  /* max-height: 300px; */
 `;
 
 export default GBCarousel;
