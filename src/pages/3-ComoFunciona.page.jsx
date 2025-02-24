@@ -50,7 +50,9 @@ const Section_ComoFunciona = styled(Section)`
   background-color: #3b73b8;
   color: white;
 `;
-const ContentContainer_ComoFunciona = styled(ContentContainer)``;
+const ContentContainer_ComoFunciona = styled(ContentContainer)`
+  width: 50dvw;
+`;
 
 const Title_ComoFunciona = styled(Title)`
   color: white;

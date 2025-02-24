@@ -22,7 +22,7 @@ function PerguntasFrequentes() {
       <Title ref={title}>Perguntas Frequentes</Title>
       <SectionContent>
         <CollapsibleButton onClick={toggleContent}>
-          Quanto tempo durará a psicoterapia?
+          <h2>Quanto tempo durará a psicoterapia?</h2>
         </CollapsibleButton>
         <Content>
           <SectionText>
@@ -48,7 +48,7 @@ function PerguntasFrequentes() {
         </Content>
 
         <CollapsibleButton onClick={toggleContent}>
-          Qual referencial teórico você segue?
+          <h2>Qual referencial teórico você segue?</h2>
         </CollapsibleButton>
         <Content>
           <SectionText>
@@ -60,7 +60,7 @@ function PerguntasFrequentes() {
         </Content>
 
         <CollapsibleButton onClick={toggleContent}>
-          Em que quadros você pode me ajudar?
+          <h2>Em que quadros você pode me ajudar?</h2>
         </CollapsibleButton>
         <Content>
           <SectionText>
@@ -91,7 +91,9 @@ function PerguntasFrequentes() {
           </SectionText>
         </Content>
         <CollapsibleButton onClick={toggleContent}>
-          A conversa com um terapeuta não é igual com qualquer outra pessoa?
+          <h2>
+            A conversa com um terapeuta não é igual com qualquer outra pessoa?
+          </h2>
         </CollapsibleButton>
         <Content>
           <SectionText>
@@ -112,7 +114,9 @@ function PerguntasFrequentes() {
         </Content>
 
         <CollapsibleButton onClick={toggleContent}>
-          No que a conversa com um terapeuta é diferente daquela com o médico?
+          <h2>
+            No que a conversa com um terapeuta é diferente daquela com o médico?
+          </h2>
         </CollapsibleButton>
         <Content>
           <SectionText>
@@ -132,7 +136,7 @@ function PerguntasFrequentes() {
         </Content>
 
         <CollapsibleButton onClick={toggleContent}>
-          O que posso esperar do nosso trabalho?
+          <h2>O que posso esperar do nosso trabalho?</h2>
         </CollapsibleButton>
         <Content>
           <SectionText>
@@ -146,7 +150,7 @@ function PerguntasFrequentes() {
         </Content>
 
         <CollapsibleButton onClick={toggleContent}>
-          Você atende convênios?
+          <h2>Você atende convênios?</h2>
         </CollapsibleButton>
         <Content>
           <SectionText>
@@ -158,7 +162,7 @@ function PerguntasFrequentes() {
           </SectionText>
         </Content>
         <CollapsibleButton onClick={toggleContent}>
-          Qual o formato da psicoterapia?
+          <h2>Qual o formato da psicoterapia?</h2>
         </CollapsibleButton>
         <Content>
           <SectionText>
@@ -166,7 +170,7 @@ function PerguntasFrequentes() {
           </SectionText>
         </Content>
         <CollapsibleButton onClick={toggleContent}>
-          Você oferece atendimento em outro idioma?
+          <h2>Você oferece atendimento em outro idioma?</h2>
         </CollapsibleButton>
         <Content>
           <SectionText>
@@ -175,7 +179,7 @@ function PerguntasFrequentes() {
         </Content>
 
         <CollapsibleButton onClick={toggleContent}>
-          Você atende online?
+          <h2>Você atende online?</h2>
         </CollapsibleButton>
         <Content>
           <SectionText>
@@ -199,7 +203,8 @@ const SectionContent = styled(ContentContainer)`
   width: 100%;
 
   display: flex;
-  flex-flow: wrap;
+  /* flex-flow: wrap; */
+  justify-content: space-between;
   /* flex-direction: column; */
 
   /* &::after {
@@ -208,23 +213,37 @@ const SectionContent = styled(ContentContainer)`
 `;
 
 const CollapsibleButton = styled.button`
-  background-color: #bc4219;
+  background-color: ${({ isOpen }) => (isOpen ? "#5C9210" : "#BC4219")};
   color: white;
   cursor: pointer;
-  padding: 18px;
-  width: fit-content;
-
+  padding: 2px 18px 2px 18px;
+  width: 40%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: background-color 0.4s ease;
+  text-align: end;
+
+  transition: background-color 0.4s ease, transform 0.3s ease;
   margin-top: 12px;
-  /* margin-bottom: 12px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Pseudo-element for plus/minus */
+  &::before {
+    content: "${({ isOpen }) => (isOpen ? "−" : "+")}";
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
 `;
 
 const Content = styled.div`
   /* margin-top: -12px; */
+  font-size: 1rem;
+  max-width: 50%;
   padding: 0 18px;
   display: none;
   overflow: hidden;

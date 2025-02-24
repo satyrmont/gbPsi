@@ -53,7 +53,9 @@ function Metodo() {
 const Section_Metodo = styled(Section)`
   background-color: #a8d9eb;
 `;
-const ContentContainer_Metodo = styled(ContentContainer)``;
+const ContentContainer_Metodo = styled(ContentContainer)`
+  width: 50dvw;
+`;
 const SectionText_Metodo = styled(SectionText)``;
 const Title_Metodo = styled(Title)``;
 

@@ -8,6 +8,8 @@ import {
 } from "../style/PageContainers";
 import { MobileContext } from "../context/mobileContext";
 
+import GBCarousel from "../components/Carousel.component";
+
 function Intro() {
   const text = useRef();
   const isMobile = useContext(MobileContext);
@@ -57,14 +59,21 @@ function Intro() {
           </p>
         </IntroText>
       </ContentContainer>
+      <CarouselContainer>
+        <GBCarousel />
+      </CarouselContainer>
     </IntroSection>
   );
 }
+// ReactDOM.render(<DemoCarousel />, document.querySelector(".demo-carousel"));
 
 const IntroSection = styled(Section)`
   background: #acbbd2;
-  /* background: radial-gradient(circle at 100%, #ebb9a7, #acbbd2); */
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  /* background: radial-gradient(circle at 100%, #ebb9a7, #acbbd2); */
   /* mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
 
   &::before {
@@ -83,6 +92,10 @@ const IntroSection = styled(Section)`
     /* z-index: -1; */
     overflow: hidden;
   }
+`;
+
+const CarouselContainer = styled.div`
+  width: 100%;
 `;
 
 const IntroText = styled(SectionText)`
