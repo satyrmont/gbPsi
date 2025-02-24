@@ -51,7 +51,7 @@ function Metodo() {
 }
 
 const Section_Metodo = styled(Section)`
-  background-color: #a8d9eb;
+  background-color: var(--color04);
 `;
 const ContentContainer_Metodo = styled(ContentContainer)`
   width: 50dvw;

@@ -47,7 +47,7 @@ function ComoFunciona() {
 }
 
 const Section_ComoFunciona = styled(Section)`
-  background-color: #3b73b8;
+  background-color: var(--color03);
   color: white;
 `;
 const ContentContainer_ComoFunciona = styled(ContentContainer)`

@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 const Section = styled.section`
   height: fit-content;
   width: 80dvw;
-  padding: 10px;
   overflow: hidden;
 
   margin-bottom: 16px;
@@ -24,6 +23,7 @@ const Section = styled.section`
 const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 10px;
 
   @media (max-width: 768px) {
     /* padding: 3dvh 2dvw; */
@@ -31,7 +31,7 @@ const ContentContainer = styled.div`
 `;
 
 const SectionText = styled.div`
-  font-size: clamp(22px, 3vw, 24px);
+  font-size: clamp(18px, 3vw, 20px);
   white-space: break-spaces;
   word-wrap: break-word;
   height: fit-content;
@@ -68,7 +68,7 @@ const Title = styled.h1`
   font-weight: 100;
   font-style: normal;
   text-decoration-line: underline;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 1.6px;
   text-underline-offset: 5px;
 
   font-size: clamp(60px, 1dvw, 70px);

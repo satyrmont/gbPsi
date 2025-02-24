@@ -77,6 +77,7 @@ const LogoPage = styled.div`
   img {
     width: 100%;
     max-width: 350px; // Set maximum width for the logo
+    filter: drop-shadow(2px 2px 5px #00000061);
   }
 `;
 
@@ -85,24 +86,37 @@ const LogoSection = styled(Section)`
   align-items: center;
   justify-content: start;
   overflow: visible;
-  max-height: 110px;
+  height: 130px;
   margin-bottom: 32px;
+  right: 100px;
+
   /* background: radial-gradient(circle at 100%, #1d3a6a, black); */
-  filter: drop-shadow(30px 10px 20px #00000050);
+  filter: drop-shadow(10px 10px 12px #0000002c);
   /* max-width: 60%; */
+
   z-index: -1;
 
   @media (min-width: 768px) {
     margin-top: calc(var(--nav-height) + 18px);
   }
 
-  background: rgb(2, 0, 36);
+  /* background: rgb(2, 0, 36);
   background: radial-gradient(
     circle,
     rgba(2, 0, 36, 1) 0%,
-    rgba(29, 58, 106, 1) 53%,
+    rgba(29, 58, 106, 1) 80%,
     rgba(29, 58, 106, 1) 100%
+  ); */
+
+  background: rgb(49, 85, 137);
+  background: linear-gradient(
+    90deg,
+    rgba(49, 85, 137, 1) 0%,
+    rgba(22, 38, 61, 1) 40%,
+    rgba(22, 38, 61, 1) 60%,
+    rgba(49, 85, 137, 1) 100%
   );
+
   justify-content: center;
 `;
 

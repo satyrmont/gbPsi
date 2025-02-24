@@ -16,7 +16,7 @@ function Trajetoria() {
     <Section_SobreMim>
       <ContentContainer_SobreMim>
         <Left>
-          <Title>Sobre Mim</Title>
+          <Title style={{ color: "white" }}>Sobre Mim</Title>
           <TrajetoriaText>
             <p>Me chamo Guido, quero que você me conheça:</p>
             <p>
@@ -92,8 +92,9 @@ function Trajetoria() {
 }
 
 const Section_SobreMim = styled(Section)`
-  background-color: #a8d19e;
+  background-color: var(--color02);
   flex-direction: column;
+  color: white;
 `;
 
 const ContentContainer_SobreMim = styled(ContentContainer)`

@@ -13,30 +13,25 @@ function Contato() {
 
   return (
     <Section_Contato>
-      <Left>
+      <Address>
         <div>
           <h2>Contato:</h2> psc.guido@gmail.com / (11) 94358-0695
         </div>
         <div>
           <h2>Horários:</h2> Segunda a Sábado de 14:00 às 2:00.
         </div>
-      </Left>
-
-      <Right>
-        <Address>
-          <div style={{ textAlign: "start" }}>
-            <h2>Endereço:</h2>
-            Livance Market Place Torre II
-            <br />
-            Av. Dr. Chucri Zaidan, 940 - 3° andar
-          </div>
-          <div>
-            Chácara Santo Antônio. São Paulo
-            <br /> SP, 04583-110
-            <br />
-          </div>
-        </Address>
-      </Right>
+        <div style={{ textAlign: "start" }}>
+          <h2>Endereço:</h2>
+          Livance Market Place Torre II
+          <br />
+          Av. Dr. Chucri Zaidan, 940 - 3° andar
+        </div>
+        <div>
+          Chácara Santo Antônio. São Paulo
+          <br /> SP, 04583-110
+          <br />
+        </div>
+      </Address>
     </Section_Contato>
   );
 }
@@ -49,7 +44,11 @@ const Section_Contato = styled(Section)`
   flex-direction: row;
   justify-content: space-between;
 
-  /* margin-bottom: 0px !important; */
+  width: 100dvw;
+  /* padding-left: 100px; */
+  /* padding-right: 100px; */
+
+  margin-bottom: 0px;
   h2 {
     white-space: nowrap;
     font-family: "Roboto", serif;
@@ -63,23 +62,27 @@ const Section_Contato = styled(Section)`
   }
 `;
 
-const Left = styled.div`
-  margin-left: 20px;
-  div {
-    min-height: fit-content;
-    margin-bottom: 50%;
-  }
-`;
-const Right = styled.div`
-  justify-content: end;
-  text-align: end;
+// const Left = styled.div`
+//   margin-left: 20px;
+//   div {
+//     min-height: fit-content;
+//     margin-bottom: 50%;
+//   }
+// `;
+// const Right = styled.div`
+//   justify-content: end;
+//   text-align: end;
 
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-`;
+//   display: flex;
+//   flex-direction: column;
+//   margin-right: 20px;
+// `;
 
 const Address = styled.div`
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

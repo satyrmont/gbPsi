@@ -21,7 +21,7 @@ function App() {
           <Nav />
           <Logo />
           <Intro />
-          <Trajetoria />
+          {/* <Trajetoria /> */}
           <ComoFunciona />
           <Metodo />
           <QueEsperar />
