@@ -65,9 +65,8 @@ function Intro() {
 
       <ContentContainer_SobreMim>
         <ContentWrapper_SobreMim>
-          {/* <Title style={{ color: "white" }}>Sobre Mim</Title> */}
           <SectionText_SobreMim>
-            <Title>Sobre Mim</Title>
+            <Title_SobreMim>Sobre Mim</Title_SobreMim>
             <p>Me chamo Guido, quero que você me conheça:</p>
             <p>
               Psicólogo pela Universidade de São Paulo (USP) e especialista em
@@ -94,21 +93,21 @@ function Intro() {
             <div>
               <u>Currículo de pesquisador</u>
             </div>
-            <a href="http://lattes.cnpq.br/7444613524162568">
+            {/* <a href="http://lattes.cnpq.br/7444613524162568">
               <div>
                 <Icon_ExteriorLink />
                 lattes.cnpq.br
               </div>
-            </a>
+            </a> */}
             <u>Publicações:</u>
             <br />
             <div style={{ display: "flex", flexDirection: "row" }}>
-              <a href="https://pubmed.ncbi.nlm.nih.gov/30826356/">
+              {/* <a href="https://pubmed.ncbi.nlm.nih.gov/30826356/">
                 <Icon_ExteriorArticle />
               </a>
               <a href="https://pubmed.ncbi.nlm.nih.gov/38215610/">
                 <Icon_ExteriorArticle />
-              </a>
+              </a> */}
             </div>
           </Links>
         </ContainerPortraitAndLinks>
@@ -140,7 +139,7 @@ function Intro() {
 // ReactDOM.render(<DemoCarousel />, document.querySelector(".demo-carousel"));
 
 const IntroSection = styled(Section)`
-  background-color: var(--color01);
+  background-color: var(--color_D3);
 
   overflow: hidden;
   display: flex;
@@ -148,26 +147,6 @@ const IntroSection = styled(Section)`
   padding: 0px;
 
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-
-    right: 30%;
-    top: 50%;
-
-    width: 200px;
-    height: 200px;
-    background-image: url("hat.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    transform: rotate(30deg) scale(200%, 200%);
-    mix-blend-mode: luminosity;
-    /* transform: rotate(-30deg) scale(-225%, 225%); */
-    opacity: 0.4;
-    overflow: hidden;
-  }
 `;
 
 const ContentContainer_Intro = styled(ContentContainer)`
@@ -192,15 +171,39 @@ const IntroText = styled(SectionText)`
 const ContentContainer_SobreMim = styled(ContentContainer)`
   flex-direction: row;
   justify-content: end;
-  background-color: var(--color06);
-`;
-const SectionText_SobreMim = styled(SectionText)`
-  width: 50%;
-  display: flex;
+  background-color: var(--color_D1);
+  position: relative;
   box-sizing: border-box;
   padding: 10px;
-  /* align-items: end; */
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 20%;
+    right: 26dvw;
+
+    width: 200px;
+    height: 200px;
+    background-image: url("hat.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(30deg) scale(250%);
+    mix-blend-mode: luminosity;
+    /* transform: rotate(-30deg) scale(-225%, 225%); */
+    opacity: 0.7;
+    overflow: hidden;
+  }
+`;
+const SectionText_SobreMim = styled(SectionText)`
+  width: 40%;
+  display: flex;
+  color: white;
+
+  overflow: hidden;
   /* justify-content: end; */
+  /* align-items: end; */
   /* text-align: end; */
   /* right: 20dvw; */
 `;
@@ -213,27 +216,28 @@ const ContentWrapper_SobreMim = styled.div`
   justify-content: start;
   position: relative;
 `;
+
+const Title_SobreMim = styled(Title)`
+  color: white;
+`;
 const PortraitSection = styled.div`
   position: absolute;
-  color: white;
+  /* color: white; */
+  color: #000000a9;
+
+  background-color: var(--color_0);
 
   right: 30px;
   top: 30px;
 
   padding: 10px;
   border-radius: 1%;
-  background-color: var(--color02);
   display: flex;
   flex-direction: column;
   justify-content: start;
   font-size: clamp(18px, 2vw, 20px);
 
   filter: drop-shadow(10px 10px 20px #00000047);
-  a {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* align-items: end; */
-  }
 `;
 const ContainerPortraitAndLinks = styled.div`
   display: flex;
@@ -253,8 +257,6 @@ const Links = styled.div`
 const About = styled.div`
   font-size: 0.8rem;
   max-width: 16dvw;
-  color: white;
-
   padding: 12px;
 `;
 

@@ -194,7 +194,7 @@ function PerguntasFrequentes() {
 }
 
 const Section_PerguntasFrequentes = styled(Section)`
-  background-color: var(--color08);
+  background-color: var(--color_D3);
   display: flex;
   flex-direction: column;
   color: white;
@@ -216,7 +216,7 @@ const Title_Perguntas = styled(Title)`
 `;
 
 const CollapsibleButton = styled.button`
-  background-color: ${({ isOpen }) => (isOpen ? "#5C9210" : "var(--color10)")};
+  background-color: ${({ isOpen }) => (isOpen ? "#5C9210" : "var(--color_G1)")};
   color: white;
   cursor: pointer;
   padding: 2px 18px 2px 18px;

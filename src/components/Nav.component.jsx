@@ -165,7 +165,7 @@ const NavBar = styled.div`
   top: 0px;
   left: 0px;
   z-index: 10;
-  background-color: var(--color01);
+  background-color: var(--color_0);
 
   display: flex;
   flex-direction: row;

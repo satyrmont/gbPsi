@@ -97,7 +97,7 @@ function QueEsperar() {
 }
 
 const Section_QueEsperar = styled(Section)`
-  background-color: var(--color05);
+  background-color: var(--color_D2);
   display: flex;
   flex-direction: column;
   color: white;
@@ -122,12 +122,12 @@ const Card = styled.div`
   min-width: 30%;
   max-width: 45%;
   width: clamp();
-  background-color: var(--color07);
+  background-color: var(--color_D1);
 
   h2 {
     font-size: calc(var(--title-font-size) * 0.3);
     color: black;
-    color: white;
+    /* color: white; */
     color: var(--color04);
     white-space: nowrap;
     font-family: "Roboto", serif;

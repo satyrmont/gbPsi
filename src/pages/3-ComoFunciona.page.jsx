@@ -81,7 +81,7 @@ function ComoFunciona() {
 
 const Section_ComoFunciona = styled(Section)`
   color: white;
-  background-color: var(--color15);
+  background-color: var(--color_B3);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -133,7 +133,7 @@ const Title_ComoFunciona = styled(Title)`
 
 const ContentContainer_Metodo = styled(ContentContainer)`
   width: 100%;
-  background-color: var(--color14);
+  background-color: var(--color_C1);
   align-items: end;
   overflow: hidden;
   position: relative;

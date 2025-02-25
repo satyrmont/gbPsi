@@ -110,10 +110,10 @@ const LogoSection = styled(Section)`
   background: rgb(49, 85, 137);
   background: linear-gradient(
     90deg,
-    rgba(49, 85, 137, 1) 0%,
-    rgba(22, 38, 61, 1) 40%,
-    rgba(22, 38, 61, 1) 60%,
-    rgba(49, 85, 137, 1) 100%
+    var(--color_B3) 0%,
+    var(--color_A2) 40%,
+    var(--color_A2) 60%,
+    var(--color_B3) 100%
   );
 
   justify-content: center;
