@@ -23,7 +23,7 @@ const Section = styled.section`
 const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  /* padding: 10px; */
 
   @media (max-width: 768px) {
     /* padding: 3dvh 2dvw; */

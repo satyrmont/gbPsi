@@ -19,7 +19,7 @@ function PerguntasFrequentes() {
 
   return (
     <Section_PerguntasFrequentes ref={main}>
-      <Title ref={title}>Perguntas Frequentes</Title>
+      <Title_Perguntas ref={title}>Perguntas Frequentes</Title_Perguntas>
       <SectionContent>
         <CollapsibleButton onClick={toggleContent}>
           <h2>Quanto tempo durará a psicoterapia?</h2>
@@ -194,9 +194,12 @@ function PerguntasFrequentes() {
 }
 
 const Section_PerguntasFrequentes = styled(Section)`
-  background-color: #f3e49e;
+  background-color: var(--color08);
   display: flex;
   flex-direction: column;
+  color: white;
+  box-sizing: border-box;
+  padding: 10px;
 `;
 
 const SectionContent = styled(ContentContainer)`
@@ -206,14 +209,14 @@ const SectionContent = styled(ContentContainer)`
   /* flex-flow: wrap; */
   justify-content: space-between;
   /* flex-direction: column; */
+`;
 
-  /* &::after {
-    margin-bottom: 12px;
-  } */
+const Title_Perguntas = styled(Title)`
+  color: white;
 `;
 
 const CollapsibleButton = styled.button`
-  background-color: ${({ isOpen }) => (isOpen ? "#5C9210" : "#BC4219")};
+  background-color: ${({ isOpen }) => (isOpen ? "#5C9210" : "var(--color10)")};
   color: white;
   cursor: pointer;
   padding: 2px 18px 2px 18px;

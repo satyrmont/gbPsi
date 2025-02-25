@@ -97,16 +97,18 @@ function QueEsperar() {
 }
 
 const Section_QueEsperar = styled(Section)`
-  background-color: #bc4219;
+  background-color: var(--color05);
   display: flex;
   flex-direction: column;
-  /* color: white; */
+  color: white;
+  box-sizing: border-box;
+  padding: 10px;
 `;
 
 const ContentContainer_QueEsperar = styled(ContentContainer)`
   display: flex;
   flex-flow: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 `;
 
@@ -120,11 +122,13 @@ const Card = styled.div`
   min-width: 30%;
   max-width: 45%;
   width: clamp();
-  background-color: aliceblue;
+  background-color: var(--color07);
 
   h2 {
     font-size: calc(var(--title-font-size) * 0.3);
     color: black;
+    color: white;
+    color: var(--color04);
     white-space: nowrap;
     font-family: "Roboto", serif;
     font-weight: 300;
@@ -136,7 +140,7 @@ const Card = styled.div`
   p::first-letter {
     font-size: 1.2rem;
     font-weight: bold;
-    color: brown;
+    color: var(--color04);
   }
 
   @media (max-width: 768px) {

@@ -64,10 +64,10 @@ function Intro() {
       </CarouselContainer> */}
 
       <ContentContainer_SobreMim>
-        <Historico>
+        <ContentWrapper_SobreMim>
           {/* <Title style={{ color: "white" }}>Sobre Mim</Title> */}
-          <Title>Sobre Mim</Title>
-          <TrajetoriaText>
+          <SectionText_SobreMim>
+            <Title>Sobre Mim</Title>
             <p>Me chamo Guido, quero que você me conheça:</p>
             <p>
               Psicólogo pela Universidade de São Paulo (USP) e especialista em
@@ -82,8 +82,8 @@ function Intro() {
               publicações científicas e no Congresso das Federações Europeias de
               Neurociência (FENS 2018).
             </p>
-          </TrajetoriaText>
-        </Historico>
+          </SectionText_SobreMim>
+        </ContentWrapper_SobreMim>
       </ContentContainer_SobreMim>
       <PortraitSection>
         <ContainerPortraitAndLinks>
@@ -153,8 +153,8 @@ const IntroSection = styled(Section)`
     content: "";
     position: absolute;
 
-    right: 20px;
-    /* top: 5dvw; */
+    right: 30%;
+    top: 50%;
 
     width: 200px;
     height: 200px;
@@ -162,14 +162,16 @@ const IntroSection = styled(Section)`
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    transform: rotate(-30deg) scale(-100%, 100%);
+    transform: rotate(30deg) scale(200%, 200%);
+    mix-blend-mode: luminosity;
     /* transform: rotate(-30deg) scale(-225%, 225%); */
-    opacity: 0.8;
+    opacity: 0.4;
     overflow: hidden;
   }
 `;
 
 const ContentContainer_Intro = styled(ContentContainer)`
+  box-sizing: border-box;
   padding: 10px;
 `;
 
@@ -178,7 +180,7 @@ const CarouselContainer = styled.div`
 `;
 
 const IntroText = styled(SectionText)`
-  width: 50%;
+  width: 70%;
   display: block;
   word-wrap: break-word;
   /* p {
@@ -188,22 +190,23 @@ const IntroText = styled(SectionText)`
 `;
 
 const ContentContainer_SobreMim = styled(ContentContainer)`
-  background-color: var(--color03);
-  padding: 10px;
-  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
-  /* background-color: bisque; */
+  justify-content: end;
+  background-color: var(--color06);
 `;
-const TrajetoriaText = styled(SectionText)`
-  max-width: 80dvw;
+const SectionText_SobreMim = styled(SectionText)`
+  width: 50%;
   display: flex;
-  /* flex-direction: row; */
-  align-items: start;
+  box-sizing: border-box;
+  padding: 10px;
+  /* align-items: end; */
+  /* justify-content: end; */
+  /* text-align: end; */
+  /* right: 20dvw; */
 `;
 
-const Historico = styled.div`
-  width: 40dvw;
+const ContentWrapper_SobreMim = styled.div`
+  /* width: 40dvw; */
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -214,8 +217,8 @@ const PortraitSection = styled.div`
   position: absolute;
   color: white;
 
-  right: 20px;
-  top: 25%;
+  right: 30px;
+  top: 30px;
 
   padding: 10px;
   border-radius: 1%;
@@ -267,19 +270,20 @@ const PortraitContainer = styled.div`
 `;
 
 const Portrait = styled.img`
-  display: block;
-  margin: 0 auto;
-  height: 200px;
-  width: auto;
+  height: 100%; // Fill the container's height
+  width: 100%; // Fill the container's width
+  object-fit: cover; // Ensures the image covers the entire circular container
+  object-position: center; // Positions the image at the center of the circular mask
+  border-radius: 50%; // Applies the circular mask effect
 `;
 
 const StyledIcon = styled.svg`
-  fill: currentColor;
+  fill: var(--color11);
   margin-right: 5px;
   width: ${({ size }) => size || "24px"};
   height: ${({ size }) => size || "24px"};
   &:hover {
-    fill: #144a6f;
+    fill: var(--color11);
   }
 `;
 
@@ -292,7 +296,7 @@ const Icon_ExteriorLink = () => (
   >
     <path
       fill="none"
-      stroke="currentColor"
+      stroke="var(--color11)"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="1.5"

@@ -85,12 +85,15 @@ const Section_ComoFunciona = styled(Section)`
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
   /* position: relative; */
 `;
 const ContentContainer_ComoFunciona = styled(ContentContainer)`
   position: relative;
   overflow: hidden;
   width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
 
   &::before {
     content: "";
@@ -134,6 +137,8 @@ const ContentContainer_Metodo = styled(ContentContainer)`
   align-items: end;
   overflow: hidden;
   position: relative;
+  box-sizing: border-box;
+  padding: 10px;
   &::before {
     content: "";
     position: absolute;

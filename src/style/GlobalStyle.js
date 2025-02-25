@@ -31,19 +31,13 @@ const GlobalStyle = createGlobalStyle`
         --scroll-bar-width: 6px;
         --scroll-bar-width-large: 8px;
 
-        /* --color01: #EAAC8B;
-        --color02: #E56B6F;
-        --color03: #B56576;
-        --color04: #6D597A;
-        --color05: #355070; */
 
-        /* --color01: #f3d897; */
-        --color01: #eee1b4;
+        --color01: #efba8f;
         --color02: #ef9e20;
         --color03: #ef8057;
         --color04: #ef7920;
         --color05: #ef9e20;
-        --color06: #efba8f;
+        --color06: #f3d95f;
         --color07: #6d2a2c;
         --color08: #7a4577;
         --color09: #876785;
@@ -81,7 +75,9 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     overflow-x: hidden;
 
-
+        a{
+            color: var(--color01);
+        }
     
 }
 
