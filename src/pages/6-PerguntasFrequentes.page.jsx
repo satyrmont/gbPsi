@@ -194,7 +194,7 @@ function PerguntasFrequentes() {
 }
 
 const Section_PerguntasFrequentes = styled(Section)`
-  background-color: var(--color_D3);
+  background-color: var(--color_C1);
   display: flex;
   flex-direction: column;
   color: white;
@@ -216,7 +216,7 @@ const Title_Perguntas = styled(Title)`
 `;
 
 const CollapsibleButton = styled.button`
-  background-color: ${({ isOpen }) => (isOpen ? "#5C9210" : "var(--color_G1)")};
+  background-color: ${({ isOpen }) => (isOpen ? "#5C9210" : "var(--color_A3)")};
   color: white;
   cursor: pointer;
   padding: 2px 18px 2px 18px;
@@ -245,6 +245,7 @@ const CollapsibleButton = styled.button`
 
 const Content = styled.div`
   /* margin-top: -12px; */
+  color: black;
   font-size: 1rem;
   max-width: 50%;
   padding: 0 18px;
