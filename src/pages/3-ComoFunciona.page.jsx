@@ -144,7 +144,7 @@ const ContentContainer_Metodo = styled(ContentContainer)`
     position: absolute;
 
     left: 20px;
-    /* top: -3dvw; */
+    top: 35%;
 
     width: 400px;
     height: 400px;

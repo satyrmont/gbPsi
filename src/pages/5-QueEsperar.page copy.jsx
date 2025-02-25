@@ -138,9 +138,9 @@ const Card = styled.div`
     margin-bottom: 10px;
   }
   p::first-letter {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: var(--color04);
+    color: var(--color_F1);
   }
 
   @media (max-width: 768px) {
