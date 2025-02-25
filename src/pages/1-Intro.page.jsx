@@ -199,7 +199,15 @@ const IntroText = styled(SectionText)`
 `;
 
 const Prossiga = styled.div`
+  display: flex;
+  flex-direction: row;
   column-count: 2;
+  ul {
+    width: 80%;
+  }
+  p {
+    width: 60%;
+  }
 `;
 
 const ContentContainer_Experiencia = styled(ContentContainer)`
