@@ -17,122 +17,130 @@ function Intro() {
   return (
     <IntroSection>
       <ContentContainer_Intro>
-        <Title>
-          <strong>Apresentação</strong>
-        </Title>
+        <Title>Apresentação</Title>
         <IntroText>
-          <p>
-            A busca por renovação, a mudança de hábitos antigos, iniciar uma
-            nova fase ou criar um estilo de vida diferente… iniciativas sofrem
-            com a resistência de nossos próprios esforços antes mesmo de
-            começar.
-          </p>
-
-          <p>
-            É frequente esquecermos de dar continuidade para ideias boas que
-            temos ou dar prioridade à felicidade que almejamos. A mudança
-            interior e alcançar uma versão melhorada de si, quando chegam,
-            recompensam apenas esforço duradouro e consistente consigo próprio.{" "}
-          </p>
-
-          <p>
-            Como terapeuta, sou testemunha de seu compromisso pessoal com a
-            melhora. Promovo a aproximação de suas metas e assinalo os passos
-            positivos de seu rumo. Objetivos valorosos muitas vezes requerem uma
-            estrada cansativa, e quando acompanhados registramos progresso de
-            maneira mais eficaz.
-          </p>
-
-          <p>
-            Em momentos de crise, surgem sentimentos de confusão, sofrimento e
-            angústia. Ao procurar conhecidos em momentos assim, você pode ter
-            sido lembrado de seu próprio valor e se sentido acolhido ao expor
-            esses sentimentos, isto conduz ao alívio e à redução de inseguranças
-            e dúvidas.
-          </p>
-
-          <p>
-            Alinhar-se com um terapeuta tem um efeito similar, pondo de lado
-            hesitações e receios, e diferenciando mera especulação daquilo que
-            concretamente nos diz respeito. Antecipe a consulta a um
-            profissional para evitar complicações e dar vazão a seus planos.
-          </p>
+          <h2>
+            Compartilhe sua história, revele-se autor de páginas prósperas.
+          </h2>
+          <br />
+          <IntroText_Wrapper>
+            <p>
+              Desconhecer o trabalho do psicólogo leva muitos a se conformarem
+              com a aflição em silêncio e sustentar uma fachada de positividade
+              que aprendemos imitando outros:
+            </p>
+            <ul>
+              <li>-Construir o enfrentamento não é tarefa solitária.</li>
+              <li>-Guardar pensamentos para si não é prova de saúde mental.</li>
+              <li>-Obter aconselhamento não é sinal de incapacidade.</li>
+            </ul>
+            <br />
+            <p>
+              Acredito na continuidade de boas ideias e pôr em prática planos
+              empoeirados em meio à pressão diária. Dar importância ao bem-estar
+              poderia ser o seu caso?
+            </p>
+            <p>
+              Se você está movido para concretizar uma iniciativa ou determinar
+              causas para a felicidade, testemunharei seu comprometimento e
+              faremos diferença em sua resolução.
+            </p>
+            <p>
+              Desabafar, pedir opinião profissional e buscar conhecimento é o
+              mais esperado ao sentirmos alguma dor. Por que com o sofrimento e
+              a dúvida interior seria diferente?{" "}
+            </p>
+            <p>
+              Quando é necessária uma mudança de curso ou em momentos de
+              hesitação, já percebeu a diferença em contar com alguém de
+              confiança?
+            </p>
+            <p>
+              Espero traduzir seu interesse em um ato de motivação, otimismo e
+              amor-próprio. Enxergue com clareza, sinta-se confiante e
+              desencadeie seu potencial.
+            </p>
+            <p>
+              Prossiga se tiver mais interesse em meu trabalho ou algum dos
+              seguintes tópicos:
+            </p>
+            <ul>
+              <li>Saúde Mental</li>
+              <li>Auto-cuidado</li>
+              <li>Organizar queixas e demandas</li>
+              <li>Auto-conhecimento</li>
+              <li>Criar estratégias conscientes</li>
+            </ul>
+          </IntroText_Wrapper>
         </IntroText>
       </ContentContainer_Intro>
       {/* <CarouselContainer>
         <GBCarousel />
       </CarouselContainer> */}
 
-      <ContentContainer_SobreMim>
-        <ContentWrapper_SobreMim>
-          <SectionText_SobreMim>
-            <Title_SobreMim>Sobre Mim</Title_SobreMim>
-            <p>Me chamo Guido, quero que você me conheça:</p>
-            <p>
-              Psicólogo pela Universidade de São Paulo (USP) e especialista em
-              terapia comportamental e cognitiva pelo Instituto de Psiquiatria
-              (IPq-FMUSP). Adquiri experiência em atendimento e no Hospital das
-              Clínicas, maior hospital da América Latina.
-            </p>
-            <br />
-            <p>
-              Concluí o mestrado pela USP na área de neurociências, com passagem
-              pelo Charité, maior hospital da Alemanha. Representei o Brasil em
-              publicações científicas e no Congresso das Federações Europeias de
-              Neurociência (FENS 2018).
-            </p>
-          </SectionText_SobreMim>
-        </ContentWrapper_SobreMim>
-      </ContentContainer_SobreMim>
-      <PortraitSection>
-        <ContainerPortraitAndLinks>
-          <PortraitContainer>
-            <Portrait src="portrait01.jpeg" />
-          </PortraitContainer>
-          <Links>
-            <div>
-              <u>Currículo de pesquisador</u>
-            </div>
-            {/* <a href="http://lattes.cnpq.br/7444613524162568">
+      <ContentContainer_Experiencia>
+        <ContentWrapper_Experiencia>
+          <PortraitSection>
+            <ContainerPortraitAndLinks>
+              <PortraitContainer>
+                <Portrait src="portrait01.jpeg" />
+              </PortraitContainer>
+              <Links>
+                <div>
+                  <u>Currículo de pesquisador</u>
+                </div>
+                {/* <a href="http://lattes.cnpq.br/7444613524162568">
               <div>
                 <Icon_ExteriorLink />
                 lattes.cnpq.br
               </div>
             </a> */}
-            <u>Publicações:</u>
-            <br />
-            <div style={{ display: "flex", flexDirection: "row" }}>
-              {/* <a href="https://pubmed.ncbi.nlm.nih.gov/30826356/">
+                <u>Publicações:</u>
+                <br />
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                  {/* <a href="https://pubmed.ncbi.nlm.nih.gov/30826356/">
                 <Icon_ExteriorArticle />
               </a>
               <a href="https://pubmed.ncbi.nlm.nih.gov/38215610/">
                 <Icon_ExteriorArticle />
               </a> */}
-            </div>
-          </Links>
-        </ContainerPortraitAndLinks>
-        <About>
-          <p>
-            Gosto de ler e estudar. Durante a Pandemia (2020 - 2023) criei o
-            hábito de ler as notícias em alemão para aprender este idioma
-            enquanto me atualizava. Foi chamativo constatar certa
-            “personalidade” em cada jornal: o tipo de assunto e o tipo de
-            opinião preferida refletem o conteúdo de escrita e um tipo de
-            leitura preferida pela cultura daquele idioma: de país para país
-            muda esta forma de interesse.
-          </p>
-          <br />
-          <p>
-            Me Interessou em particular leituras sobre o sentimento humano do
-            amor, e sobre o uso de biblioterapia na medicina (leitura de livros
-            durante o tratamento de uma doença) como meio de diminuir o
-            sofrimento e promover a cura “de dentro para fora”: “‘A Montanha
-            Mágica’ para doenças do pulmão e ‘Anna Karenina’ para dores de
-            dente”, chamava a notícia. Este tema me fascina explorar e
-            incorporar na clínica.
-          </p>
-        </About>
-      </PortraitSection>
+                </div>
+              </Links>
+            </ContainerPortraitAndLinks>
+          </PortraitSection>
+          <SectionText_Experiencia>
+            <Title_Experiencia>Experiência</Title_Experiencia>
+            <p>Me chamo Guido Bittencourt, me conheça:</p>
+
+            <p>
+              Psicólogo pela Universidade de São Paulo (USP) e especialista em
+              terapia comportamental e cognitiva pelo Instituto de Psiquiatria
+              (IPq-FMUSP). Adquiri experiência em atendimento no Hospital das
+              Clínicas, maior hospital da América Latina.
+            </p>
+            <p>
+              Constatei que estava na profissão certa ao me deparar no jornal
+              sobre médicos que “prescrevem” livros como forma de melhorar a
+              saúde e lidar com as emoções: “‘A montanha mágica’ (Thomas Mann)
+              para doenças do pulmão e ‘Anna Karenina’ (Leon Tolstói) contra
+              dores de dente”, dizia a manchete.
+            </p>
+
+            <p>
+              Narrar a própria história e encontrar correspondência com arte são
+              capacidades humanas fundamentais, nos fazem sentir acompanhados e
+              encontrar saídas para a existência.
+            </p>
+
+            <p>
+              Concluí o mestrado pela USP na área de neurociências. Representei
+              o Brasil em publicações científicas internacionais e no Congresso
+              das Federações Europeias de Neurociência (FENS 2018). Residi como
+              pesquisador visitante no Charité, maior hospital da Alemanha.
+            </p>
+          </SectionText_Experiencia>
+        </ContentWrapper_Experiencia>
+      </ContentContainer_Experiencia>
     </IntroSection>
   );
 }
@@ -144,92 +152,90 @@ const IntroSection = styled(Section)`
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0px;
 
-  position: relative;
+  /* position: relative; */
 `;
 
 const ContentContainer_Intro = styled(ContentContainer)`
   box-sizing: border-box;
-  padding: 10px;
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 70%;
+
+  background-color: #ffe4c43a;
 `;
 
 const CarouselContainer = styled.div`
   width: 80%;
 `;
 
+const IntroText_Wrapper = styled.div`
+  column-count: 2;
+  width: 100%;
+
+  p {
+    break-inside: avoid;
+  }
+
+  background-color: #c9c4ff94;
+`;
+
 const IntroText = styled(SectionText)`
-  width: 70%;
   display: block;
   word-wrap: break-word;
-  /* p {
-    overflow-wrap: break-word;
-  } */
-  /* column-count: 2; */
-`;
+  width: 100%;
 
-const ContentContainer_SobreMim = styled(ContentContainer)`
-  flex-direction: row;
-  justify-content: end;
-  background-color: var(--color_D1);
-  position: relative;
-  box-sizing: border-box;
-  padding: 10px;
-
-  &::before {
-    content: "";
-    position: absolute;
-
-    top: 20%;
-    right: 26dvw;
-
-    width: 200px;
-    height: 200px;
-    background-image: url("hat.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    transform: rotate(30deg) scale(250%);
-    mix-blend-mode: luminosity;
-    /* transform: rotate(-30deg) scale(-225%, 225%); */
-    opacity: 0.7;
-    overflow: hidden;
+  h2 {
+    font-weight: 300;
+    font-size: calc(var(--title-font-size) * 0.32);
   }
 `;
-const SectionText_SobreMim = styled(SectionText)`
-  width: 40%;
+
+const ContentContainer_Experiencia = styled(ContentContainer)`
+  background-color: var(--color_D1);
+  width: 100%;
+`;
+
+const ContentWrapper_Experiencia = styled.div`
   display: flex;
+  flex-direction: row;
+  text-align: start;
+  justify-content: space-between;
+  position: relative;
+
+  width: var(--content-width);
+  background-color: #f848d462;
+`;
+const SectionText_Experiencia = styled(SectionText)`
   color: white;
+  box-sizing: border-box;
+  column-count: 2;
 
   overflow: hidden;
-  /* justify-content: end; */
-  /* align-items: end; */
-  /* text-align: end; */
-  /* right: 20dvw; */
+  /* margin-left: 20px; */
+
+  background-color: #ffe4c463;
+  p {
+    break-inside: avoid;
+  }
 `;
 
-const ContentWrapper_SobreMim = styled.div`
-  /* width: 40dvw; */
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  justify-content: start;
-  position: relative;
-`;
-
-const Title_SobreMim = styled(Title)`
+const Title_Experiencia = styled(Title)`
   color: white;
 `;
 const PortraitSection = styled.div`
-  position: absolute;
-  /* color: white; */
   color: #000000a9;
 
   background-color: var(--color_0);
 
-  right: 30px;
-  top: 30px;
-
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+  margin: 10px;
+  box-sizing: border-box;
   padding: 10px;
   border-radius: 1%;
   display: flex;
@@ -237,7 +243,7 @@ const PortraitSection = styled.div`
   justify-content: start;
   font-size: clamp(18px, 2vw, 20px);
 
-  filter: drop-shadow(10px 10px 20px #00000047);
+  filter: drop-shadow(10px 10px 20px #00000031);
 `;
 const ContainerPortraitAndLinks = styled.div`
   display: flex;
@@ -267,16 +273,14 @@ const PortraitContainer = styled.div`
   overflow: hidden;
   border-radius: 50%;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
 `;
 
 const Portrait = styled.img`
-  height: 100%; // Fill the container's height
-  width: 100%; // Fill the container's width
-  object-fit: cover; // Ensures the image covers the entire circular container
-  object-position: center; // Positions the image at the center of the circular mask
-  border-radius: 50%; // Applies the circular mask effect
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
 `;
 
 const StyledIcon = styled.svg`

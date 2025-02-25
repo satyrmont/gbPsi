@@ -87,7 +87,7 @@ const LogoSection = styled(Section)`
   justify-content: start;
   overflow: visible;
   height: 130px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 
   /* background: radial-gradient(circle at 100%, #1d3a6a, black); */
   filter: drop-shadow(10px 10px 12px #0000002c);
@@ -96,7 +96,7 @@ const LogoSection = styled(Section)`
   z-index: -1;
 
   @media (min-width: 768px) {
-    margin-top: calc(var(--nav-height) + 18px);
+    margin-top: calc(var(--nav-height));
   }
 
   /* background: rgb(2, 0, 36);

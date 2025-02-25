@@ -2,10 +2,10 @@ import { styled } from "styled-components";
 
 const Section = styled.section`
   height: fit-content;
-  width: 80dvw;
+  width: 100%;
   overflow: hidden;
 
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 
   display: flex;
   flex-direction: row;
@@ -23,7 +23,8 @@ const Section = styled.section`
 const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* padding: 10px; */
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 768px) {
     /* padding: 3dvh 2dvw; */
@@ -35,7 +36,7 @@ const SectionText = styled.div`
   white-space: break-spaces;
   word-wrap: break-word;
   height: fit-content;
-  /* max-height: 96dvh; */
+  width: 60dvw;
 
   display: flex;
   flex-direction: column;

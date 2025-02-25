@@ -24,8 +24,8 @@ function App() {
           {/* <Trajetoria /> */}
           <ComoFunciona />
           {/* <Metodo /> */}
-          {/* <QueEsperar /> */}
-          {/* <PerguntasFrequent es /> */}
+          <QueEsperar />
+          <PerguntasFrequentes />
           <Contato />
           <Mapa />
         </body>

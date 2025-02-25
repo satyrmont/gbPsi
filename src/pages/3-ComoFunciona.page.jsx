@@ -86,38 +86,21 @@ const Section_ComoFunciona = styled(Section)`
   flex-direction: column;
   overflow: hidden;
 
+  width: 100%;
+
   /* position: relative; */
 `;
 const ContentContainer_ComoFunciona = styled(ContentContainer)`
   position: relative;
   overflow: hidden;
-  width: 100%;
+  /* width: 100%; */
   box-sizing: border-box;
   padding: 10px;
-
-  &::before {
-    content: "";
-    position: absolute;
-
-    right: 80px;
-    top: -3dvw;
-
-    width: 400px;
-    height: 400px;
-    background-image: url("escherHands.png");
-    mix-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    transform: rotate(-30deg) scale(-150%, 150%);
-    /* transform: rotate(-30deg) scale(-225%, 225%); */
-    opacity: 0.8;
-  }
 `;
 
 const SectionText_ComoFunciona = styled(SectionText)`
   font-size: calc(var(--text-font-size) * 0.9);
-  max-width: 50%;
+  width: 70%;
   display: block;
   column-count: 2;
   p {
@@ -134,39 +117,19 @@ const Title_ComoFunciona = styled(Title)`
 const ContentContainer_Metodo = styled(ContentContainer)`
   width: 100%;
   background-color: var(--color_C1);
-  align-items: end;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
   padding: 10px;
-  &::before {
-    content: "";
-    position: absolute;
-
-    left: 20px;
-    top: 35%;
-
-    width: 400px;
-    height: 400px;
-    max-height: 90%;
-    background-image: url("labyrinth.png");
-    mix-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    transform: scale(200%);
-    /* transform: rotate(-30deg) scale(-225%, 225%); */
-    opacity: 0.8;
-  }
 `;
 
 const ContentWrapper_Metodo = styled.div`
   display: flex;
   flex-direction: column;
-  /* background-color: #9b691e; */
+  background-color: #9b691e;
   text-align: center;
   align-items: center;
-  width: 50dvw;
+  width: var(--content-width);
   overflow: hidden;
 `;
 

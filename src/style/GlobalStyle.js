@@ -31,6 +31,8 @@ const GlobalStyle = createGlobalStyle`
         --scroll-bar-width: 6px;
         --scroll-bar-width-large: 8px;
 
+        --content-width: 70%;
+
 
         --color_0: #eee1b4;
 
