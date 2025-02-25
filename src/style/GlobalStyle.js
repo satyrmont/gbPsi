@@ -77,7 +77,8 @@ const GlobalStyle = createGlobalStyle`
 
 
         --title-font-size: clamp(60px, 65dvw, 70px);
-        --text-font-size: clamp(16px, 1rem, 22px);
+        --text-font-size: clamp(20px, 1rem, 24px);
+        line-height: 1.2rem;
         
         --title-font: "Lato", serif;
         /* --title-font-weight: 500; */

@@ -37,6 +37,7 @@ const SectionText = styled.div`
   word-wrap: break-word;
   height: fit-content;
   width: 60dvw;
+  line-height: 1.1em;
 
   display: flex;
   flex-direction: column;
