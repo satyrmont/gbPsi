@@ -101,15 +101,19 @@ const Section_QueEsperar = styled(Section)`
   display: flex;
   flex-direction: column;
   color: white;
-  box-sizing: border-box;
-  padding: 10px;
+  align-items: center;
+  justify-content: center;
 `;
 
 const ContentContainer_QueEsperar = styled(ContentContainer)`
   display: flex;
   flex-flow: wrap;
-  justify-content: space-between;
-  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  width: var(--content-width);
+  box-sizing: border-box;
+  padding: 10px 0px 10px 0px;
+  /* background-color: #0000ff56; */
 `;
 
 const Title_QueEsperar = styled(Title)`
@@ -117,11 +121,13 @@ const Title_QueEsperar = styled(Title)`
 `;
 
 const Card = styled.div`
+  margin-bottom: 5px;
+
+  box-sizing: border-box;
   padding: 10px;
-  margin-bottom: 2dvw;
-  min-width: 30%;
-  max-width: 45%;
-  width: clamp();
+
+  height: 120px;
+  width: 45%;
   background-color: var(--color_D1);
 
   h2 {
@@ -137,6 +143,7 @@ const Card = styled.div`
     text-decoration-thickness: 1px;
     margin-bottom: 10px;
   }
+
   p::first-letter {
     font-size: 1.5rem;
     font-weight: bold;

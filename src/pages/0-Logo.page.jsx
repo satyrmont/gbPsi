@@ -87,13 +87,14 @@ const LogoSection = styled(Section)`
   justify-content: start;
   overflow: visible;
   height: 130px;
+
   /* margin-bottom: 32px; */
 
   /* background: radial-gradient(circle at 100%, #1d3a6a, black); */
   filter: drop-shadow(10px 10px 12px #0000002c);
   /* max-width: 60%; */
 
-  z-index: -1;
+  z-index: 3;
 
   @media (min-width: 768px) {
     margin-top: calc(var(--nav-height));
@@ -107,14 +108,14 @@ const LogoSection = styled(Section)`
     rgba(29, 58, 106, 1) 100%
   ); */
 
-  background: var(--color_A2);
-  background: linear-gradient(
+  background: var(--color_A3);
+  /* background: linear-gradient(
     90deg,
     var(--color_A3) 0%,
     var(--color_A1) 40%,
     var(--color_A1) 60%,
     var(--color_A3) 100%
-  );
+  ); */
 
   justify-content: center;
 `;

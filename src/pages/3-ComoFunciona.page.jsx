@@ -84,6 +84,7 @@ const Section_ComoFunciona = styled(Section)`
   background-color: var(--color_B3);
   display: flex;
   flex-direction: column;
+  align-items: center;
   overflow: hidden;
 
   width: 100%;
@@ -91,25 +92,32 @@ const Section_ComoFunciona = styled(Section)`
   /* position: relative; */
 `;
 const ContentContainer_ComoFunciona = styled(ContentContainer)`
-  position: relative;
   overflow: hidden;
-  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
+
+  /* width: var(--content-width); */
+
+  /* background-color: bisque; */
 `;
 
 const SectionText_ComoFunciona = styled(SectionText)`
-  font-size: calc(var(--text-font-size) * 0.9);
-  width: 70%;
+  /* font-size: calc(var(--text-font-size) * 0.9); */
+  width: var(--content-width);
   display: block;
   column-count: 2;
+
   p {
     break-inside: avoid;
   }
 `;
 
 const Title_ComoFunciona = styled(Title)`
-  width: 50dvw;
   color: white;
   font-size: 3vi;
 `;
@@ -120,26 +128,31 @@ const ContentContainer_Metodo = styled(ContentContainer)`
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  padding: 10px;
+
+  box-sizing: border-box;
+  padding: 10px 0px 10px 0px;
 `;
 
 const ContentWrapper_Metodo = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #9b691e;
   text-align: center;
   align-items: center;
-  width: var(--content-width);
+  /* width: var(--content-width); */
   overflow: hidden;
+
+  /* background-color: #9b691e; */
 `;
 
 const SectionText_Metodo = styled(SectionText)`
   display: block;
   text-align: start;
-  font-size: calc(var(--text-font-size) * 0.9);
+  /* font-size: calc(var(--text-font-size) * 0.9); */
+  width: var(--content-width);
+
   column-count: 2;
   column-gap: 1rem;
-  max-width: 80%;
+  /* max-width: 80%; */
   /* background-color: #62451a; */
   justify-content: start;
   p {

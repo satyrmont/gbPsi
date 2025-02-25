@@ -50,13 +50,13 @@ const GlobalStyle = createGlobalStyle`
         --color_C2: #7ac0d3;
         --color_C3: #a0d4e2;
 
-        --color_D1: #cc6525;
-        --color_D2: #d18b60;
-        --color_D3: #e0a784;
+        --color_D1: #cc8444;
+        --color_D2: #d1a680;
+        --color_D3: #e0c1a6;
 
-        --color_E1: #cc8825;
-        --color_E2: #d1a360;
-        --color_E3: #e0bb84;
+        --color_E1: #cc9a4d;
+        --color_E2: #d1b589;
+        --color_E3: #e0cdb0;
 
         --color_F1: #dbbf42;
         --color_F2: #e0cf82;

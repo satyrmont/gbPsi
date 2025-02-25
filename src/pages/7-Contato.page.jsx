@@ -37,7 +37,7 @@ function Contato() {
 }
 
 const Section_Contato = styled(Section)`
-  background-color: #876785;
+  background-color: var(--color_G3);
   color: white;
 
   display: flex;
@@ -61,22 +61,6 @@ const Section_Contato = styled(Section)`
     margin-bottom: 16px;
   }
 `;
-
-// const Left = styled.div`
-//   margin-left: 20px;
-//   div {
-//     min-height: fit-content;
-//     margin-bottom: 50%;
-//   }
-// `;
-// const Right = styled.div`
-//   justify-content: end;
-//   text-align: end;
-
-//   display: flex;
-//   flex-direction: column;
-//   margin-right: 20px;
-// `;
 
 const Address = styled.div`
   margin-left: 5%;

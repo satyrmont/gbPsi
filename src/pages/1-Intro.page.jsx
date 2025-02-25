@@ -30,9 +30,9 @@ function Intro() {
               que aprendemos imitando outros:
             </p>
             <ul>
-              <li>-Construir o enfrentamento não é tarefa solitária.</li>
-              <li>-Guardar pensamentos para si não é prova de saúde mental.</li>
-              <li>-Obter aconselhamento não é sinal de incapacidade.</li>
+              <li>Construir o enfrentamento não é tarefa solitária.</li>
+              <li>Guardar pensamentos para si não é prova de saúde mental.</li>
+              <li>Obter aconselhamento não é sinal de incapacidade.</li>
             </ul>
             <br />
             <p>
@@ -60,23 +60,22 @@ function Intro() {
               amor-próprio. Enxergue com clareza, sinta-se confiante e
               desencadeie seu potencial.
             </p>
-            <p>
-              Prossiga se tiver mais interesse em meu trabalho ou algum dos
-              seguintes tópicos:
-            </p>
-            <ul>
-              <li>Saúde Mental</li>
-              <li>Auto-cuidado</li>
-              <li>Organizar queixas e demandas</li>
-              <li>Auto-conhecimento</li>
-              <li>Criar estratégias conscientes</li>
-            </ul>
+            <Prossiga>
+              <p>
+                Prossiga se tiver mais interesse em meu trabalho ou algum dos
+                seguintes tópicos:
+              </p>
+              <ul>
+                <li>Saúde Mental</li>
+                <li>Auto-cuidado</li>
+                <li>Organizar queixas e demandas</li>
+                <li>Auto-conhecimento</li>
+                <li>Criar estratégias conscientes</li>
+              </ul>
+            </Prossiga>
           </IntroText_Wrapper>
         </IntroText>
       </ContentContainer_Intro>
-      {/* <CarouselContainer>
-        <GBCarousel />
-      </CarouselContainer> */}
 
       <ContentContainer_Experiencia>
         <ContentWrapper_Experiencia>
@@ -144,7 +143,6 @@ function Intro() {
     </IntroSection>
   );
 }
-// ReactDOM.render(<DemoCarousel />, document.querySelector(".demo-carousel"));
 
 const IntroSection = styled(Section)`
   background-color: var(--color_D3);
@@ -154,34 +152,27 @@ const IntroSection = styled(Section)`
   flex-direction: column;
   align-items: center;
   padding: 0px;
-
-  /* position: relative; */
 `;
 
 const ContentContainer_Intro = styled(ContentContainer)`
   box-sizing: border-box;
-  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   align-items: start;
   width: 70%;
+  margin-bottom: 10px;
 
-  background-color: #ffe4c43a;
-`;
-
-const CarouselContainer = styled.div`
-  width: 80%;
+  /* background-color: #ffe4c43a; */
 `;
 
 const IntroText_Wrapper = styled.div`
   column-count: 2;
-  width: 100%;
 
   p {
     break-inside: avoid;
   }
 
-  background-color: #c9c4ff94;
+  /* background-color: #c9c4ff94; */
 `;
 
 const IntroText = styled(SectionText)`
@@ -192,11 +183,29 @@ const IntroText = styled(SectionText)`
   h2 {
     font-weight: 300;
     font-size: calc(var(--title-font-size) * 0.32);
+    color: var(--color_G1);
+    font-style: italic;
   }
+  // Change from first-letter to first word
+  p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color_G1);
+  }
+  li::before {
+    content: "•";
+    margin-right: 4px;
+  }
+`;
+
+const Prossiga = styled.div`
+  column-count: 2;
 `;
 
 const ContentContainer_Experiencia = styled(ContentContainer)`
   background-color: var(--color_D1);
+  box-sizing: border-box;
+  padding: 10px 0px 10px 0px;
   width: 100%;
 `;
 
@@ -208,7 +217,7 @@ const ContentWrapper_Experiencia = styled.div`
   position: relative;
 
   width: var(--content-width);
-  background-color: #f848d462;
+  /* background-color: #f848d462; */
 `;
 const SectionText_Experiencia = styled(SectionText)`
   color: white;
@@ -218,7 +227,7 @@ const SectionText_Experiencia = styled(SectionText)`
   overflow: hidden;
   /* margin-left: 20px; */
 
-  background-color: #ffe4c463;
+  /* background-color: #ffe4c463; */
   p {
     break-inside: avoid;
   }
