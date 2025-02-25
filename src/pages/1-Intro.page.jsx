@@ -9,7 +9,6 @@ import {
 import { MobileContext } from "../context/mobileContext";
 
 import GBCarousel from "../components/Carousel.component";
-import Trajetoria from "./2-SobreMim.page";
 
 function Intro() {
   const text = useRef();
@@ -154,18 +153,18 @@ const IntroSection = styled(Section)`
     content: "";
     position: absolute;
 
-    right: 100px;
-    top: 5dvw;
+    right: 20px;
+    /* top: 5dvw; */
 
-    width: 200px; /* Adjust as needed */
+    width: 200px;
     height: 200px;
     background-image: url("hat.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    transform: rotate(30deg) scale(200%); /* Rotate by 45 degrees */
+    transform: rotate(-30deg) scale(-100%, 100%);
+    /* transform: rotate(-30deg) scale(-225%, 225%); */
     opacity: 0.8;
-    /* z-index: -1; */
     overflow: hidden;
   }
 `;
@@ -179,7 +178,13 @@ const CarouselContainer = styled.div`
 `;
 
 const IntroText = styled(SectionText)`
-  width: 50dvw;
+  width: 50%;
+  display: block;
+  word-wrap: break-word;
+  /* p {
+    overflow-wrap: break-word;
+  } */
+  /* column-count: 2; */
 `;
 
 const ContentContainer_SobreMim = styled(ContentContainer)`
@@ -203,6 +208,7 @@ const Historico = styled.div`
   flex-direction: column;
   text-align: start;
   justify-content: start;
+  position: relative;
 `;
 const PortraitSection = styled.div`
   position: absolute;
@@ -256,8 +262,8 @@ const PortraitContainer = styled.div`
   overflow: hidden;
   border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 `;
 
 const Portrait = styled.img`

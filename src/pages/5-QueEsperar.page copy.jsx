@@ -116,17 +116,22 @@ const Title_QueEsperar = styled(Title)`
 
 const Card = styled.div`
   padding: 10px;
-  /* margin-right: 2dvw; */
   margin-bottom: 2dvw;
-  /* min-width: 15dvw; */
   min-width: 30%;
   max-width: 45%;
   width: clamp();
   background-color: aliceblue;
+
   h2 {
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 3px;
+    font-size: calc(var(--title-font-size) * 0.3);
+    color: black;
+    white-space: nowrap;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    margin-bottom: 10px;
   }
   p::first-letter {
     font-size: 1.2rem;

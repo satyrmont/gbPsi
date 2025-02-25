@@ -37,7 +37,8 @@ const GlobalStyle = createGlobalStyle`
         --color04: #6D597A;
         --color05: #355070; */
 
-        --color01: #f3d897;
+        /* --color01: #f3d897; */
+        --color01: #eee1b4;
         --color02: #ef9e20;
         --color03: #ef8057;
         --color04: #ef7920;
@@ -54,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
         --color15: #7aa7de;
 
         --title-font-size: clamp(60px, 65dvw, 70px);
-        --text-font-size: clamp(18px, 3vw, 20px);;
+        --text-font-size: clamp(16px, 1rem, 22px);
         
         --title-font: "Lato", serif;
         /* --title-font-weight: 500; */
