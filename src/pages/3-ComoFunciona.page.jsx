@@ -80,8 +80,8 @@ function ComoFunciona() {
 }
 
 const Section_ComoFunciona = styled(Section)`
-  color: white;
-  background-color: var(--color_B3);
+  /* color: white; */
+  background-color: var(--color_1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,13 +118,14 @@ const SectionText_ComoFunciona = styled(SectionText)`
 `;
 
 const Title_ComoFunciona = styled(Title)`
-  color: white;
-  font-size: 3vi;
+  /* color: white; */
+  font-size: 4vi;
 `;
 
 const ContentContainer_Metodo = styled(ContentContainer)`
   width: 100%;
-  background-color: var(--color_C1);
+  /* background-color: var(--color_1); */
+  background-color: white;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
@@ -162,8 +163,8 @@ const SectionText_Metodo = styled(SectionText)`
 
 const Title_Metodo = styled(Title)`
   display: inline-block;
-  color: white;
-  font-size: 3vi;
+  /* color: white; */
+  font-size: 4vi;
   /* background-color: #62451a75; */
 `;
 

@@ -145,7 +145,7 @@ function Intro() {
 }
 
 const IntroSection = styled(Section)`
-  background-color: var(--color_D3);
+  background-color: white;
 
   overflow: hidden;
   display: flex;
@@ -160,7 +160,8 @@ const ContentContainer_Intro = styled(ContentContainer)`
   flex-direction: column;
   align-items: start;
   width: 70%;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 
   /* background-color: #ffe4c43a; */
 `;
@@ -211,7 +212,7 @@ const Prossiga = styled.div`
 `;
 
 const ContentContainer_Experiencia = styled(ContentContainer)`
-  background-color: var(--color_D1);
+  background-color: var(--color_0);
   box-sizing: border-box;
   padding: 10px 0px 10px 0px;
   width: 100%;
@@ -223,12 +224,14 @@ const ContentWrapper_Experiencia = styled.div`
   text-align: start;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 40px;
+  margin-top: 40px;
 
   width: var(--content-width);
   /* background-color: #f848d462; */
 `;
 const SectionText_Experiencia = styled(SectionText)`
-  color: white;
+  /* color: white; */
   box-sizing: border-box;
   column-count: 2;
 
@@ -242,15 +245,13 @@ const SectionText_Experiencia = styled(SectionText)`
 `;
 
 const Title_Experiencia = styled(Title)`
-  color: white;
+  /* color: white; */
 `;
 const PortraitSection = styled.div`
   color: #000000a9;
 
-  background-color: var(--color_0);
+  background-color: var(--color_1);
 
-  /* margin-top: 10px; */
-  /* margin-bottom: 10px; */
   margin: 10px;
   box-sizing: border-box;
   padding: 10px;

@@ -194,8 +194,8 @@ function PerguntasFrequentes() {
 }
 
 const Section_PerguntasFrequentes = styled(Section)`
-  background-color: var(--color_C2);
-  color: white;
+  background-color: var(--color_1);
+  /* color: white; */
 
   display: flex;
   flex-direction: column;
@@ -216,14 +216,14 @@ const SectionContent = styled(ContentContainer)`
 `;
 
 const Title_Perguntas = styled(Title)`
-  color: white;
+  /* color: white; */
 `;
 
 const CollapsibleButton = styled.button`
   /* background-color: ${({ isOpen }) =>
     isOpen ? "var(--color_A2)" : "var(--color_A3)"}; */
-  background-color: var(--color_B2);
-  color: white;
+  background-color: var(--color_0);
+  color: #5c5c5c;
   cursor: pointer;
   padding: 2px 18px 2px 18px;
   width: 40%;

@@ -76,7 +76,7 @@ const LogoPage = styled.div`
 
   img {
     width: 100%;
-    max-width: 350px; // Set maximum width for the logo
+    max-width: 650px; // Set maximum width for the logo
     filter: drop-shadow(2px 2px 5px #00000061);
   }
 `;
@@ -86,7 +86,7 @@ const LogoSection = styled(Section)`
   align-items: center;
   justify-content: start;
   overflow: visible;
-  height: 130px;
+  height: 150px;
 
   /* margin-bottom: 32px; */
 

@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
 
 
         --color_0: #eee1b4;
+        --color_1: #e9b977;
 
         --color_A1: #050f1f;
         --color_A2: #17263d;
