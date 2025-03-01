@@ -30,9 +30,21 @@ function Intro() {
               que aprendemos imitando outros:
             </p>
             <ul>
-              <li>Construir o enfrentamento não é tarefa solitária.</li>
-              <li>Guardar pensamentos para si não é prova de saúde mental.</li>
-              <li>Obter aconselhamento não é sinal de incapacidade.</li>
+              <li>
+                <ListItem>
+                  Construir o enfrentamento não é tarefa solitária.
+                </ListItem>
+              </li>
+              <li>
+                <ListItem>
+                  Guardar pensamentos para si não é prova de saúde mental.
+                </ListItem>
+              </li>
+              <li>
+                <ListItem>
+                  Obter aconselhamento não é sinal de incapacidade.
+                </ListItem>
+              </li>
             </ul>
             <br />
             <p>
@@ -66,80 +78,94 @@ function Intro() {
                 seguintes tópicos:
               </p>
               <ul>
-                <li>Saúde Mental</li>
-                <li>Auto-cuidado</li>
-                <li>Organizar queixas e demandas</li>
-                <li>Auto-conhecimento</li>
-                <li>Criar estratégias conscientes</li>
+                <li>
+                  <ListItem>Saúde Mental</ListItem>
+                </li>
+                <li>
+                  <ListItem>Auto-cuidado</ListItem>
+                </li>
+                <li>
+                  <ListItem>Organizar queixas e demandas</ListItem>
+                </li>
+                <li>
+                  <ListItem>Auto-conhecimento</ListItem>
+                </li>
+                <li>
+                  <ListItem>Criar estratégiasi conscientes</ListItem>
+                </li>
               </ul>
             </Prossiga>
           </IntroText_Wrapper>
         </IntroText>
       </ContentContainer_Intro>
-
-      <ContentContainer_Experiencia>
-        <ContentWrapper_Experiencia>
-          <PortraitSection>
-            <ContainerPortraitAndLinks>
-              <PortraitContainer>
-                <Portrait src="portrait01.jpeg" />
-              </PortraitContainer>
-              <Links>
+      <SectionWrapper_Experiencia>
+        <ContentContainer_Experiencia>
+          <ContentWrapper_ExperienciaAndPortrait>
+            <PortraitSection>
+              <ContainerPortraitAndLinks>
+                <PortraitContainer>
+                  <Portrait src="portrait01.jpeg" />
+                </PortraitContainer>
+                <Links>
+                  <div>
+                    <u>Currículo de pesquisador</u>
+                  </div>
+                  {/* <a href="http://lattes.cnpq.br/7444613524162568">
                 <div>
-                  <u>Currículo de pesquisador</u>
+                  <Icon_ExteriorLink />
+                  lattes.cnpq.br
                 </div>
-                {/* <a href="http://lattes.cnpq.br/7444613524162568">
-              <div>
-                <Icon_ExteriorLink />
-                lattes.cnpq.br
-              </div>
-            </a> */}
-                <u>Publicações:</u>
-                <br />
-                <div style={{ display: "flex", flexDirection: "row" }}>
-                  {/* <a href="https://pubmed.ncbi.nlm.nih.gov/30826356/">
-                <Icon_ExteriorArticle />
-              </a>
-              <a href="https://pubmed.ncbi.nlm.nih.gov/38215610/">
-                <Icon_ExteriorArticle />
               </a> */}
-                </div>
-              </Links>
-            </ContainerPortraitAndLinks>
-          </PortraitSection>
-          <SectionText_Experiencia>
-            <Title_Experiencia>Experiência</Title_Experiencia>
-            <p>Me chamo Guido Bittencourt, me conheça:</p>
+                  <u>Publicações:</u>
+                  <br />
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                    {/* <a href="https://pubmed.ncbi.nlm.nih.gov/30826356/">
+                  <Icon_ExteriorArticle />
+                </a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/38215610/">
+                  <Icon_ExteriorArticle />
+                </a> */}
+                  </div>
+                </Links>
+              </ContainerPortraitAndLinks>
+            </PortraitSection>
+            <ContentWrapper_Experiencia>
+              <Title_Experiencia>Experiência</Title_Experiencia>
+              <SectionText_Experiencia>
+                <p>Me chamo Guido Bittencourt, me conheça:</p>
 
-            <p>
-              Psicólogo pela Universidade de São Paulo (USP) e especialista em
-              terapia comportamental e cognitiva pelo Instituto de Psiquiatria
-              (IPq-FMUSP). Adquiri experiência em atendimento no Hospital das
-              Clínicas, maior hospital da América Latina.
-            </p>
-            <p>
-              Constatei que estava na profissão certa ao me deparar no jornal
-              sobre médicos que “prescrevem” livros como forma de melhorar a
-              saúde e lidar com as emoções: “‘A montanha mágica’ (Thomas Mann)
-              para doenças do pulmão e ‘Anna Karenina’ (Leon Tolstói) contra
-              dores de dente”, dizia a manchete.
-            </p>
+                <p>
+                  Psicólogo pela Universidade de São Paulo (USP) e especialista
+                  em terapia comportamental e cognitiva pelo Instituto de
+                  Psiquiatria (IPq-FMUSP). Adquiri experiência em atendimento no
+                  Hospital das Clínicas, maior hospital da América Latina.
+                </p>
+                <p>
+                  Constatei que estava na profissão certa ao me deparar no
+                  jornal sobre médicos que “prescrevem” livros como forma de
+                  melhorar a saúde e lidar com as emoções: “‘A montanha mágica’
+                  (Thomas Mann) para doenças do pulmão e ‘Anna Karenina’ (Leon
+                  Tolstói) contra dores de dente”, dizia a manchete.
+                </p>
 
-            <p>
-              Narrar a própria história e encontrar correspondência com arte são
-              capacidades humanas fundamentais, nos fazem sentir acompanhados e
-              encontrar saídas para a existência.
-            </p>
+                <p>
+                  Narrar a própria história e encontrar correspondência com arte
+                  são capacidades humanas fundamentais, nos fazem sentir
+                  acompanhados e encontrar saídas para a existência.
+                </p>
 
-            <p>
-              Concluí o mestrado pela USP na área de neurociências. Representei
-              o Brasil em publicações científicas internacionais e no Congresso
-              das Federações Europeias de Neurociência (FENS 2018). Residi como
-              pesquisador visitante no Charité, maior hospital da Alemanha.
-            </p>
-          </SectionText_Experiencia>
-        </ContentWrapper_Experiencia>
-      </ContentContainer_Experiencia>
+                <p>
+                  Concluí o mestrado pela USP na área de neurociências.
+                  Representei o Brasil em publicações científicas internacionais
+                  e no Congresso das Federações Europeias de Neurociência (FENS
+                  2018). Residi como pesquisador visitante no Charité, maior
+                  hospital da Alemanha.
+                </p>
+              </SectionText_Experiencia>
+            </ContentWrapper_Experiencia>
+          </ContentWrapper_ExperienciaAndPortrait>
+        </ContentContainer_Experiencia>
+      </SectionWrapper_Experiencia>
     </IntroSection>
   );
 }
@@ -159,7 +185,7 @@ const ContentContainer_Intro = styled(ContentContainer)`
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 70%;
+  width: var(--content-width);
   margin-bottom: 40px;
   margin-top: 40px;
 
@@ -187,16 +213,34 @@ const IntroText = styled(SectionText)`
     color: var(--color_G1);
     font-style: italic;
   }
-  // Change from first-letter to first word
   p::first-letter {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--color_G1);
   }
+
+  li {
+    display: flex;
+    flex-direction: row;
+  }
   li::before {
     content: "•";
     margin-right: 4px;
+    margin-left: 4px;
+    flex-direction: row;
   }
+`;
+
+const ListItem = styled.div`
+  /* position: relative; */
+`;
+
+const SectionWrapper_Experiencia = styled.div`
+  width: 100%;
+  background-color: var(--color_0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Prossiga = styled.div`
@@ -204,7 +248,7 @@ const Prossiga = styled.div`
   flex-direction: row;
   column-count: 2;
   ul {
-    width: 80%;
+    /* width: 80%; */
   }
   p {
     width: 60%;
@@ -212,47 +256,52 @@ const Prossiga = styled.div`
 `;
 
 const ContentContainer_Experiencia = styled(ContentContainer)`
-  background-color: var(--color_0);
   box-sizing: border-box;
   padding: 10px 0px 10px 0px;
-  width: 100%;
+  /* width: 100%; */
+  height: fit-content;
 `;
 
 const ContentWrapper_Experiencia = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: start;
   justify-content: space-between;
-  position: relative;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  /* margin-bottom: 40px; */
+  /* margin-top: 40px; */
+  /* box-sizing: border-box; */
+  /* padding: 10px; */
 
-  width: var(--content-width);
+  height: 100%;
+  margin-left: 20px;
+
   /* background-color: #f848d462; */
 `;
+
+const ContentWrapper_ExperienciaAndPortrait = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 const SectionText_Experiencia = styled(SectionText)`
-  /* color: white; */
-  box-sizing: border-box;
-  column-count: 2;
+  /* box-sizing: border-box; */
+  /* column-count: 2; */
 
-  overflow: hidden;
-  /* margin-left: 20px; */
-
-  /* background-color: #ffe4c463; */
   p {
     break-inside: avoid;
   }
+
+  /* background-color: #5d2fc760; */
 `;
 
 const Title_Experiencia = styled(Title)`
-  /* color: white; */
+  /* background-color: #48f8c961; */
 `;
 const PortraitSection = styled.div`
   color: #000000a9;
 
   background-color: var(--color_1);
 
-  margin: 10px;
+  /* margin: 10px; */
   box-sizing: border-box;
   padding: 10px;
   border-radius: 1%;
@@ -273,8 +322,6 @@ const ContainerPortraitAndLinks = styled.div`
 const Links = styled.div`
   font-size: 1rem;
   svg {
-    /* width: 100px;
-    height: 100px; */
     fill: blue;
   }
 `;

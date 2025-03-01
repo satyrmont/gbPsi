@@ -37,8 +37,8 @@ function Contato() {
 }
 
 const Section_Contato = styled(Section)`
-  background-color: var(--color_G3);
-  color: white;
+  background-color: var(--color_0);
+  /* color: white; */
 
   display: flex;
   flex-direction: row;

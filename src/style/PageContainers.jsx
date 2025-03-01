@@ -16,7 +16,7 @@ const Section = styled.section`
     flex-direction: column;
     justify-content: start;
     overflow-y: hidden;
-    width: 100dvw;
+    /* width: 100dvw; */
   }
 `;
 
@@ -25,6 +25,8 @@ const ContentContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: 70%;
 
   @media (max-width: 768px) {
     /* padding: 3dvh 2dvw; */
@@ -36,7 +38,8 @@ const SectionText = styled.div`
   white-space: break-spaces;
   word-wrap: break-word;
   height: fit-content;
-  width: 60dvw;
+
+  /* width: 60dvw; */
   line-height: 1.1em;
 
   display: flex;
@@ -66,12 +69,11 @@ const SectionText = styled.div`
 const Title = styled.h1`
   color: black;
   white-space: nowrap;
-  font-family: "Roboto", serif;
-  font-weight: 100;
-  font-style: normal;
-  text-decoration-line: underline;
+  font-family: "Crete Round", serif;
+  font-weight: 200;
+  /* text-decoration-line: underline;
   text-decoration-thickness: 1.6px;
-  text-underline-offset: 5px;
+  text-underline-offset: 5px; */
 
   font-size: var(--title-font-size);
 

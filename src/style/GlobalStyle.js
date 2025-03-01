@@ -2,15 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
-/* @font-face {
-    font-family: "Atkinson Hyperlegible Next", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-} */
+
 
     html{
-        /* scroll-snap-type: y mandatory; */
         
         &::-webkit-scrollbar {
             width: 0;
@@ -27,17 +21,23 @@ const GlobalStyle = createGlobalStyle`
         
         --color-gray: #f9f9f9;
         --title-font-size-horz: clamp(10dvw, 4dvw, 2dvw);
+        --title-font-size: clamp(35px, 65dvw, 40px);
+        --text-font-size: clamp(20px, 1rem, 24px);
+        --text-small-factor: 0.8;
+        --title-small-factor: 0.7;
         
+        --title-font: "Lato", serif;
         --scroll-bar-width: 6px;
         --scroll-bar-width-large: 8px;
 
-        --content-width: 70%;
-
+        --content-width: 70dvw;
+        --margin-top-bottom: 40px;
+    
 
         --color_0: #eee1b4;
         --color_1: #e9b977;
 
-        --color_A1: #050f1f;
+        --color_A1:rgba(5, 15, 31, 0.31);
         --color_A2: #17263d;
         --color_A3: #2b3442;
         --color_A4: #404751;
@@ -67,21 +67,10 @@ const GlobalStyle = createGlobalStyle`
         --color_G2: #724c4d;
         --color_G3: #816768;
 
-        /* --color_H1: #cc8825;
-        --color_H2: #d1a360;
-        --color_H3: #e0bb84;
-        
-        --color_I1: #cc8825;
-        --color_I2: #d1a360;
-        --color_I3: #e0bb84; */
+ 
 
 
-        --title-font-size: clamp(60px, 65dvw, 70px);
-        --text-font-size: clamp(20px, 1rem, 24px);
-        line-height: 1.2rem;
         
-        --title-font: "Lato", serif;
-        /* --title-font-weight: 500; */
         
         
         --sm-screen: 768px;
@@ -90,14 +79,11 @@ const GlobalStyle = createGlobalStyle`
     
     
     body{
-    /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* margin-left: 500px; */
+  
 
-    font-family: "Atkinson Hyperlegible Next", serif;
-    font-weight: 200;
+        font-family: "Bitter", serif;
+    /* font-family: "Atkinson Hyperlegible Next", serif; */
+    font-weight: 330;
     display: flex;
     flex-direction: column;
     align-items: center;
