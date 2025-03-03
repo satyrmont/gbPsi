@@ -69,8 +69,8 @@ const SectionText = styled.div`
 const Title = styled.h1`
   color: black;
   white-space: nowrap;
-  font-family: "Crete Round", serif;
-  font-weight: 200;
+  font-family: var(--title-font);
+  font-weight: 300;
   /* text-decoration-line: underline;
   text-decoration-thickness: 1.6px;
   text-underline-offset: 5px; */

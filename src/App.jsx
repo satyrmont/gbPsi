@@ -23,7 +23,7 @@ function App() {
           <QueEsperar />
           <PerguntasFrequentes />
           <Contato />
-          <Mapa />
+          {/* <Mapa /> */}
         </body>
       </MobileProvider>
     </React.Fragment>

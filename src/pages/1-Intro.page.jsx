@@ -209,7 +209,7 @@ const IntroText = styled(SectionText)`
 
   h2 {
     font-weight: 300;
-    font-size: calc(var(--title-font-size) * 0.32);
+    font-size: calc(var(--title-font-size) * 0.5);
     color: var(--color_G1);
     font-style: italic;
   }
@@ -247,9 +247,7 @@ const Prossiga = styled.div`
   display: flex;
   flex-direction: row;
   column-count: 2;
-  ul {
-    /* width: 80%; */
-  }
+
   p {
     width: 60%;
   }
@@ -257,8 +255,6 @@ const Prossiga = styled.div`
 
 const ContentContainer_Experiencia = styled(ContentContainer)`
   box-sizing: border-box;
-  padding: 10px 0px 10px 0px;
-  /* width: 100%; */
   height: fit-content;
 `;
 
@@ -267,15 +263,8 @@ const ContentWrapper_Experiencia = styled.div`
   flex-direction: column;
   text-align: start;
   justify-content: space-between;
-  /* margin-bottom: 40px; */
-  /* margin-top: 40px; */
-  /* box-sizing: border-box; */
-  /* padding: 10px; */
 
   height: 100%;
-  margin-left: 20px;
-
-  /* background-color: #f848d462; */
 `;
 
 const ContentWrapper_ExperienciaAndPortrait = styled.div`
