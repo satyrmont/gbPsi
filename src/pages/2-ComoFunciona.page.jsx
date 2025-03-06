@@ -99,6 +99,7 @@ const SectionWrapper = styled.div`
 `;
 
 const Container_TwoColumn = styled.div`
+  padding-top: var(--margin-top-bottom);
   /* width: 50%; */
   display: flex;
   flex-direction: column;
@@ -132,6 +133,9 @@ const SectionText_ComoFunciona = styled(SectionText)`
 
 const Title_ComoFunciona = styled(Title)`
   font-size: calc(var(--title-font-size) * var(--title-small-factor));
+  text-decoration-line: underline;
+  text-decoration-thickness: 1.6px;
+  text-underline-offset: 5px;
 `;
 
 // ----------------------- TERAPIA ------------------------
@@ -163,6 +167,9 @@ const SectionText_Metodo = styled(SectionText)`
 const Title_Metodo = styled(Title)`
   font-size: calc(var(--title-font-size) * var(--title-small-factor));
   display: inline-block;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1.6px;
+  text-underline-offset: 5px;
 `;
 
 export default ComoFunciona;

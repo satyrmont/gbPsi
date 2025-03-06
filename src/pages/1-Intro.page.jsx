@@ -241,6 +241,7 @@ const SectionWrapper_Experiencia = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 40px;
 `;
 
 const Prossiga = styled.div`
@@ -263,7 +264,7 @@ const ContentWrapper_Experiencia = styled.div`
   flex-direction: column;
   text-align: start;
   justify-content: space-between;
-
+  margin-left: var(--margin-top-bottom);
   height: 100%;
 `;
 

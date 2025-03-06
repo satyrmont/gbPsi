@@ -15,16 +15,14 @@ function App() {
   return (
     <React.Fragment>
       <MobileProvider>
-        <body>
-          <Nav />
-          <Logo />
-          <Intro />
-          <ComoFunciona />
-          <QueEsperar />
-          <PerguntasFrequentes />
-          <Contato />
-          {/* <Mapa /> */}
-        </body>
+        <Nav />
+        <Logo />
+        <Intro />
+        <ComoFunciona />
+        <QueEsperar />
+        <PerguntasFrequentes />
+        <Contato />
+        {/* <Mapa /> */}
       </MobileProvider>
     </React.Fragment>
   );

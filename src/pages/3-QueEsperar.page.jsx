@@ -131,7 +131,7 @@ const Card = styled.div`
   background-color: var(--color_D1);
 
   h2 {
-    font-size: calc(var(--title-font-size) * 0.3);
+    font-size: calc(var(--title-font-size) * 0.45);
     color: black;
     /* color: white; */
     color: var(--color04);
