@@ -336,8 +336,8 @@ const AnswerText = styled.div`
   /* border-style: solid;
   border: 1px;
   border-color: black; */
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   li::before {
     content: "•";
     margin-right: 6px;
