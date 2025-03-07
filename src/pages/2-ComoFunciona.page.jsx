@@ -27,7 +27,7 @@ function ComoFunciona() {
               <p>
                 Uma perspectiva mais encorajadora cria o ambiente para atitudes
                 saudáveis. Nos livramos de pensamentos contraproducentes visando
-                areestruturação cognitiva.
+                a reestruturação cognitiva.
               </p>
               <p>
                 Adotando atitude construtiva e tolerante consigo mesmo, somos
@@ -49,34 +49,44 @@ function ComoFunciona() {
               <Title_Metodo>Terapia cognitivo comportamental</Title_Metodo>
               <SectionText_Metodo>
                 <p>
-                  Método científico e escolha prioritária para promoção de saúde
-                  mental: prestígio adquirido ao ser adaptável para diferentes
-                  vivências e necessidades do público, e comunicar-se
-                  cientificamente com a área da saúde por meio de resultados
-                  concretos.
+                  <h3>
+                    Método científico e escolha prioritária para promoção de
+                    saúde mental:
+                  </h3>
+                  prestígio adquirido ao ser adaptável para diferentes vivências
+                  e necessidades, articula-se com a área da saúde por meio de
+                  Ciência e resultados concretos.
                 </p>
 
                 <p>
-                  Padrão-ouro, alternativo ou conjunto à medicação psiquiátrica:
-                  tratamento consagrado para ansiedade, depressão, transtornos
-                  psiquiátricos e de personalidade, conflitos pessoais.
+                  <h3>
+                    Padrão-ouro -alternativo ou conjunto à medicação
+                    psiquiátrica:
+                  </h3>{" "}
+                  tratamento consagrado para ansiedade e depressão, conflitos e
+                  sentimentos pessoais, transtornos psiquiátricos.
                 </p>
 
                 <p>
-                  Saúde e bem-estar transmitidos pelo corpo, emoções e
-                  pensamentos: apoiada em tradição filosófica milenar e décadas
-                  de observação e pesquisa científica de ponta, a combinação de
-                  técnicas da Psicologia comportamental e cognitiva em
-                  consultório é o referencial teórico preferencial há mais de 40
-                  anos.
+                  <h3>
+                    Saúde e bem-estar que ressoam pelo corpo, emoções e
+                    pensamentos:
+                  </h3>{" "}
+                  fundado em tradição filosófica milenar e décadas de observação
+                  científica e pesquisa de ponta. A combinação de técnicas da
+                  psicologia comportamental e cognitiva em consultório é a
+                  referência adotada internacionalmente por mais de 40 anos.
                 </p>
 
                 <p>
-                  Revigore o espírito por enfrentamento racional e pensamento
-                  consciente: recursos e ferramentas compartilhados com
-                  transparência de objetivos convidam o paciente a aprender o
-                  tratamento e participar, e ganhando independência, sentir que
-                  e transformou-se em terapeuta de si próprio.
+                  <h3>
+                    Revigore o espírito por enfrentamento racional e pensamento
+                    consciente:
+                  </h3>{" "}
+                  recursos e ferramentas compartilhados com transparência de
+                  objetivos convidam o paciente a aprender o tratamento e
+                  participar, e ganhando independência, sentir que e
+                  transformou-se em terapeuta de si próprio.
                 </p>
               </SectionText_Metodo>
             </ContentWrapper_Metodo>
@@ -142,6 +152,9 @@ const Title_ComoFunciona = styled(Title)`
 
 const ContentContainer_Metodo = styled(ContentContainer)`
   background-color: white;
+  h3 {
+    font-weight: 400;
+  }
 `;
 
 const ContentWrapper_Metodo = styled.div`
@@ -156,7 +169,7 @@ const SectionText_Metodo = styled(SectionText)`
   display: block;
   text-align: start;
 
-  column-count: 2;
+  /* column-count: 2; */
   column-gap: 1rem;
   font-size: calc(var(--text-font-size) * var(--text-small-factor));
 
