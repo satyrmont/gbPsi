@@ -19,7 +19,7 @@ function QueEsperar() {
           <h2>Maior otimismo consigo e o mundo</h2>
           <p>
             Não escolhemos com qual emoção reagir a acontecimentos, mas podemos
-            perceber quando demos crédito indevido a ela.
+            perceber quando demos a ela crédito indevido.
           </p>
         </Card>
 
@@ -28,9 +28,9 @@ function QueEsperar() {
 
           <p>
             O sofrimento e confusão são maiores quando incapazes de denominar e
-            descrever verbalmente. Trazer incômodos para a conversa poderá
-            iniciar processos de mudança. Você se sentirá acompanhado e
-            ventilará suas perspectivas pelo percurso.
+            descrever verbalmente. Trazer incômodos para a conversa pode iniciar
+            processos de mudança, você se sentirá acompanhado pelo percurso e
+            ventilará as perspectivas desmotivadoras.
           </p>
         </Card>
 
@@ -39,16 +39,16 @@ function QueEsperar() {
 
           <p>
             Sentimentos de inferioridade frequentemente são indevidos e ainda
-            assim impedem aproveitarmos o lado bom de viver. Realize-se
-            pessoalmente criando senso próprio durante nossa caminhada.
+            assim impedem de aproveitarmos o lado bom de viver. Realize-se
+            pessoalmente criando senso próprio.
           </p>
         </Card>
 
         <Card>
           <h2>Detox tecnológico</h2>
           <p>
-            Gastamos com as telas, celulares e computadores tempo de qualidade
-            que passaríamos reunidos. Porque repetimos um hábito de que
+            Gastamos com as telas, celulares e computadores, tempo de qualidade
+            que passávamos reunidos. Porque repetimos um hábito de que
             gostaríamos de nos livrar? Quanto tempo é demais para se passar
             conectado?
           </p>
@@ -79,16 +79,15 @@ function QueEsperar() {
           <p>
             Independência profissional e financeira são muito valorizados.
             Equilibre-se com estudos, melhore o ambiente de trabalho e atinja
-            sua produtividade. Perseguimos e rastreamos progressos em suas
-            ambições.
+            sua produtividade. Rastreamos o progresso em suas ambições.
           </p>
         </Card>
 
         <Card>
           <h2>Comportamento Obsessivo-compulsivo (TOC)</h2>
           <p>
-            Pensamentos intrusivos, busca de alívio por meio de compras e
-            limpeza, acumular objetos: aprenda a se desprender.
+            Pensamentos intrusivos, busca de alívio por meio de compras ou
+            limpeza, acumular objetos: aprenda a desprender-se.
           </p>
         </Card>
       </ContentContainer_QueEsperar>
@@ -103,16 +102,20 @@ const Section_QueEsperar = styled(Section)`
   color: white;
   align-items: center;
   justify-content: center;
+
+  box-sizing: border-box;
+  padding: var(--margin-top-bottom) 0px;
 `;
 
 const ContentContainer_QueEsperar = styled(ContentContainer)`
   display: flex;
   flex-flow: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: var(--content-width);
   box-sizing: border-box;
   padding: 10px 0px 10px 0px;
+  gap: 10px;
   /* background-color: #0000ff56; */
 `;
 
@@ -121,12 +124,10 @@ const Title_QueEsperar = styled(Title)`
 `;
 
 const Card = styled.div`
-  margin-bottom: 5px;
-
   box-sizing: border-box;
   padding: 10px;
-
-  height: 120px;
+  min-width: 460px;
+  height: 130px;
   width: 45%;
   background-color: var(--color_D1);
 
@@ -136,11 +137,11 @@ const Card = styled.div`
     /* color: white; */
     color: var(--color04);
     white-space: nowrap;
-    font-family: "Roboto", serif;
+    font-family: var(--title-font);
     font-weight: 300;
-    font-style: normal;
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
     margin-bottom: 10px;
   }
 

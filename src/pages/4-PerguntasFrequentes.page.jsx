@@ -116,8 +116,6 @@ function PerguntasFrequentes() {
                   </li>
                 </ul>
               </ul>
-              Resposta 3: Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit.
             </AnswerText>
           </Answer>
           <QuestionButton data-open="false" onClick={toggleContent}>
@@ -130,38 +128,15 @@ function PerguntasFrequentes() {
               <p>
                 Ao pedir conselho a conhecidos e amigos, obtemos opiniões
                 influenciadas pelo que já conhecem e antecipam de nós. Isto é
-                desejável e muitas vezes a alternativa mais agradável!
+                desejável e muitas vezes a alternativa mais agradável.
               </p>
 
               <p>
-                Já o psicólogo te auxilia a romper padrões contraproducentes e
+                Já um psicólogo auxilia a romper padrões contraproducentes e
                 nocivos dos quais não nos demos conta ou relutamos em abandonar.
                 A dedicação necessária para superar desconfortos, mudar hábitos
-                e reconsiderar nossos sentimentos é mais constante quando
-                acompanhada por uma opinião profissional independente.
-              </p>
-            </AnswerText>
-          </Answer>
-
-          <QuestionButton data-open="false" onClick={toggleContent}>
-            <h2>
-              No que a conversa com um terapeuta é diferente daquela com o
-              médico?
-            </h2>
-          </QuestionButton>
-          <Answer>
-            <AnswerText>
-              <p>
-                Formas de psicoterapia que buscam intervir sobre o bem-estar
-                emoções e reconhecer padrões de pensamento também possuem
-                validade científica e recursos próprios, como: técnicas de
-                meditação, respiração e atenção plena (mindfulness) para
-                promover o relaxamento e a mudança de consciência.
-              </p>
-
-              <p>
-                Uma equipe multidisciplinar atenta e colaborativa é sempre capaz
-                de encontrar um maior leque de decisões informadas.
+                e reconsiderar nossos sentimentos é mais consistente quando
+                acompanhada por opinião profissional independente.
               </p>
             </AnswerText>
           </Answer>
@@ -172,10 +147,10 @@ function PerguntasFrequentes() {
           <Answer>
             <AnswerText>
               <p>
-                Em uma conversa inicial avaliamos como a Psicologia poderia te
-                ajudar. A partir da conceitualização de caso, trabalhamos
-                conjuntamente em sua intervenção ou na necessidade de
-                encaminhamento para um profissional dedicado a isto.
+                Em uma conversa inicial avaliamos como a Psicologia pode ajudar.
+                A partir da conceitualização de caso, trabalhamos conjuntamente
+                como intervir ou na necessidade de encaminhamento para um
+                profissional dedicado a isto.
               </p>
             </AnswerText>
           </Answer>
@@ -192,6 +167,7 @@ function PerguntasFrequentes() {
               </p>
             </AnswerText>
           </Answer>
+
           <QuestionButton data-open="false" onClick={toggleContent}>
             <h2>Qual o formato da psicoterapia?</h2>
           </QuestionButton>
@@ -219,6 +195,53 @@ function PerguntasFrequentes() {
               formato mais eficaz.
             </AnswerText>
           </Answer>
+
+          <QuestionButton data-open="false" onClick={toggleContent}>
+            <h2>A psicoterapia está ligada à área da saúde?</h2>
+          </QuestionButton>
+          <Answer>
+            <AnswerText>
+              <p>
+                Se você busca tratamento baseado em Ciência, pergunte ao
+                profissional sobre evidências que sustentam sua prática e como
+                ele avalia o progresso ao longo da terapia.
+              </p>
+
+              <p>
+                Métodos comprovados, como terapia cognitivo-comportamental (TCC)
+                empenham-se em identificar e modificar padrões de pensamento e
+                comportamento.{" "}
+              </p>
+
+              <p>
+                A psicoterapia que segue princípios científicos aplicados à
+                saúde baseia-se em comprovação. Estão disponíveis tratamentos
+                testados e de eficácia demonstrada.{" "}
+              </p>
+            </AnswerText>
+          </Answer>
+
+          <QuestionButton data-open="false" onClick={toggleContent}>
+            <h2>
+              Como a psicoterapia concilia ciência com experiência pessoal?
+            </h2>
+          </QuestionButton>
+          <Answer>
+            <AnswerText>
+              <p>
+                A psicoterapia é, ao mesmo tempo, prática de saúde e espaço de
+                reflexão sobre a condição humana. Seu propósito vai além de
+                sintomas: trata-se de compreender uma trajetória de vida e a
+                autenticidade envolvida por emoções, memórias e valores
+                individuais.
+              </p>
+              <p>
+                Sem deixar de valorizar a experiência humana irredutível, criar
+                um enfoque racional evita que meras impressões e suposições
+                sejam causa para nossas ações.
+              </p>
+            </AnswerText>
+          </Answer>
         </QuestionsContainer>
       </SectionContent>
     </Section_PerguntasFrequentes>
@@ -233,6 +256,9 @@ const Section_PerguntasFrequentes = styled(Section)`
 
   box-sizing: border-box;
   padding: 10px;
+
+  box-sizing: border-box;
+  padding: var(--margin-top-bottom) 0px;
 `;
 
 const SectionContent = styled(ContentContainer)`
@@ -306,12 +332,23 @@ const Answer = styled.div`
 
 const AnswerText = styled.div`
   padding: 6px 12px;
-  line-height: 1.1rem;
+  line-height: 1.4rem;
   /* border-style: solid;
   border: 1px;
   border-color: black; */
+  display: flex;
+  flex-direction: row;
+  li::before {
+    content: "•";
+    margin-right: 6px;
+    /* background-color: blue; */
+  }
 
-  font-size: calc(var(--text-font-size) * 0.8);
+  font-size: calc(var(--text-font-size) * 0.9);
+  font-weight: 350;
+  p {
+    margin-bottom: 6px;
+  }
   ul {
   }
 `;

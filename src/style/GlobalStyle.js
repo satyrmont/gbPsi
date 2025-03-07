@@ -26,12 +26,13 @@ const GlobalStyle = createGlobalStyle`
         --text-small-factor: 0.8;
         --title-small-factor: 0.7;
         
-        --title-font: "Lato", serif;
+        --title-font: "Arvo", serif;
         --scroll-bar-width: 6px;
         --scroll-bar-width-large: 8px;
 
         --content-width: 70dvw;
         --margin-top-bottom: 40px;
+        
     
 
         --color_0: #eee1b4;

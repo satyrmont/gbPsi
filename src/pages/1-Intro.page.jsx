@@ -107,25 +107,28 @@ function Intro() {
                   <Portrait src="portrait01.jpeg" />
                 </PortraitContainer>
                 <Links>
-                  <div>
-                    <u>Currículo de pesquisador</u>
-                  </div>
+                  <LinkButton>
+                    <h2>Currículo de pesquisador</h2>
+                    <Icon_ExteriorLink />
+                  </LinkButton>
                   {/* <a href="http://lattes.cnpq.br/7444613524162568">
                 <div>
                   <Icon_ExteriorLink />
                   lattes.cnpq.br
                 </div>
               </a> */}
-                  <u>Publicações:</u>
-                  <br />
-                  <div style={{ display: "flex", flexDirection: "row" }}>
-                    {/* <a href="https://pubmed.ncbi.nlm.nih.gov/30826356/">
+                  <LinkButton>
+                    <h2>Publicações:</h2>
+                    <br />
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                      {/* <a href="https://pubmed.ncbi.nlm.nih.gov/30826356/">
                   <Icon_ExteriorArticle />
-                </a>
-                <a href="https://pubmed.ncbi.nlm.nih.gov/38215610/">
+                  </a>
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/38215610/">
                   <Icon_ExteriorArticle />
-                </a> */}
-                  </div>
+                  </a> */}
+                    </div>
+                  </LinkButton>
                 </Links>
               </ContainerPortraitAndLinks>
             </PortraitSection>
@@ -288,7 +291,7 @@ const Title_Experiencia = styled(Title)`
 `;
 const PortraitSection = styled.div`
   color: #000000a9;
-
+  height: fit-content;
   background-color: var(--color_1);
 
   /* margin: 10px; */
@@ -307,14 +310,40 @@ const ContainerPortraitAndLinks = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  :first-child {
+    margin-bottom: 12px;
+  }
 `;
 
 const Links = styled.div`
   font-size: 1rem;
-  svg {
-    fill: blue;
+  /* background-color: antiquewhite; */
+`;
+
+const LinkButton = styled.button`
+  font: var(--title-font);
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  :hover {
+    cursor: pointer;
+  }
+
+  /* background-color: yellow; */
+  h2 {
+    /* background-color: azure; */
   }
 `;
+
 const About = styled.div`
   font-size: 0.8rem;
   max-width: 16dvw;
@@ -341,11 +370,10 @@ const Portrait = styled.img`
 const StyledIcon = styled.svg`
   fill: var(--color11);
   margin-right: 5px;
-  width: ${({ size }) => size || "24px"};
-  height: ${({ size }) => size || "24px"};
-  &:hover {
-    fill: var(--color11);
-  }
+  /* width: ${({ size }) => size || "24px"}; */
+  /* height: ${({ size }) => size || "24px"}; */
+
+  /* background-color: green; */
 `;
 
 const Icon_ExteriorLink = () => (
@@ -354,10 +382,11 @@ const Icon_ExteriorLink = () => (
     width="32"
     height="32"
     viewBox="0 0 24 24"
+    fill="black"
   >
     <path
       fill="none"
-      stroke="var(--color11)"
+      stroke="black"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width="1.5"
