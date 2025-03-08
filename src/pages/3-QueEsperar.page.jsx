@@ -28,9 +28,9 @@ function QueEsperar() {
 
           <p>
             O sofrimento e confusão são maiores quando incapazes de denominar e
-            descrever verbalmente. Trazer incômodos para a conversa pode iniciar
-            processos de mudança, você se sentirá acompanhado pelo percurso e
-            ventilará as perspectivas desmotivadoras.
+            verbalmente descrever. Trazer incômodos para a conversa pode iniciar
+            processos de mudança, perspectivas desmotivadoras serão ventiladas e
+            você se sentirá acompanhado pelo percurso.
           </p>
         </Card>
 

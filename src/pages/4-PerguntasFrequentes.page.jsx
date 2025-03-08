@@ -107,7 +107,7 @@ function PerguntasFrequentes() {
                   <li>Transtornos do impulso</li>
                   <li>Baixa concentração</li>
                   <li>Dependência de internet e tecnologia</li>
-                  <li>Apostas e jogo online (ludomania)</li>
+                  <li>Apostas e jogo online</li>
                   <li>
                     Mudanças de vida tais como: troca de residência e trabalho
                   </li>
@@ -119,9 +119,7 @@ function PerguntasFrequentes() {
             </AnswerText>
           </Answer>
           <QuestionButton data-open="false" onClick={toggleContent}>
-            <h2>
-              A conversa com um terapeuta não é igual com qualquer outra pessoa?
-            </h2>
+            <h2>A conversa com um terapeuta não é igual a qualquer outra?</h2>
           </QuestionButton>
           <Answer>
             <AnswerText>
@@ -150,7 +148,7 @@ function PerguntasFrequentes() {
                 Em uma conversa inicial avaliamos como a Psicologia pode ajudar.
                 A partir da conceitualização de caso, trabalhamos conjuntamente
                 como intervir ou na necessidade de encaminhamento para um
-                profissional dedicado a isto.
+                profissional especialista desta demanda.
               </p>
             </AnswerText>
           </Answer>
@@ -161,9 +159,11 @@ function PerguntasFrequentes() {
           <Answer>
             <AnswerText>
               <p>
-                No momento, o atendimento é apenas para particulares. Ainda
-                assim, a nota fiscal emitida pode ser usada para a operadora
-                reembolsar o valor da consulta.
+                No momento, o atendimento é apenas a particulares. Ainda assim,
+                a nota fiscal emitida pode ser usada para reembolsos via
+                convênio. Os atendimentos estão classificados como despesas
+                médicas, é permitido abater 100% do valor declarando-o no
+                imposto de renda.
               </p>
             </AnswerText>
           </Answer>
@@ -202,21 +202,21 @@ function PerguntasFrequentes() {
           <Answer>
             <AnswerText>
               <p>
-                Se você busca tratamento baseado em Ciência, pergunte ao
-                profissional sobre evidências que sustentam sua prática e como
-                ele avalia o progresso ao longo da terapia.
+                A psicoterapia, quando segue princípios científicos aplicados à
+                saúde, baseia-se em comprovação. Estão disponíveis tratamentos
+                testados e de eficácia demonstrada.
               </p>
 
               <p>
                 Métodos comprovados, como terapia cognitivo-comportamental (TCC)
                 empenham-se em identificar e modificar padrões de pensamento e
-                comportamento.{" "}
+                comportamento.
               </p>
 
               <p>
-                A psicoterapia que segue princípios científicos aplicados à
-                saúde baseia-se em comprovação. Estão disponíveis tratamentos
-                testados e de eficácia demonstrada.{" "}
+                Se você busca tratamento baseado em Ciência, pergunte ao
+                profissional sobre evidências que sustentam sua prática e como
+                ele avalia o progresso ao longo da terapia.
               </p>
             </AnswerText>
           </Answer>

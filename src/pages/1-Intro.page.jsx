@@ -27,7 +27,7 @@ function Intro() {
             <p>
               Desconhecer o trabalho do psicólogo leva muitos a se conformarem
               com a aflição em silêncio e sustentar uma fachada de positividade
-              que aprendemos imitando outros:
+              que aprendemos imitando outros, mas:
             </p>
             <ul>
               <li>
@@ -91,13 +91,14 @@ function Intro() {
                   <ListItem>Auto-conhecimento</ListItem>
                 </li>
                 <li>
-                  <ListItem>Criar estratégiasi conscientes</ListItem>
+                  <ListItem>Criar estratégias conscientes</ListItem>
                 </li>
               </ul>
             </Prossiga>
           </IntroText_Wrapper>
         </IntroText>
       </ContentContainer_Intro>
+      <GBCarousel />
       <SectionWrapper_Experiencia>
         <ContentContainer_Experiencia>
           <ContentWrapper_ExperienciaAndPortrait>
@@ -111,24 +112,18 @@ function Intro() {
                     <h2>Currículo de pesquisador</h2>
                     <Icon_ExteriorLink />
                   </LinkButton>
-                  {/* <a href="http://lattes.cnpq.br/7444613524162568">
-                <div>
-                  <Icon_ExteriorLink />
-                  lattes.cnpq.br
-                </div>
-              </a> */}
-                  <LinkButton>
-                    <h2>Publicações:</h2>
-                    <br />
-                    <div style={{ display: "flex", flexDirection: "row" }}>
-                      {/* <a href="https://pubmed.ncbi.nlm.nih.gov/30826356/">
-                  <Icon_ExteriorArticle />
-                  </a>
-                  <a href="https://pubmed.ncbi.nlm.nih.gov/38215610/">
-                  <Icon_ExteriorArticle />
-                  </a> */}
+
+                  <Publicacoes>
+                    <h2 style={{ marginRight: "6px" }}>Publicações:</h2>
+                    <div>
+                      <LinkButton>
+                        1<Icon_ExteriorLink />
+                      </LinkButton>
+                      <LinkButton>
+                        2<Icon_ExteriorLink />
+                      </LinkButton>
                     </div>
-                  </LinkButton>
+                  </Publicacoes>
                 </Links>
               </ContainerPortraitAndLinks>
             </PortraitSection>
@@ -234,9 +229,7 @@ const IntroText = styled(SectionText)`
   }
 `;
 
-const ListItem = styled.div`
-  /* position: relative; */
-`;
+const ListItem = styled.div``;
 
 const SectionWrapper_Experiencia = styled.div`
   width: 100%;
@@ -276,32 +269,24 @@ const ContentWrapper_ExperienciaAndPortrait = styled.div`
   flex-direction: row;
 `;
 const SectionText_Experiencia = styled(SectionText)`
-  /* box-sizing: border-box; */
-  /* column-count: 2; */
-
   p {
     break-inside: avoid;
   }
-
-  /* background-color: #5d2fc760; */
 `;
 
-const Title_Experiencia = styled(Title)`
-  /* background-color: #48f8c961; */
-`;
+const Title_Experiencia = styled(Title)``;
 const PortraitSection = styled.div`
-  color: #000000a9;
+  /* color: #000000a9; */
   height: fit-content;
   background-color: var(--color_1);
 
-  /* margin: 10px; */
   box-sizing: border-box;
   padding: 10px;
   border-radius: 1%;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  font-size: clamp(18px, 2vw, 20px);
+  /* font-size: clamp(18px, 2vw, 20px); */
 
   filter: drop-shadow(10px 10px 20px #00000031);
 `;
@@ -310,15 +295,15 @@ const ContainerPortraitAndLinks = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  :first-child {
-    margin-bottom: 12px;
-  }
 `;
 
 const Links = styled.div`
   font-size: 1rem;
-  /* background-color: antiquewhite; */
+  min-height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 `;
 
 const LinkButton = styled.button`
@@ -327,36 +312,40 @@ const LinkButton = styled.button`
   text-decoration: none;
   border-radius: 5px;
   border: none;
-  width: 100%;
+  /* width: 100%; */
 
+  /* display: inline flex; */
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
   /* align-items: center; */
-  /* justify-content: center; */
+  /* background-color: #00ddff; */
 
-  :hover {
+  &:hover {
     cursor: pointer;
+    background-color: var(--color_0);
   }
 
-  /* background-color: yellow; */
   h2 {
+    text-align: start;
+
     /* background-color: azure; */
   }
 `;
 
-const About = styled.div`
-  font-size: 0.8rem;
-  max-width: 16dvw;
-  padding: 12px;
-`;
-
 const PortraitContainer = styled.div`
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 15rem;
+  width: 15rem;
   overflow: hidden;
   border-radius: 50%;
   display: flex;
+
+  margin: 10px;
 `;
 
 const Portrait = styled.img`
@@ -365,6 +354,24 @@ const Portrait = styled.img`
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+`;
+
+const Publicacoes = styled.div`
+  display: inline flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    /* background-color: yellow; */
+    & {
+      gap: 20px;
+    }
+  }
 `;
 
 const StyledIcon = styled.svg`

@@ -23,21 +23,23 @@ function Contato() {
           <div>
             <h2>Horários:</h2> Segunda a Sábado de 14:00 às 21:00.
           </div>
-          <h2>Endereço:</h2>
-          <Endereco>
-            <div style={{ textAlign: "start" }}>
-              Livance Market Place Torre II
-              <br />
-              Av. Dr. Chucri Zaidan, 940 - 3° andar
-            </div>
-            <div>
-              Chácara Santo Antônio.
-              <br />
-              São Paulo
-              <br />
-              SP, 04583-110
-            </div>
-          </Endereco>
+          <div>
+            <h2>Endereço:</h2>
+            <Endereco>
+              <div style={{ textAlign: "start" }}>
+                Livance Market Place Torre II
+                <br />
+                Av. Dr. Chucri Zaidan, 940 - 3° andar
+              </div>
+              <div>
+                Chácara Santo Antônio.
+                <br />
+                São Paulo
+                <br />
+                SP, 04583-110
+              </div>
+            </Endereco>
+          </div>
         </AddressText>
         <Section_Map>
           <iframe
@@ -63,9 +65,9 @@ const Section_Contato = styled(Section)`
   justify-content: space-between;
 
   box-sizing: border-box;
-  padding-left: 40px;
 
   margin-bottom: 0px;
+  line-height: 1.2rem;
 
   filter: drop-shadow(10px -10px 6px #00000016);
 
@@ -77,6 +79,8 @@ const Section_Contato = styled(Section)`
     text-decoration-thickness: 1px;
     text-underline-offset: 5px;
     font-size: calc(var(--title-font-size) * 0.6);
+
+    margin-bottom: 6px;
   }
 `;
 
@@ -89,10 +93,15 @@ const Address = styled.div`
 `;
 
 const AddressText = styled.div`
-  margin-top: 40px;
+  margin: 20px;
+
   width: 45%;
   max-width: 600px;
   min-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
 
 const Section_Map = styled.div`
@@ -105,5 +114,8 @@ const Endereco = styled.div`
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
+  :last-child {
+    text-align: end;
+  }
 `;
 export default Contato;
