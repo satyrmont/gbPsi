@@ -325,11 +325,11 @@ const QuestionButton = styled.button`
 const Answer = styled.div`
   color: black;
   font-size: var(--text-font-size);
-  max-width: 50%;
   display: none;
 
-  width: 40%;
   min-width: 400px;
+  border-bottom: solid;
+  border-width: 1.2px;
 `;
 
 const AnswerText = styled.div`

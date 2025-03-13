@@ -13,7 +13,7 @@ function Experiencia() {
   const isMobile = useContext(MobileContext);
 
   return (
-    <SectionWrapper_Experiencia id="sobre">
+    <Section_Experiencia id="sobre">
       <ContentContainer_Experiencia>
         <ContentWrapper_ExperienciaAndPortrait>
           <PortraitSection>
@@ -76,106 +76,11 @@ function Experiencia() {
           </ContentWrapper_Experiencia>
         </ContentWrapper_ExperienciaAndPortrait>
       </ContentContainer_Experiencia>
-    </SectionWrapper_Experiencia>
+    </Section_Experiencia>
   );
 }
 
-const IntroSection = styled(Section)`
-  background-color: white;
-
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-`;
-
-const ContentContainer_Intro = styled(ContentContainer)`
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: var(--content-width);
-  margin-bottom: 40px;
-  margin-top: 40px;
-
-  .whatsapp-button {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    z-index: 99;
-    background-color: #25d366;
-    border-radius: 50px;
-    color: #ffffff;
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
-    animation: effect 5s infinite ease-in;
-  }
-
-  /* background-color: #ffe4c43a; */
-`;
-
-const IntroText_Wrapper = styled.div`
-  p {
-    break-inside: avoid;
-  }
-
-  @media (min-width: 768px) {
-    column-count: 2;
-  }
-`;
-
-const IntroText = styled(SectionText)`
-  display: block;
-  word-wrap: break-word;
-  width: 100%;
-
-  h2 {
-    font-weight: 300;
-    font-size: calc(var(--title-font-size) * 0.5);
-    color: var(--color_G1);
-    font-style: italic;
-  }
-  /* p::first-letter {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--color_G1);
-  } */
-
-  li {
-    display: flex;
-    flex-direction: row;
-  }
-  li::before {
-    content: "•";
-    margin-right: 4px;
-    margin-left: 4px;
-    flex-direction: row;
-  }
-`;
-
-const ListItem = styled.div``;
-
-const Prossiga = styled.div`
-  display: flex;
-  flex-direction: row;
-  column-count: 2;
-
-  p {
-    width: 60%;
-  }
-`;
-
-const SectionWrapper_Experiencia = styled.div`
+const Section_Experiencia = styled(Section)`
   width: 100%;
   background-color: var(--color_0);
   display: flex;
@@ -257,7 +162,7 @@ const LinkButton = styled.button`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 6px;
+  /* padding: 6px; */
 
   &:hover {
     cursor: pointer;
@@ -308,7 +213,7 @@ const Publicacoes = styled.div`
 
 const StyledIcon = styled.svg`
   fill: var(--color11);
-  margin-right: 5px;
+  /* margin-right: 5px; */
 
   /* background-color: green; */
 `;
