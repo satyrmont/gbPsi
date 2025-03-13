@@ -12,11 +12,11 @@ function QueEsperar() {
   const title = useRef();
 
   return (
-    <Section_QueEsperar>
+    <Section_QueEsperar id="resultados">
       <Title_QueEsperar>O que esperar?</Title_QueEsperar>
       <ContentContainer_QueEsperar>
         <Card>
-          <h2>Maior otimismo consigo e o mundo</h2>
+          <h2>Maior otimismo consigo e com o mundo</h2>
           <p>
             Não escolhemos com qual emoção reagir a acontecimentos, mas podemos
             perceber quando demos a ela crédito indevido.

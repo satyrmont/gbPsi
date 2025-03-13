@@ -17,23 +17,36 @@ const GlobalStyle = createGlobalStyle`
     :root {
         
         
-        --nav-height: 5dvh;
+        --nav-height: 40px;
         
         --color-gray: #f9f9f9;
         --title-font-size-horz: clamp(10dvw, 4dvw, 2dvw);
         --title-font-size: clamp(35px, 65dvw, 40px);
         --text-font-size: clamp(20px, 1rem, 24px);
-        --text-small-factor: 0.8;
+        --text-small-factor: 0.9;
         --title-small-factor: 0.7;
         
         --title-font: "Arvo", serif;
-        --scroll-bar-width: 6px;
-        --scroll-bar-width-large: 8px;
 
         --content-width: 70dvw;
         --margin-top-bottom: 40px;
         
-    
+        @media (max-width: 768px) {
+            --color-gray: #f9f9f9;
+            --title-font-size-horz: clamp(10dvw, 3dvw, 2dvw);
+            --title-font-size: clamp(35px, 65dvw, 40px);
+            --text-font-size: clamp(16px, 1rem, 24px);
+            --text-small-factor: 0.9;
+            --title-small-factor: 0.7;
+            
+            --title-font: "Arvo", serif;
+            --scroll-bar-width: 6px;
+            --scroll-bar-width-large: 8px;
+            
+            --margin-top-bottom: 0px;
+            
+            --content-width: 100%;
+        }
 
         --color_0: #eee1b4;
         --color_1: #e9b977;

@@ -39,7 +39,7 @@ function PerguntasFrequentes() {
   };
 
   return (
-    <Section_PerguntasFrequentes ref={main}>
+    <Section_PerguntasFrequentes ref={main} id="perguntas">
       <Title_Perguntas ref={title}>Perguntas Frequentes</Title_Perguntas>
       <SectionContent>
         <QuestionsContainer>
@@ -273,7 +273,7 @@ const Title_Perguntas = styled(Title)`
 
 const QuestionsContainer = styled.div`
   outline-style: solid;
-  outline-width: 2px;
+  outline-width: 1.2px;
   outline-color: black;
   /* border-radius: 2px; */
   display: flex;
@@ -283,7 +283,7 @@ const QuestionsContainer = styled.div`
 `;
 
 const QuestionButton = styled.button`
-  outline: 2px;
+  outline: 1.2px;
   cursor: pointer;
   z-index: 1;
   padding: 2px 18px 2px 18px;
@@ -293,7 +293,9 @@ const QuestionButton = styled.button`
   font-size: 15px;
   display: flex;
   align-items: center;
-  border-bottom: solid 2px black;
+  border-bottom: solid 1.2px black;
+
+  background-color: white;
 
   h2 {
     pointer-events: none;

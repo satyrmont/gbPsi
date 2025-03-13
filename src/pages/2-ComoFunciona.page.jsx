@@ -12,7 +12,7 @@ function ComoFunciona() {
   const isMobile = useContext(MobileContext);
 
   return (
-    <Section_ComoFunciona>
+    <Section_ComoFunciona id="terapia">
       <SectionWrapper>
         <ContentContainer_ComoFunciona>
           <Container_TwoColumn>
@@ -46,47 +46,49 @@ function ComoFunciona() {
         <ContentContainer_Metodo>
           <Container_TwoColumn>
             <ContentWrapper_Metodo>
-              <Title_Metodo>Terapia cognitivo comportamental</Title_Metodo>
+              <Title_Metodo>
+                Terapia cognitivo-comportamental (TCC)
+              </Title_Metodo>
               <SectionText_Metodo>
+                <h3>
+                  Método científico e escolha prioritária para promoção de saúde
+                  mental:
+                </h3>
                 <p>
-                  <h3>
-                    Método científico e escolha prioritária para promoção de
-                    saúde mental:
-                  </h3>
                   prestígio adquirido ao ser adaptável para diferentes vivências
                   e necessidades, articula-se com a área da saúde por meio de
                   Ciência e resultados concretos.
                 </p>
 
+                <h3>
+                  Padrão-ouro (alternativo ou conjunto à medicação
+                  psiquiátrica):
+                </h3>
                 <p>
-                  <h3>
-                    Padrão-ouro -alternativo ou conjunto à medicação
-                    psiquiátrica:
-                  </h3>{" "}
                   tratamento consagrado para ansiedade e depressão, conflitos e
                   sentimentos pessoais, transtornos psiquiátricos.
                 </p>
 
+                <h3>
+                  Saúde e bem-estar que ressoam pelo corpo, emoções e
+                  pensamentos:
+                </h3>
                 <p>
-                  <h3>
-                    Saúde e bem-estar que ressoam pelo corpo, emoções e
-                    pensamentos:
-                  </h3>{" "}
                   fundado em tradição filosófica milenar e décadas de observação
                   científica e pesquisa de ponta. A combinação de técnicas da
                   psicologia comportamental e cognitiva em consultório é a
                   referência adotada internacionalmente por mais de 40 anos.
                 </p>
 
+                <h3>
+                  Revigore o espírito por enfrentamento racional e pensamento
+                  consciente:
+                </h3>
                 <p>
-                  <h3>
-                    Revigore o espírito por enfrentamento racional e pensamento
-                    consciente:
-                  </h3>{" "}
-                  recursos e ferramentas compartilhados com transparência de
-                  objetivos convidam o paciente a aprender o tratamento e
-                  participar, e ganhando independência, sentir que e
-                  transformou-se em terapeuta de si próprio.
+                  recursos e ferramentas passados com transparência convidam o
+                  paciente ao aprendizado e participação em seu tratamento,
+                  sentindo conquistar independência e finalmente transformar-se
+                  em terapeuta de si próprio.
                 </p>
               </SectionText_Metodo>
             </ContentWrapper_Metodo>
@@ -106,6 +108,12 @@ const SectionWrapper = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: start;
+    overflow-y: hidden;
+    width: 100dvw;
+  }
 `;
 
 const Container_TwoColumn = styled.div`
@@ -131,7 +139,7 @@ const ContentContainer_ComoFunciona = styled(ContentContainer)`
 
 const SectionText_ComoFunciona = styled(SectionText)`
   display: block;
-  column-count: 2;
+  /* column-count: 2; */
   font-size: calc(var(--text-font-size) * var(--text-small-factor));
 
   width: 70%;
@@ -166,11 +174,8 @@ const ContentWrapper_Metodo = styled.div`
 `;
 
 const SectionText_Metodo = styled(SectionText)`
-  display: block;
   text-align: start;
-
-  /* column-count: 2; */
-  column-gap: 1rem;
+  display: inline-block;
   font-size: calc(var(--text-font-size) * var(--text-small-factor));
 
   justify-content: start;
@@ -179,10 +184,11 @@ const SectionText_Metodo = styled(SectionText)`
 
 const Title_Metodo = styled(Title)`
   font-size: calc(var(--title-font-size) * var(--title-small-factor));
-  display: inline-block;
+  /* display: inline-block; */
   text-decoration-line: underline;
   text-decoration-thickness: 1.6px;
   text-underline-offset: 5px;
+  overflow-wrap: break-word;
 `;
 
 export default ComoFunciona;

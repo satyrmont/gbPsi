@@ -53,7 +53,7 @@ function Logo() {
   }, []);
 
   return (
-    <LogoSection>
+    <LogoSection id="apresentacao">
       <LogoPage ref={logoPage}>
         <img
           className="logo"
@@ -88,11 +88,7 @@ const LogoSection = styled(Section)`
   overflow: visible;
   height: 150px;
 
-  /* margin-bottom: 32px; */
-
-  /* background: radial-gradient(circle at 100%, #1d3a6a, black); */
   filter: drop-shadow(10px 10px 12px #0000002c);
-  /* max-width: 60%; */
 
   z-index: 3;
 
@@ -100,22 +96,7 @@ const LogoSection = styled(Section)`
     margin-top: calc(var(--nav-height));
   }
 
-  /* background: rgb(2, 0, 36);
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(29, 58, 106, 1) 80%,
-    rgba(29, 58, 106, 1) 100%
-  ); */
-
   background: var(--color_A3);
-  /* background: linear-gradient(
-    90deg,
-    var(--color_A3) 0%,
-    var(--color_A1) 40%,
-    var(--color_A1) 60%,
-    var(--color_A3) 100%
-  ); */
 
   justify-content: center;
 `;

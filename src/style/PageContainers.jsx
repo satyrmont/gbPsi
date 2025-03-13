@@ -16,7 +16,7 @@ const Section = styled.section`
     flex-direction: column;
     justify-content: start;
     overflow-y: hidden;
-    /* width: 100dvw; */
+    width: 100dvw;
   }
 `;
 
@@ -29,6 +29,7 @@ const ContentContainer = styled.div`
   width: 70%;
 
   @media (max-width: 768px) {
+    width: 100%;
     /* padding: 3dvh 2dvw; */
   }
 `;
@@ -38,7 +39,6 @@ const SectionText = styled.div`
   white-space: break-spaces;
   word-wrap: break-word;
   height: fit-content;
-
   /* width: 60dvw; */
   line-height: 1.1em;
 
@@ -59,9 +59,10 @@ const SectionText = styled.div`
   }
 
   @media (min-width: 768px) {
+    line-height: 1.2em;
     max-height: 90dvh;
     &::-webkit-scrollbar {
-      width: var(--scroll-bar-width-large);
+      /* width: var(--scroll-bar-width-large); */
     }
   }
 `;

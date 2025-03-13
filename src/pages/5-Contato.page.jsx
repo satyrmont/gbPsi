@@ -12,7 +12,7 @@ function Contato() {
   const isMobile = useContext(MobileContext);
 
   return (
-    <Section_Contato>
+    <Section_Contato id="contato">
       <Address>
         <AddressText>
           <div>
@@ -47,8 +47,8 @@ function Contato() {
             width="100%"
             height="100%"
             style={{ border: "0" }}
-            allowFullScreen=""
-            loading="lazy"
+            allowFullScreen="no"
+            loading="fast"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </Section_Map>
@@ -80,7 +80,7 @@ const Section_Contato = styled(Section)`
     text-underline-offset: 5px;
     font-size: calc(var(--title-font-size) * 0.6);
 
-    margin-bottom: 6px;
+    margin-bottom: 12px;
   }
 `;
 
@@ -94,10 +94,10 @@ const Address = styled.div`
 
 const AddressText = styled.div`
   margin: 20px;
-
-  width: 45%;
+  width: 50%;
   max-width: 600px;
   min-width: 300px;
+  white-space: nowrap;
 
   display: flex;
   flex-direction: column;

@@ -9,6 +9,7 @@ import {
 import { MobileContext } from "../context/mobileContext";
 
 import GBCarousel from "../components/Carousel.component";
+import { WhatsappIcon } from "../components/WhatsApp.component";
 
 function Intro() {
   const text = useRef();
@@ -27,7 +28,8 @@ function Intro() {
             <p>
               Desconhecer o trabalho do psicólogo leva muitos a se conformarem
               com a aflição em silêncio e sustentar uma fachada de positividade
-              que aprendemos imitando outros, mas:
+              que aprendemos imitando outros. Mesmo que não for o seu caso, é
+              bom lembrarmos que:
             </p>
             <ul>
               <li>
@@ -49,8 +51,8 @@ function Intro() {
             <br />
             <p>
               Acredito na continuidade de boas ideias e pôr em prática planos
-              empoeirados em meio à pressão diária. Dar importância ao bem-estar
-              poderia ser o seu caso?
+              empoeirados em meio à pressão diária. Dar maior importância ao seu
+              bem-estar poderia ser o seu caso?
             </p>
             <p>
               Se você está movido para concretizar uma iniciativa ou determinar
@@ -62,6 +64,12 @@ function Intro() {
               mais esperado ao sentirmos alguma dor. Por que com o sofrimento e
               a dúvida interior seria diferente?{" "}
             </p>
+
+            <p>
+              Em momentos de hesitação ou quando é necessária uma mudança de
+              curso, já notou a diferença em contar com alguém de confiança?
+            </p>
+
             <p>
               Quando é necessária uma mudança de curso ou em momentos de
               hesitação, já percebeu a diferença em contar com alguém de
@@ -70,7 +78,7 @@ function Intro() {
             <p>
               Espero traduzir seu interesse em um ato de motivação, otimismo e
               amor-próprio. Enxergue com clareza, sinta-se confiante e
-              desencadeie seu potencial.
+              desencadeie potencial represado.
             </p>
             <Prossiga>
               <p>
@@ -97,9 +105,17 @@ function Intro() {
             </Prossiga>
           </IntroText_Wrapper>
         </IntroText>
+        <a
+          target="_blank"
+          href="https://wa.me/5511943580695"
+          class="whatsapp-button"
+        >
+          <WhatsappIcon />
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </ContentContainer_Intro>
       <GBCarousel />
-      <SectionWrapper_Experiencia>
+      <SectionWrapper_Experiencia id="sobre">
         <ContentContainer_Experiencia>
           <ContentWrapper_ExperienciaAndPortrait>
             <PortraitSection>
@@ -130,13 +146,12 @@ function Intro() {
             <ContentWrapper_Experiencia>
               <Title_Experiencia>Experiência</Title_Experiencia>
               <SectionText_Experiencia>
-                <p>Me chamo Guido Bittencourt, me conheça:</p>
-
                 <p>
-                  Psicólogo pela Universidade de São Paulo (USP) e especialista
-                  em terapia comportamental e cognitiva pelo Instituto de
-                  Psiquiatria (IPq-FMUSP). Adquiri experiência em atendimento no
-                  Hospital das Clínicas, maior hospital da América Latina.
+                  Me chamo Guido Bittencourt, sou psicólogo pela Universidade de
+                  São Paulo (USP) e especialista em terapia comportamental e
+                  cognitiva pelo Instituto de Psiquiatria (IPq-FMUSP). Adquiri
+                  experiência em atendimento no Hospital das Clínicas, maior
+                  hospital da América Latina.
                 </p>
                 <p>
                   Constatei que estava na profissão certa ao me deparar no
@@ -187,17 +202,39 @@ const ContentContainer_Intro = styled(ContentContainer)`
   margin-bottom: 40px;
   margin-top: 40px;
 
+  .whatsapp-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    background-color: #25d366;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
+    animation: effect 5s infinite ease-in;
+  }
+
   /* background-color: #ffe4c43a; */
 `;
 
 const IntroText_Wrapper = styled.div`
-  column-count: 2;
-
   p {
     break-inside: avoid;
   }
 
-  /* background-color: #c9c4ff94; */
+  @media (min-width: 768px) {
+    column-count: 2;
+  }
 `;
 
 const IntroText = styled(SectionText)`
@@ -211,11 +248,11 @@ const IntroText = styled(SectionText)`
     color: var(--color_G1);
     font-style: italic;
   }
-  p::first-letter {
+  /* p::first-letter {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--color_G1);
-  }
+  } */
 
   li {
     display: flex;
@@ -231,15 +268,6 @@ const IntroText = styled(SectionText)`
 
 const ListItem = styled.div``;
 
-const SectionWrapper_Experiencia = styled.div`
-  width: 100%;
-  background-color: var(--color_0);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-`;
-
 const Prossiga = styled.div`
   display: flex;
   flex-direction: row;
@@ -248,6 +276,15 @@ const Prossiga = styled.div`
   p {
     width: 60%;
   }
+`;
+
+const SectionWrapper_Experiencia = styled.div`
+  width: 100%;
+  background-color: var(--color_0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
 `;
 
 const ContentContainer_Experiencia = styled(ContentContainer)`
@@ -267,6 +304,10 @@ const ContentWrapper_Experiencia = styled.div`
 const ContentWrapper_ExperienciaAndPortrait = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const SectionText_Experiencia = styled(SectionText)`
   p {
@@ -275,10 +316,11 @@ const SectionText_Experiencia = styled(SectionText)`
 `;
 
 const Title_Experiencia = styled(Title)``;
+
 const PortraitSection = styled.div`
   /* color: #000000a9; */
   height: fit-content;
-  background-color: var(--color_1);
+  /* background-color: var(--color_1); */
 
   box-sizing: border-box;
   padding: 10px;
@@ -288,8 +330,9 @@ const PortraitSection = styled.div`
   justify-content: start;
   /* font-size: clamp(18px, 2vw, 20px); */
 
-  filter: drop-shadow(10px 10px 20px #00000031);
+  /* filter: drop-shadow(10px 10px 20px #00000031); */
 `;
+
 const ContainerPortraitAndLinks = styled.div`
   display: flex;
   flex-direction: column;
@@ -312,28 +355,20 @@ const LinkButton = styled.button`
   text-decoration: none;
   border-radius: 5px;
   border: none;
-  /* width: 100%; */
 
-  /* display: inline flex; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 6px;
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  /* background-color: #00ddff; */
 
   &:hover {
     cursor: pointer;
-    background-color: var(--color_0);
+    background-color: var(--color_1);
   }
 
   h2 {
     text-align: start;
-
-    /* background-color: azure; */
   }
 `;
 
@@ -346,6 +381,7 @@ const PortraitContainer = styled.div`
   display: flex;
 
   margin: 10px;
+  filter: drop-shadow(10px 10px 20px #00000031);
 `;
 
 const Portrait = styled.img`
@@ -367,7 +403,6 @@ const Publicacoes = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: end;
-    /* background-color: yellow; */
     & {
       gap: 20px;
     }
@@ -377,8 +412,6 @@ const Publicacoes = styled.div`
 const StyledIcon = styled.svg`
   fill: var(--color11);
   margin-right: 5px;
-  /* width: ${({ size }) => size || "24px"}; */
-  /* height: ${({ size }) => size || "24px"}; */
 
   /* background-color: green; */
 `;

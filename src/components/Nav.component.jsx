@@ -57,7 +57,7 @@ function Nav() {
     gsap.to(window, {
       scrollTo: {
         y: `#${sectionId}`,
-        offsetY: 100, // Adjust the offsetY as needed
+        offsetY: 40,
       },
       duration: 0.2, // Adjust the duration as needed
     });
@@ -74,20 +74,20 @@ function Nav() {
             alt="Dropdown Menu"
           />
           <MenuContent open={buttonMenuOpen}>
-            <DrpDwnNavBtn onClick={() => scrollToSection("quem-somos")}>
-              Intro
+            <DrpDwnNavBtn onClick={() => scrollToSection("apresentacao")}>
+              Apresentação
             </DrpDwnNavBtn>
-            <DrpDwnNavBtn onClick={() => scrollToSection("como-funciona")}>
-              Como Funciona?
+            <DrpDwnNavBtn onClick={() => scrollToSection("sobre")}>
+              Sobre mim
             </DrpDwnNavBtn>
-            <DrpDwnNavBtn onClick={() => scrollToSection("buscamos")}>
-              O Que Buscamos?
+            <DrpDwnNavBtn onClick={() => scrollToSection("terapia")}>
+              Terapia e Método
             </DrpDwnNavBtn>
-            <DrpDwnNavBtn onClick={() => scrollToSection("historico")}>
-              Histórico
+            <DrpDwnNavBtn onClick={() => scrollToSection("resultados")}>
+              Resultados
             </DrpDwnNavBtn>
-            <DrpDwnNavBtn onClick={() => scrollToSection("balanco")}>
-              Balanço
+            <DrpDwnNavBtn onClick={() => scrollToSection("perguntas")}>
+              Perguntas Frequentes
             </DrpDwnNavBtn>
             <DrpDwnNavBtn onClick={() => scrollToSection("contato")}>
               Contato
@@ -97,20 +97,17 @@ function Nav() {
       ) : (
         <NavBar>
           <NavButtonContainer ref={buttons}>
-            <NavBtn onClick={() => scrollToSection("quem-somos")}>Intro</NavBtn>
-            <NavBtn onClick={() => scrollToSection("como-funciona")}>
-              Trajetória
+            <NavBtn onClick={() => scrollToSection("apresentacao")}>
+              Apresentação
             </NavBtn>
-            <NavBtn onClick={() => scrollToSection("buscamos")}>
-              Como Ajuda?
+            <NavBtn onClick={() => scrollToSection("sobre")}>Sobre mim</NavBtn>
+            <NavBtn onClick={() => scrollToSection("terapia")}>
+              Terapia e Método
             </NavBtn>
-            <NavBtn onClick={() => scrollToSection("historico")}>
-              Como Acontece?
+            <NavBtn onClick={() => scrollToSection("resultados")}>
+              Resultados
             </NavBtn>
-            <NavBtn onClick={() => scrollToSection("balanco")}>
-              O Que Esperar?
-            </NavBtn>
-            <NavBtn onClick={() => scrollToSection("balanco")}>
+            <NavBtn onClick={() => scrollToSection("perguntas")}>
               Perguntas Frequentes
             </NavBtn>
             <NavBtn onClick={() => scrollToSection("contato")}>Contato</NavBtn>
