@@ -15,7 +15,7 @@ function ComoFunciona() {
     <Section_ComoFunciona id="terapia">
       <SectionWrapper>
         <ContentContainer_ComoFunciona>
-          <Container_TwoColumn>
+          <Container_ComoFunciona>
             <Title_ComoFunciona>Como funciona?</Title_ComoFunciona>
             <SectionText_ComoFunciona>
               <p>
@@ -41,10 +41,10 @@ function ComoFunciona() {
                 e alcançamos juntos.
               </p>
             </SectionText_ComoFunciona>
-          </Container_TwoColumn>
+          </Container_ComoFunciona>
         </ContentContainer_ComoFunciona>
         <ContentContainer_Metodo>
-          <Container_TwoColumn>
+          <Container_ComoFunciona>
             <ContentWrapper_Metodo>
               <Title_Metodo>
                 Terapia cognitivo-comportamental (TCC)
@@ -92,7 +92,7 @@ function ComoFunciona() {
                 </p>
               </SectionText_Metodo>
             </ContentWrapper_Metodo>
-          </Container_TwoColumn>
+          </Container_ComoFunciona>
         </ContentContainer_Metodo>
       </SectionWrapper>
     </Section_ComoFunciona>
@@ -108,6 +108,7 @@ const SectionWrapper = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: row;
+
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: start;
@@ -116,9 +117,8 @@ const SectionWrapper = styled.div`
   }
 `;
 
-const Container_TwoColumn = styled.div`
+const Container_ComoFunciona = styled.div`
   padding-top: var(--margin-top-bottom);
-  /* width: 50%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,10 +138,6 @@ const ContentContainer_ComoFunciona = styled(ContentContainer)`
 `;
 
 const SectionText_ComoFunciona = styled(SectionText)`
-  display: block;
-  /* column-count: 2; */
-  font-size: calc(var(--text-font-size) * var(--text-small-factor));
-
   width: 70%;
 
   p {

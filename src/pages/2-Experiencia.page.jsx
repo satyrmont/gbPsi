@@ -8,114 +8,75 @@ import {
 } from "../style/PageContainers";
 import { MobileContext } from "../context/mobileContext";
 
-import GBCarousel from "../components/Carousel.component";
-import { WhatsappIcon } from "../components/WhatsApp.component";
-
-function Intro() {
+function Experiencia() {
   const text = useRef();
   const isMobile = useContext(MobileContext);
 
   return (
-    <IntroSection>
-      <ContentContainer_Intro>
-        <Title>Apresentação</Title>
-        <IntroText>
-          <h2>
-            Compartilhe sua história, revele-se autor de páginas prósperas.
-          </h2>
-          <br />
-          <IntroText_Wrapper>
-            <p>
-              Desconhecer o trabalho do psicólogo leva muitos a se conformarem
-              com a aflição em silêncio e sustentar uma fachada de positividade
-              que aprendemos imitando outros. Mesmo que não for o seu caso, é
-              bom lembrarmos que:
-            </p>
-            <ul>
-              <li>
-                <ListItem>
-                  Construir o enfrentamento não é tarefa solitária.
-                </ListItem>
-              </li>
-              <li>
-                <ListItem>
-                  Guardar pensamentos para si não é prova de saúde mental.
-                </ListItem>
-              </li>
-              <li>
-                <ListItem>
-                  Obter aconselhamento não é sinal de incapacidade.
-                </ListItem>
-              </li>
-            </ul>
-            <br />
-            <p>
-              Acredito na continuidade de boas ideias e pôr em prática planos
-              empoeirados em meio à pressão diária. Dar maior importância ao seu
-              bem-estar poderia ser o seu caso?
-            </p>
-            <p>
-              Se você está movido para concretizar uma iniciativa ou determinar
-              causas para a felicidade, testemunharei seu comprometimento e
-              faremos diferença em sua resolução.
-            </p>
-            <p>
-              Desabafar, pedir opinião profissional e buscar conhecimento é o
-              mais esperado ao sentirmos alguma dor. Por que com o sofrimento e
-              a dúvida interior seria diferente?{" "}
-            </p>
+    <SectionWrapper_Experiencia id="sobre">
+      <ContentContainer_Experiencia>
+        <ContentWrapper_ExperienciaAndPortrait>
+          <PortraitSection>
+            <ContainerPortraitAndLinks>
+              <PortraitContainer>
+                <Portrait src="portrait01.jpeg" />
+              </PortraitContainer>
+              <Links>
+                <LinkButton>
+                  <h2>Currículo de pesquisador</h2>
+                  <Icon_ExteriorLink />
+                </LinkButton>
 
-            <p>
-              Em momentos de hesitação ou quando é necessária uma mudança de
-              curso, já notou a diferença em contar com alguém de confiança?
-            </p>
-
-            <p>
-              Quando é necessária uma mudança de curso ou em momentos de
-              hesitação, já percebeu a diferença em contar com alguém de
-              confiança?
-            </p>
-            <p>
-              Espero traduzir seu interesse em um ato de motivação, otimismo e
-              amor-próprio. Enxergue com clareza, sinta-se confiante e
-              desencadeie potencial represado.
-            </p>
-            <Prossiga>
+                <Publicacoes>
+                  <h2 style={{ marginRight: "6px" }}>Publicações:</h2>
+                  <div>
+                    <LinkButton>
+                      1<Icon_ExteriorLink />
+                    </LinkButton>
+                    <LinkButton>
+                      2<Icon_ExteriorLink />
+                    </LinkButton>
+                  </div>
+                </Publicacoes>
+              </Links>
+            </ContainerPortraitAndLinks>
+          </PortraitSection>
+          <ContentWrapper_Experiencia>
+            <Title_Experiencia>Experiência</Title_Experiencia>
+            <SectionText_Experiencia>
               <p>
-                Prossiga se tiver mais interesse em meu trabalho ou algum dos
-                seguintes tópicos:
+                Me chamo Guido Bittencourt, sou psicólogo pela Universidade de
+                São Paulo (USP) e especialista em terapia comportamental e
+                cognitiva pelo Instituto de Psiquiatria (IPq-FMUSP). Adquiri
+                experiência em atendimento no Hospital das Clínicas, maior
+                hospital da América Latina.
               </p>
-              <ul>
-                <li>
-                  <ListItem>Saúde Mental</ListItem>
-                </li>
-                <li>
-                  <ListItem>Auto-cuidado</ListItem>
-                </li>
-                <li>
-                  <ListItem>Organizar queixas e demandas</ListItem>
-                </li>
-                <li>
-                  <ListItem>Auto-conhecimento</ListItem>
-                </li>
-                <li>
-                  <ListItem>Criar estratégias conscientes</ListItem>
-                </li>
-              </ul>
-            </Prossiga>
-          </IntroText_Wrapper>
-        </IntroText>
-        <a
-          target="_blank"
-          href="https://wa.me/5511943580695"
-          class="whatsapp-button"
-        >
-          <WhatsappIcon />
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </ContentContainer_Intro>
-      <GBCarousel />
-    </IntroSection>
+              <p>
+                Constatei que estava na profissão certa ao me deparar no jornal
+                sobre médicos que “prescrevem” livros como forma de melhorar a
+                saúde e lidar com as emoções: “‘A montanha mágica’ (Thomas Mann)
+                para doenças do pulmão e ‘Anna Karenina’ (Leon Tolstói) contra
+                dores de dente”, dizia a manchete.
+              </p>
+
+              <p>
+                Narrar a própria história e encontrar correspondência com arte
+                são capacidades humanas fundamentais, nos fazem sentir
+                acompanhados e encontrar saídas para a existência.
+              </p>
+
+              <p>
+                Concluí o mestrado pela USP na área de neurociências.
+                Representei o Brasil em publicações científicas internacionais e
+                no Congresso das Federações Europeias de Neurociência (FENS
+                2018). Residi como pesquisador visitante no Charité, maior
+                hospital da Alemanha.
+              </p>
+            </SectionText_Experiencia>
+          </ContentWrapper_Experiencia>
+        </ContentWrapper_ExperienciaAndPortrait>
+      </ContentContainer_Experiencia>
+    </SectionWrapper_Experiencia>
   );
 }
 
@@ -376,4 +337,4 @@ const Icon_ExteriorArticle = () => (
   </StyledIcon>
 );
 
-export default Intro;
+export default Experiencia;
