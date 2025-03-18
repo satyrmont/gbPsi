@@ -112,11 +112,15 @@ const ContentContainer_QueEsperar = styled(ContentContainer)`
   flex-flow: wrap;
   align-items: center;
   justify-content: center;
-  width: var(--content-width);
+  width: 90%;
   box-sizing: border-box;
   padding: 10px 0px 10px 0px;
   gap: 10px;
   /* background-color: #0000ff56; */
+
+  @media (max-width: 768px) {
+    width: var(--content-width);
+  }
 `;
 
 const Title_QueEsperar = styled(Title)`
@@ -128,7 +132,7 @@ const Card = styled.div`
   padding: 10px;
   min-width: 460px;
   height: 130px;
-  width: 45%;
+  width: 40%;
   background-color: var(--color_D1);
 
   h2 {

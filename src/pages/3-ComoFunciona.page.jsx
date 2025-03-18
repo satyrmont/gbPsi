@@ -113,7 +113,7 @@ const SectionWrapper = styled.div`
     flex-direction: column;
     justify-content: start;
     overflow-y: hidden;
-    width: 100dvw;
+    /* width: 100dvw; */
   }
 `;
 
@@ -135,14 +135,13 @@ const ContentContainer_ComoFunciona = styled(ContentContainer)`
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  @media (max-width: 768px) {
+    /* width: 100%; */
+  }
 `;
 
 const SectionText_ComoFunciona = styled(SectionText)`
-  width: 70%;
-
-  p {
-    break-inside: avoid;
-  }
+  /* width: 70%; */
 `;
 
 const Title_ComoFunciona = styled(Title)`
@@ -157,7 +156,8 @@ const Title_ComoFunciona = styled(Title)`
 const ContentContainer_Metodo = styled(ContentContainer)`
   background-color: white;
   h3 {
-    font-weight: 400;
+    font-weight: 600;
+    background-color: antiquewhite;
   }
 `;
 
@@ -166,16 +166,15 @@ const ContentWrapper_Metodo = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: start;
+
   /* background-color: aliceblue; */
 `;
 
 const SectionText_Metodo = styled(SectionText)`
-  text-align: start;
-  display: inline-block;
   font-size: calc(var(--text-font-size) * var(--text-small-factor));
 
-  justify-content: start;
-  width: 70%;
+  /* justify-content: start; */
+  /* width: 70%; */
 `;
 
 const Title_Metodo = styled(Title)`

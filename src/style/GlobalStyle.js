@@ -28,13 +28,13 @@ const GlobalStyle = createGlobalStyle`
         
         --title-font: "Arvo", serif;
 
-        --content-width: 70dvw;
+        --content-width: 80dvw;
         --margin-top-bottom: 40px;
         
         @media (max-width: 768px) {
             --color-gray: #f9f9f9;
             --title-font-size-horz: clamp(10dvw, 3dvw, 2dvw);
-            --title-font-size: clamp(35px, 65dvw, 40px);
+            --title-font-size: clamp(28px, 65dvw, 32px);
             --text-font-size: clamp(16px, 1rem, 24px);
             --text-small-factor: 0.9;
             --title-small-factor: 0.7;
@@ -45,7 +45,8 @@ const GlobalStyle = createGlobalStyle`
             
             --margin-top-bottom: 0px;
             
-            --content-width: 100%;
+            --content-width: 90%;
+            
         }
 
         --color_0: #eee1b4;

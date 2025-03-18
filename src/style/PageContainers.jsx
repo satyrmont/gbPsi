@@ -26,11 +26,10 @@ const ContentContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  width: 70%;
+  width: 80%;
 
   @media (max-width: 768px) {
-    width: 100%;
-    /* padding: 3dvh 2dvw; */
+    width: 90%;
   }
 `;
 
@@ -39,7 +38,6 @@ const SectionText = styled.div`
   white-space: break-spaces;
   word-wrap: break-word;
   height: fit-content;
-  /* width: 60dvw; */
   line-height: 1.1em;
 
   display: flex;
@@ -48,12 +46,6 @@ const SectionText = styled.div`
 
   position: relative;
 
-  &::-webkit-scrollbar {
-    width: var(--scroll-bar-width);
-    background-color: #ffffff28;
-    border-radius: 10px;
-  }
-
   p {
     margin-bottom: 2dvh;
   }
@@ -61,9 +53,6 @@ const SectionText = styled.div`
   @media (min-width: 768px) {
     line-height: 1.2em;
     max-height: 90dvh;
-    &::-webkit-scrollbar {
-      /* width: var(--scroll-bar-width-large); */
-    }
   }
 `;
 

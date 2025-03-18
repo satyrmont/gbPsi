@@ -27,17 +27,19 @@ function Experiencia() {
                   <Icon_ExteriorLink />
                 </LinkButton>
 
-                <Publicacoes>
-                  <h2 style={{ marginRight: "6px" }}>Publicações:</h2>
-                  <div>
-                    <LinkButton>
-                      1<Icon_ExteriorLink />
-                    </LinkButton>
-                    <LinkButton>
-                      2<Icon_ExteriorLink />
-                    </LinkButton>
-                  </div>
-                </Publicacoes>
+                <LinkButton>
+                  <Publicacoes>
+                    <h2 style={{ marginRight: "6px" }}>Publicações:</h2>
+                    {/* <div>
+                      <LinkButton>
+                        1<Icon_ExteriorLink />
+                      </LinkButton>
+                      <LinkButton>
+                        2<Icon_ExteriorLink />
+                      </LinkButton>
+                    </div> */}
+                  </Publicacoes>
+                </LinkButton>
               </Links>
             </ContainerPortraitAndLinks>
           </PortraitSection>
@@ -86,12 +88,17 @@ const Section_Experiencia = styled(Section)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 40px 0px;
+
+  @media (max-width: 768px) {
+    padding: 0px;
+  }
 `;
 
 const ContentContainer_Experiencia = styled(ContentContainer)`
   box-sizing: border-box;
   height: fit-content;
+  background-color: aliceblue;
 `;
 
 const ContentWrapper_Experiencia = styled.div`
@@ -99,8 +106,12 @@ const ContentWrapper_Experiencia = styled.div`
   flex-direction: column;
   text-align: start;
   justify-content: space-between;
-  margin-left: var(--margin-top-bottom);
+  margin-left: 40px;
   height: 100%;
+
+  @media (max-width: 768px) {
+    margin-left: 0px;
+  }
 `;
 
 const ContentWrapper_ExperienciaAndPortrait = styled.div`
@@ -120,12 +131,10 @@ const SectionText_Experiencia = styled(SectionText)`
 const Title_Experiencia = styled(Title)``;
 
 const PortraitSection = styled.div`
-  /* color: #000000a9; */
   height: fit-content;
-  /* background-color: var(--color_1); */
 
   box-sizing: border-box;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 1%;
   display: flex;
   flex-direction: column;
@@ -153,6 +162,7 @@ const Links = styled.div`
 
 const LinkButton = styled.button`
   font: var(--title-font);
+  font-size: calc(var(--text-font-size) * 0.5);
   font-weight: 400;
   text-decoration: none;
   border-radius: 5px;
@@ -162,7 +172,7 @@ const LinkButton = styled.button`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* padding: 6px; */
+  padding: 6px;
 
   &:hover {
     cursor: pointer;
@@ -221,8 +231,8 @@ const StyledIcon = styled.svg`
 const Icon_ExteriorLink = () => (
   <StyledIcon
     xmlns="http://www.w3.org/2000/svg"
-    width="32"
-    height="32"
+    width="24"
+    height="24"
     viewBox="0 0 24 24"
     fill="black"
   >

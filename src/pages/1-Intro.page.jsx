@@ -134,9 +134,10 @@ const ContentContainer_Intro = styled(ContentContainer)`
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: var(--content-width);
   margin-bottom: 40px;
   margin-top: 40px;
+
+  background-color: aliceblue;
 
   .whatsapp-button {
     position: fixed;

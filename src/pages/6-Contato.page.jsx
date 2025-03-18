@@ -90,11 +90,15 @@ const Address = styled.div`
 
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const AddressText = styled.div`
   margin: 20px;
-  width: 50%;
+  width: 60%;
   max-width: 600px;
   min-width: 300px;
   white-space: nowrap;
@@ -102,6 +106,10 @@ const AddressText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    width: 100dvw;
+  }
 `;
 
 const Section_Map = styled.div`
