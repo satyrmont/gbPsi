@@ -259,6 +259,9 @@ const Section_PerguntasFrequentes = styled(Section)`
 
   box-sizing: border-box;
   padding: var(--margin-top-bottom) 0px;
+  @media (max-width: 768px) {
+    padding: 0px;
+  }
 `;
 
 const SectionContent = styled(ContentContainer)`
@@ -280,6 +283,10 @@ const QuestionsContainer = styled.div`
   flex-direction: column;
   width: 100%;
   min-width: 400px;
+
+  @media (max-width: 768px) {
+    min-width: 350px;
+  }
 `;
 
 const QuestionButton = styled.button`
@@ -302,23 +309,26 @@ const QuestionButton = styled.button`
   }
 
   &::before {
-    content: "${({ "data-open": open }) => (open === "true" ? "−" : "+")}";
     font-size: 20px;
     font-weight: bold;
     margin-right: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.1s ease;
   }
 
   &[data-open="true"]::before {
-    content: "−"; /* Change to minus when open */
+    content: "❯";
+    transform: rotate(90deg);
   }
 
   &[data-open="false"]::before {
-    content: "+"; /* Change to plus when closed */
+    content: "❯";
   }
 
   &:last-of-type {
     border-bottom: none;
+  }
+  &:hover {
+    background-color: #0000001a;
   }
 `;
 
@@ -335,15 +345,10 @@ const Answer = styled.div`
 const AnswerText = styled.div`
   padding: 6px 12px;
   line-height: 1.4rem;
-  /* border-style: solid;
-  border: 1px;
-  border-color: black; */
-  /* display: flex; */
-  /* flex-direction: row; */
+
   li::before {
     content: "•";
     margin-right: 6px;
-    /* background-color: blue; */
   }
 
   font-size: calc(var(--text-font-size) * 0.9);

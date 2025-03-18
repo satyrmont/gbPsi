@@ -116,7 +116,9 @@ const ContentContainer_ComoFunciona = styled.div`
   }
 `;
 
-const SectionText_ComoFunciona = styled(SectionText)``;
+const SectionText_ComoFunciona = styled(SectionText)`
+  width: 80%;
+`;
 
 const Title_ComoFunciona = styled(Title)`
   font-size: calc(var(--title-font-size) * var(--title-small-factor));
@@ -131,6 +133,10 @@ const ContentContainer_Metodo = styled.div`
     font-weight: 600;
     /* background-color: antiquewhite; */
   }
+  max-width: 50%;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const ContentWrapper_Metodo = styled.div`
@@ -143,7 +149,10 @@ const ContentWrapper_Metodo = styled.div`
 `;
 
 const SectionText_Metodo = styled(SectionText)`
-  font-size: calc(var(--text-font-size) * var(--text-small-factor));
+  width: 80%;
+
+  display: block;
+  column-count: 2;
 
   /* justify-content: start; */
   /* width: 70%; */

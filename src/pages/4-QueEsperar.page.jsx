@@ -144,9 +144,6 @@ const Card = styled.div`
     white-space: nowrap;
     font-family: var(--title-font);
     font-weight: 300;
-    text-decoration-line: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
     margin-bottom: 10px;
   }
 
