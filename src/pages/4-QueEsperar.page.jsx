@@ -130,10 +130,11 @@ const Title_QueEsperar = styled(Title)`
 const Card = styled.div`
   box-sizing: border-box;
   padding: 10px;
-  min-width: 460px;
+  min-width: 360px;
   height: 130px;
   width: 40%;
   background-color: var(--color_D1);
+  min-height: fit-content;
 
   h2 {
     font-size: calc(var(--title-font-size) * 0.45);

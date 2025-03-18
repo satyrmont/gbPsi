@@ -46,29 +46,8 @@ function ComoFunciona() {
         <ContentContainer_Metodo>
           <Container_ComoFunciona>
             <ContentWrapper_Metodo>
-              <Title_Metodo>
-                Terapia cognitivo-comportamental (TCC)
-              </Title_Metodo>
+              <Title_Metodo>Terapia cognitivo-comportamental</Title_Metodo>
               <SectionText_Metodo>
-                <h3>
-                  Método científico e escolha prioritária para promoção de saúde
-                  mental:
-                </h3>
-                <p>
-                  prestígio adquirido ao ser adaptável para diferentes vivências
-                  e necessidades, articula-se com a área da saúde por meio de
-                  Ciência e resultados concretos.
-                </p>
-
-                <h3>
-                  Padrão-ouro (alternativo ou conjunto à medicação
-                  psiquiátrica):
-                </h3>
-                <p>
-                  tratamento consagrado para ansiedade e depressão, conflitos e
-                  sentimentos pessoais, transtornos psiquiátricos.
-                </p>
-
                 <h3>
                   Saúde e bem-estar que ressoam pelo corpo, emoções e
                   pensamentos:
@@ -105,7 +84,6 @@ const Section_ComoFunciona = styled(Section)`
 `;
 
 const SectionWrapper = styled.div`
-  width: 100vw;
   display: flex;
   flex-direction: row;
 
@@ -113,7 +91,6 @@ const SectionWrapper = styled.div`
     flex-direction: column;
     justify-content: start;
     overflow-y: hidden;
-    /* width: 100dvw; */
   }
 `;
 
@@ -129,35 +106,30 @@ const Container_ComoFunciona = styled.div`
 
 // ----------------------- COMO FUNCIONA ------------------------
 
-const ContentContainer_ComoFunciona = styled(ContentContainer)`
+const ContentContainer_ComoFunciona = styled.div`
   background-color: var(--color_1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
   @media (max-width: 768px) {
-    /* width: 100%; */
   }
 `;
 
-const SectionText_ComoFunciona = styled(SectionText)`
-  /* width: 70%; */
-`;
+const SectionText_ComoFunciona = styled(SectionText)``;
 
 const Title_ComoFunciona = styled(Title)`
   font-size: calc(var(--title-font-size) * var(--title-small-factor));
-  text-decoration-line: underline;
-  text-decoration-thickness: 1.6px;
-  text-underline-offset: 5px;
 `;
 
 // ----------------------- TERAPIA ------------------------
 
-const ContentContainer_Metodo = styled(ContentContainer)`
+const ContentContainer_Metodo = styled.div`
   background-color: white;
+  overflow: hidden;
   h3 {
     font-weight: 600;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
   }
 `;
 
@@ -180,9 +152,6 @@ const SectionText_Metodo = styled(SectionText)`
 const Title_Metodo = styled(Title)`
   font-size: calc(var(--title-font-size) * var(--title-small-factor));
   /* display: inline-block; */
-  text-decoration-line: underline;
-  text-decoration-thickness: 1.6px;
-  text-underline-offset: 5px;
   overflow-wrap: break-word;
 `;
 

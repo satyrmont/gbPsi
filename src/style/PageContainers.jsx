@@ -29,7 +29,7 @@ const ContentContainer = styled.div`
   width: 80%;
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 90dvw;
   }
 `;
 

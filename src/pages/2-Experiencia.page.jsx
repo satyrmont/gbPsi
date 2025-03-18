@@ -26,20 +26,6 @@ function Experiencia() {
                   <h2>Currículo de pesquisador</h2>
                   <Icon_ExteriorLink />
                 </LinkButton>
-
-                <LinkButton>
-                  <Publicacoes>
-                    <h2 style={{ marginRight: "6px" }}>Publicações:</h2>
-                    {/* <div>
-                      <LinkButton>
-                        1<Icon_ExteriorLink />
-                      </LinkButton>
-                      <LinkButton>
-                        2<Icon_ExteriorLink />
-                      </LinkButton>
-                    </div> */}
-                  </Publicacoes>
-                </LinkButton>
               </Links>
             </ContainerPortraitAndLinks>
           </PortraitSection>
@@ -98,7 +84,7 @@ const Section_Experiencia = styled(Section)`
 const ContentContainer_Experiencia = styled(ContentContainer)`
   box-sizing: border-box;
   height: fit-content;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 `;
 
 const ContentWrapper_Experiencia = styled.div`

@@ -20,10 +20,6 @@ function Intro() {
       <ContentContainer_Intro>
         <Title>Apresentação</Title>
         <IntroText>
-          <h2>
-            Compartilhe sua história, revele-se autor de páginas prósperas.
-          </h2>
-          <br />
           <IntroText_Wrapper>
             <p>
               Desconhecer o trabalho do psicólogo leva muitos a se conformarem
