@@ -13,7 +13,7 @@ function Logo() {
       ".logo",
       { width: 200, opacity: 0 },
       {
-        width: 300,
+        width: 400,
         opacity: 1,
         duration: 2,
         ease: "back",
@@ -36,11 +36,11 @@ function Logo() {
         {
           width: 300,
           opacity: 1,
-          duration: 1,
+          duration: 2,
           ease: "back",
         }
       );
-      gsap.to(".logo", { clearProps: "all" }); // Clear previous animation properties
+      gsap.to(".logo", { clearProps: "all" });
       gsap.registerPlugin(ScrollTrigger);
       ScrollTrigger.create({
         trigger: ".logo",
@@ -78,12 +78,8 @@ const LogoPage = styled.div`
     width: 100%;
     max-width: 650px; // Set maximum width for the logo
     filter: drop-shadow(2px 2px 5px #00000061);
-  }
-  @media (max-width) {
-    img {
-      width: 50%;
-      max-width: 200px; // Set maximum width for the logo
-      filter: drop-shadow(2px 2px 5px #00000061);
+    @media (max-width: 768px) {
+      width: 80%;
     }
   }
 `;
