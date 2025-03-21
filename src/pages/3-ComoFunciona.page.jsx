@@ -12,9 +12,9 @@ function ComoFunciona() {
   const isMobile = useContext(MobileContext);
 
   return (
-    <Section_ComoFunciona id="terapia">
+    <Section_ComoFunciona>
       <SectionWrapper>
-        <ContentContainer_ComoFunciona>
+        <ContentContainer_ComoFunciona id="metodo">
           <Container_ComoFunciona>
             <Title_ComoFunciona>Como funciona?</Title_ComoFunciona>
             <SectionText_ComoFunciona>
@@ -43,7 +43,7 @@ function ComoFunciona() {
             </SectionText_ComoFunciona>
           </Container_ComoFunciona>
         </ContentContainer_ComoFunciona>
-        <ContentContainer_Metodo>
+        <ContentContainer_Metodo id="tcc">
           <Container_ComoFunciona>
             <ContentWrapper_Metodo>
               <Title_Metodo>Terapia cognitivo-comportamental</Title_Metodo>
@@ -113,6 +113,7 @@ const ContentContainer_ComoFunciona = styled.div`
   align-items: center;
   justify-content: start;
   @media (max-width: 768px) {
+    padding: 40px 0px;
   }
 `;
 
@@ -130,7 +131,7 @@ const ContentContainer_Metodo = styled.div`
   background-color: white;
   overflow: hidden;
   h3 {
-    font-weight: 600;
+    font-weight: 400;
     /* background-color: antiquewhite; */
   }
   max-width: 50%;
@@ -145,6 +146,10 @@ const ContentWrapper_Metodo = styled.div`
   align-items: center;
   text-align: start;
 
+  @media (max-width: 768px) {
+    padding: 40px 0px;
+  }
+
   /* background-color: aliceblue; */
 `;
 
@@ -153,7 +158,9 @@ const SectionText_Metodo = styled(SectionText)`
 
   display: block;
   column-count: 2;
-
+  @media (max-width: 768px) {
+    column-count: 1;
+  }
   /* justify-content: start; */
   /* width: 70%; */
 `;

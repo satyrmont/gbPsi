@@ -24,34 +24,32 @@ function Nav() {
 
   // <--------- ANIMATION WRAPPER START--------->
   useEffect(() => {
-    if (!isMobile) {
-      console.log("useLayoutEffect executed");
+    if (isMobile) {
+      console.log("Mobile scroll animation activated");
 
-      const ctx = gsap.context(() => {
-        const animation = gsap.timeline({
-          defaults: {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 120) {
+          gsap.to(buttonMenu.current, {
+            opacity: 1,
             scale: 1,
             duration: 0.6,
             ease: "power3.inOut",
-          },
-        });
-        // <--------- ANIMATION START --------->
-        animation.from(buttons.current.querySelectorAll("div"), {
-          opacity: 0,
-          yPercent: -150,
-          stagger: 0.1,
-        });
-        animation.from(buttonMenu.current, {
-          opacity: 0,
-          scale: 0,
-        });
-        // <--------- ANIMATION END --------->
-      }, buttons); // <- Scope!
-      return () => ctx.revert(); // <- Cleanup!
-    } else {
-      return;
+          });
+        } else {
+          gsap.to(buttonMenu.current, {
+            opacity: 0,
+            scale: 0.8,
+            duration: 0.6,
+            ease: "power3.inOut",
+          });
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
     }
-  }, []); //
+  }, [isMobile]);
 
   function scrollToSection(sectionId) {
     gsap.to(window, {
@@ -80,8 +78,11 @@ function Nav() {
             <DrpDwnNavBtn onClick={() => scrollToSection("sobre")}>
               Sobre mim
             </DrpDwnNavBtn>
-            <DrpDwnNavBtn onClick={() => scrollToSection("terapia")}>
-              Terapia e Método
+            <DrpDwnNavBtn onClick={() => scrollToSection("metodo")}>
+              Método
+            </DrpDwnNavBtn>
+            <DrpDwnNavBtn onClick={() => scrollToSection("tcc")}>
+              TCC
             </DrpDwnNavBtn>
             <DrpDwnNavBtn onClick={() => scrollToSection("resultados")}>
               Resultados
@@ -101,9 +102,8 @@ function Nav() {
               Apresentação
             </NavBtn>
             <NavBtn onClick={() => scrollToSection("sobre")}>Sobre mim</NavBtn>
-            <NavBtn onClick={() => scrollToSection("terapia")}>
-              Terapia e Método
-            </NavBtn>
+            <NavBtn onClick={() => scrollToSection("metodo")}>Método</NavBtn>
+            <NavBtn onClick={() => scrollToSection("tcc")}>TCC</NavBtn>
             <NavBtn onClick={() => scrollToSection("resultados")}>
               Resultados
             </NavBtn>
@@ -124,9 +124,10 @@ const ButtonMenu = styled.div`
   z-index: 1;
   top: 4px;
   right: 8px;
-  /* background-color: gray; */
+  opacity: 0; /* Start hidden */
+  transform: scale(0.8); /* Start slightly smaller */
   cursor: pointer;
-
+  filter: drop-shadow(2px 2px 5px #00000061);
   & img {
     width: 50px;
     height: auto;
@@ -200,7 +201,6 @@ const NavBtn = styled.div`
 `;
 
 const DrpDwnNavBtn = styled.div`
-  font-weight: 500;
   font-size: 18px;
   cursor: pointer;
   border: none;

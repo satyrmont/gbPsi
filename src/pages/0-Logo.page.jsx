@@ -29,14 +29,14 @@ function Logo() {
     });
 
     // Additional animation for smaller screens
-    if (window.innerWidth > 768) {
+    if (window.innerWidth < 768) {
       const smallerScreenAnimation = gsap.fromTo(
         ".logo",
-        { width: 300, opacity: 0 },
+        { width: 150, opacity: 0 },
         {
-          width: 400,
+          width: 300,
           opacity: 1,
-          duration: 2,
+          duration: 1,
           ease: "back",
         }
       );
@@ -79,6 +79,13 @@ const LogoPage = styled.div`
     max-width: 650px; // Set maximum width for the logo
     filter: drop-shadow(2px 2px 5px #00000061);
   }
+  @media (max-width) {
+    img {
+      width: 50%;
+      max-width: 200px; // Set maximum width for the logo
+      filter: drop-shadow(2px 2px 5px #00000061);
+    }
+  }
 `;
 
 const LogoSection = styled(Section)`
@@ -92,8 +99,11 @@ const LogoSection = styled(Section)`
 
   z-index: 3;
 
-  @media (min-width: 768px) {
-    margin-top: calc(var(--nav-height));
+  margin-top: calc(var(--nav-height));
+  @media (max-width: 768px) {
+    margin-top: 0px;
+    height: 120px;
+    /* align-items: start; */
   }
 
   background: var(--color_A3);

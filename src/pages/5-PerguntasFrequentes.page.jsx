@@ -43,7 +43,7 @@ function PerguntasFrequentes() {
       <Title_Perguntas ref={title}>Perguntas Frequentes</Title_Perguntas>
       <SectionContent>
         <QuestionsContainer>
-          <QuestionButton data-open="false" onClick={toggleContent}>
+          <QuestionButton data-open="true" onClick={toggleContent}>
             <h2>Quanto tempo dura a psicoterapia?</h2>
           </QuestionButton>
           <Answer>
@@ -260,7 +260,7 @@ const Section_PerguntasFrequentes = styled(Section)`
   box-sizing: border-box;
   padding: var(--margin-top-bottom) 0px;
   @media (max-width: 768px) {
-    padding: 0px;
+    padding: 40px 0px;
   }
 `;
 

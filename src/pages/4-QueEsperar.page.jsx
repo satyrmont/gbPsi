@@ -105,6 +105,10 @@ const Section_QueEsperar = styled(Section)`
 
   box-sizing: border-box;
   padding: var(--margin-top-bottom) 0px;
+
+  @media (max-width: 768px) {
+    padding: 40px 0px;
+  }
 `;
 
 const ContentContainer_QueEsperar = styled(ContentContainer)`
