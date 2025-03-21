@@ -61,6 +61,10 @@ const StyledCarousel = styled(Carousel)`
   .carousel-slider {
     justify-content: flex-start;
   }
+
+  @media (max-width: 768px) {
+    overflow-x: hidden;
+  }
 `;
 
 export default GBCarousel;
