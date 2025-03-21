@@ -55,7 +55,7 @@ function Nav() {
     gsap.to(window, {
       scrollTo: {
         y: `#${sectionId}`,
-        offsetY: 40,
+        ...(isMobile ? {} : { offsetY: 40 }),
       },
       duration: 0.2, // Adjust the duration as needed
     });
@@ -119,17 +119,16 @@ function Nav() {
 }
 
 const ButtonMenu = styled.div`
-  width: 50px;
   position: fixed;
   z-index: 1;
   top: 4px;
-  right: 8px;
+  right: 4px;
   opacity: 0; /* Start hidden */
-  transform: scale(0.8); /* Start slightly smaller */
+  transform: scale(0.8);
   cursor: pointer;
   filter: drop-shadow(2px 2px 5px #00000061);
   & img {
-    width: 50px;
+    width: 40px;
     height: auto;
     max-width: 100%;
     max-height: 100%;
@@ -137,14 +136,12 @@ const ButtonMenu = styled.div`
 `;
 
 const MenuContent = styled.div`
-  width: 20svw;
-  min-width: 160px;
+  min-width: 180px;
   height: fit-content;
   position: absolute;
   top: 50px;
   right: 0;
   background-color: white;
-  padding: 5px;
   flex-direction: column;
   display: ${({ open }) => (open ? "flex" : "none")};
 `;
@@ -193,7 +190,6 @@ const NavBtn = styled.div`
   align-items: center;
   height: 100%;
   padding: 0px 5px 0px 5px;
-  /* background-color: #f0ffff55; */
   &:hover {
     background-color: white;
     color: black;
@@ -207,7 +203,11 @@ const DrpDwnNavBtn = styled.div`
   vertical-align: middle;
   display: inline-flex;
   align-items: center;
-  margin-bottom: 8px;
+
+  padding: 8px 4px;
+  &:nth-child(odd) {
+    background-color: var(--color_0);
+  }
 `;
 
 export default Nav;

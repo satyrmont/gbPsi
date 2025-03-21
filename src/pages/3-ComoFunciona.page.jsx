@@ -156,19 +156,17 @@ const ContentWrapper_Metodo = styled.div`
 const SectionText_Metodo = styled(SectionText)`
   width: 80%;
 
-  display: block;
-  column-count: 2;
-  @media (max-width: 768px) {
-    column-count: 1;
-  }
   /* justify-content: start; */
   /* width: 70%; */
 `;
 
 const Title_Metodo = styled(Title)`
   font-size: calc(var(--title-font-size) * var(--title-small-factor));
-  /* display: inline-block; */
   overflow-wrap: break-word;
+
+  @media (max-width: 768px) {
+    font-size: calc(var(--title-font-size) * 0.6);
+  }
 `;
 
 export default ComoFunciona;

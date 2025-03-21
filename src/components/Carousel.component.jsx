@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import styled from "styled-components";
@@ -9,26 +8,32 @@ class GBCarousel extends Component {
     return (
       <StyledCarousel
         showThumbs={false}
-        dynamicHeight={true}
-        centerMode={true}
+        dynamicHeight={false} // Prevents height issues
         emulateTouch={true}
-        centerSlidePercentage={50}
+        infiniteLoop={false}
+        centerMode={true}
+        centerSlidePercentage={100 / 3}
+        showArrows={true}
+        showStatus={false}
+        showIndicators={false}
       >
         <ImgHolder>
-          <img src="/img01.jpg" />
-          {/* <p className="legend">Legend 1</p> */}
+          <img src="/img01.jpg" alt="Image 1" />
         </ImgHolder>
         <ImgHolder>
-          <img src="/img02.jpg" />
-          {/* <p className="legend">Legend 2</p> */}
+          <img src="/img02.jpg" alt="Image 2" />
         </ImgHolder>
         <ImgHolder>
-          <img src="https://images.pexels.com/photos/2846814/pexels-photo-2846814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-          {/* <p className="legend">Legend 3</p> */}
+          <img
+            src="https://images.pexels.com/photos/2846814/pexels-photo-2846814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Image 3"
+          />
         </ImgHolder>
         <ImgHolder>
-          <img src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-          {/* <p className="legend">Legend 3</p> */}
+          <img
+            src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Image 4"
+          />
         </ImgHolder>
       </StyledCarousel>
     );
@@ -36,21 +41,26 @@ class GBCarousel extends Component {
 }
 
 const ImgHolder = styled.div`
-  /* width: 100%; */
-  /* height: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 300px; // Ensures consistent height
+
   img {
-    object-fit: cover;
-    transform: translateX(-50%);
-    max-height: 300px;
-    width: auto;
+    width: 100%;
+    height: 300px; // Set a fixed height
+    object-fit: cover; // Crop taller images instead of stretching
   }
 `;
 
 const StyledCarousel = styled(Carousel)`
   filter: drop-shadow(30px 10px 20px #00000050);
   width: 100dvw;
-  /* background-color: antiquewhite; */
-  /* max-height: 300px; */
+
+  .carousel-slider {
+    justify-content: flex-start;
+  }
 `;
 
 export default GBCarousel;
