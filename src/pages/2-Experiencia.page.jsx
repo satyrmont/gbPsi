@@ -138,17 +138,22 @@ const ContainerPortraitAndLinks = styled.div`
 `;
 
 const Links = styled.div`
-  font-size: 1rem;
   min-height: 100px;
+  width: 90%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    width: 70%;
+  }
 `;
 
 const LinkButton = styled.button`
   font: var(--title-font);
-  font-size: calc(var(--text-font-size) * 0.5);
+  width: 100%;
+  font-size: calc(var(--text-font-size) * 0.7);
   font-weight: 400;
   text-decoration: none;
   border-radius: 5px;
@@ -159,10 +164,11 @@ const LinkButton = styled.button`
   align-items: center;
   justify-content: space-between;
   padding: 6px;
+  background-color: var(--color_1);
 
   &:hover {
     cursor: pointer;
-    background-color: var(--color_1);
+    background-color: white;
   }
 
   h2 {

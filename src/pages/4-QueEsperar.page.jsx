@@ -135,7 +135,7 @@ const Card = styled.div`
   box-sizing: border-box;
   padding: 10px;
   min-width: 360px;
-  height: 130px;
+  height: 150px;
   width: 40%;
   background-color: var(--color_D1);
   min-height: fit-content;

@@ -87,9 +87,10 @@ const SectionWrapper = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     justify-content: start;
+    align-items: center;
     overflow-y: hidden;
   }
 `;
@@ -118,7 +119,7 @@ const ContentContainer_ComoFunciona = styled.div`
 `;
 
 const SectionText_ComoFunciona = styled(SectionText)`
-  width: 80%;
+  width: 90%;
 `;
 
 const Title_ComoFunciona = styled(Title)`
@@ -134,9 +135,9 @@ const ContentContainer_Metodo = styled.div`
     font-weight: 400;
     /* background-color: antiquewhite; */
   }
-  max-width: 50%;
-  @media (max-width: 768px) {
-    max-width: 100%;
+  /* max-width: 50%; */
+  @media (max-width: 1024px) {
+    max-width: 90%;
   }
 `;
 
@@ -154,8 +155,11 @@ const ContentWrapper_Metodo = styled.div`
 `;
 
 const SectionText_Metodo = styled(SectionText)`
-  width: 80%;
+  width: 90%;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
   /* justify-content: start; */
   /* width: 70%; */
 `;

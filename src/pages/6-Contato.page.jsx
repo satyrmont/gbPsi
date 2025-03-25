@@ -5,8 +5,10 @@ import {
   SectionText,
   ContentContainer,
 } from "../style/PageContainers.jsx";
-import { fetchData, formatCurrency } from "../service/getGoogleSheets.jsx";
 import { MobileContext } from "../context/mobileContext.jsx";
+
+import OutgoingMailOutlineRounded from "../components/OutgoingMailOutlineRounded.jsx";
+import TelephoneOutbound from "../components/TelephoneOutbound.jsx";
 
 function Contato() {
   const isMobile = useContext(MobileContext);
@@ -17,9 +19,19 @@ function Contato() {
         <AddressText>
           <div>
             <h2>Contato:</h2>
-            <a href="mailto: psc.guido@gmail.com"> psc.guido@gmail.com</a>
+            <LinkContainer>
+              <a href="mailto: psc.guido@gmail.com">
+                <OutgoingMailOutlineRounded />
+                psc.guido@gmail.com
+              </a>
+            </LinkContainer>
             <br />
-            <a href="tel:+5511943580695">(11) 94358-0695</a>
+            <LinkContainer>
+              <a href="tel:+5511943580695">
+                <TelephoneOutbound />
+                (11) 94358-0695
+              </a>
+            </LinkContainer>
           </div>
           <div>
             <h2>Horários:</h2> Segunda-feira a Sábado
@@ -63,9 +75,7 @@ const Section_Contato = styled(Section)`
 
   box-sizing: border-box;
 
-  margin-bottom: 0px;
-  line-height: 1.2rem;
-
+  line-height: 1.5rem;
   filter: drop-shadow(10px -10px 6px #00000016);
 
   h2 {
@@ -79,6 +89,16 @@ const Section_Contato = styled(Section)`
 
     margin-bottom: 12px;
   }
+
+  svg {
+    transform: scale(1.2);
+    margin-right: 8px;
+  }
+`;
+
+const LinkContainer = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const Address = styled.div`
@@ -103,6 +123,12 @@ const AddressText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
   @media (max-width: 768px) {
     width: 100dvw;

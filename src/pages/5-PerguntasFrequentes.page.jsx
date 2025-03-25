@@ -339,6 +339,10 @@ const Answer = styled.div`
   min-width: 400px;
   border-bottom: solid;
   border-width: 1.2px;
+
+  @media (max-width: 768px) {
+    min-width: 350px;
+  }
 `;
 
 const AnswerText = styled.div`

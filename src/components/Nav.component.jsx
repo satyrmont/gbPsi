@@ -128,7 +128,7 @@ const ButtonMenu = styled.div`
   cursor: pointer;
   filter: drop-shadow(2px 2px 5px #00000061);
   & img {
-    width: 40px;
+    width: 60px;
     height: auto;
     max-width: 100%;
     max-height: 100%;
@@ -155,6 +155,9 @@ const NavBar = styled.div`
   overflow-x: hidden;
   overflow-y: hidden;
   font-size: 16px;
+
+  filter: drop-shadow(10px 10px 12px #0000002c);
+
   /* line-height: 20px; */
 
   top: 0px;

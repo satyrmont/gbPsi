@@ -48,9 +48,11 @@ const ImgHolder = styled.div`
   max-height: 300px; // Ensures consistent height
 
   img {
-    width: 100%;
     height: 300px; // Set a fixed height
     object-fit: cover; // Crop taller images instead of stretching
+    @media (max-width: 768px) {
+      height: 200px;
+    }
   }
 `;
 
