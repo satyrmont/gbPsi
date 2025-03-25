@@ -25,7 +25,6 @@ function Contato() {
                 psc.guido@gmail.com
               </a>
             </LinkContainer>
-            <br />
             <LinkContainer>
               <a href="tel:+5511943580695">
                 <TelephoneOutbound />
@@ -94,11 +93,16 @@ const Section_Contato = styled(Section)`
     transform: scale(1.2);
     margin-right: 8px;
   }
+
+  a {
+    text-decoration: underline;
+  }
 `;
 
 const LinkContainer = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
 `;
 
 const Address = styled.div`
