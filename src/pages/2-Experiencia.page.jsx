@@ -145,8 +145,9 @@ const Links = styled.div`
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
   @media (max-width: 768px) {
     width: 70%;
   }
@@ -165,7 +166,7 @@ const LinkButton = styled.button`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 6px;
+  padding: 4px;
   background-color: var(--color_1);
 
   &:hover {
@@ -175,6 +176,10 @@ const LinkButton = styled.button`
 
   h2 {
     text-align: start;
+  }
+  @media (max-width: 768px) {
+    width: 200px;
+    padding: 4px;
   }
 `;
 
@@ -196,23 +201,6 @@ const Portrait = styled.img`
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
-`;
-
-const Publicacoes = styled.div`
-  display: inline flex;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    & {
-      gap: 20px;
-    }
-  }
 `;
 
 const StyledIcon = styled.svg`

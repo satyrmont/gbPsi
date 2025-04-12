@@ -136,12 +136,16 @@ const AddressText = styled.div`
 
   @media (max-width: 768px) {
     width: 100dvw;
+    flex-direction: row;
   }
 `;
 
 const Section_Map = styled.div`
   width: 100%;
-  /* height: 100%; */
+  @media (max-width: 768px) {
+    width: 100dvw;
+    height: 500px;
+  }
 `;
 
 const Endereco = styled.div`

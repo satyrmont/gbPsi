@@ -167,10 +167,6 @@ const SectionText_Metodo = styled(SectionText)`
 const Title_Metodo = styled(Title)`
   font-size: calc(var(--title-font-size) * var(--title-small-factor));
   overflow-wrap: break-word;
-
-  @media (max-width: 768px) {
-    font-size: calc(var(--title-font-size) * 0.6);
-  }
 `;
 
 export default ComoFunciona;
