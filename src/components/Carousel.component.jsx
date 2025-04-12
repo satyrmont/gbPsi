@@ -59,13 +59,20 @@ const ImgHolder = styled.div`
 const StyledCarousel = styled(Carousel)`
   filter: drop-shadow(30px 10px 20px #00000050);
   width: 100dvw;
+  overflow: hidden; /* Ensure no content spills out */
 
   .carousel-slider {
     justify-content: flex-start;
+    overflow: hidden; /* Prevent overscroll */
+  }
+
+  .carousel .slide {
+    transition: transform 0.3s ease-out; /* Smooth transitions */
   }
 
   @media (max-width: 768px) {
-    overflow-x: hidden;
+    overflow-x: hidden; /* Reinforce no horizontal overflow */
+    touch-action: pan-y; /* Allow vertical scrolling, restrict horizontal overscroll */
   }
 `;
 
