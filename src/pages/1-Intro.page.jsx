@@ -76,29 +76,6 @@ function Intro() {
               amor-próprio. Enxergue com clareza, sinta-se confiante e
               desencadeie potencial represado.
             </p>
-            <Prossiga>
-              <p>
-                Prossiga se tiver mais interesse em meu trabalho ou algum dos
-                seguintes tópicos:
-              </p>
-              <ul>
-                <li>
-                  <ListItem>Saúde Mental</ListItem>
-                </li>
-                <li>
-                  <ListItem>Auto-cuidado</ListItem>
-                </li>
-                <li>
-                  <ListItem>Organizar queixas e demandas</ListItem>
-                </li>
-                <li>
-                  <ListItem>Auto-conhecimento</ListItem>
-                </li>
-                <li>
-                  <ListItem>Criar estratégias conscientes</ListItem>
-                </li>
-              </ul>
-            </Prossiga>
           </IntroText_Wrapper>
         </IntroText>
         <a

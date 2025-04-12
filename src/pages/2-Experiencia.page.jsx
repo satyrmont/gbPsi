@@ -22,10 +22,12 @@ function Experiencia() {
                 <Portrait src="portrait01.jpeg" />
               </PortraitContainer>
               <Links>
-                <LinkButton>
-                  <h2>Currículo de pesquisador</h2>
-                  <Icon_ExteriorLink />
-                </LinkButton>
+                <a href="http://lattes.cnpq.br/7444613524162568">
+                  <LinkButton>
+                    <h2>Currículo de pesquisador</h2>
+                    <Icon_ExteriorLink />
+                  </LinkButton>
+                </a>
               </Links>
             </ContainerPortraitAndLinks>
           </PortraitSection>
@@ -34,17 +36,17 @@ function Experiencia() {
             <SectionText_Experiencia>
               <p>
                 Me chamo Guido Bittencourt, sou psicólogo pela Universidade de
-                São Paulo (USP) e especialista em terapia comportamental e
+                São Paulo (USP) com especialização em terapia comportamental e
                 cognitiva pelo Instituto de Psiquiatria (IPq-FMUSP). Adquiri
                 experiência em atendimento no Hospital das Clínicas, maior
                 hospital da América Latina.
               </p>
               <p>
                 Constatei que estava na profissão certa ao me deparar no jornal
-                sobre médicos que “prescrevem” livros como forma de melhorar a
-                saúde e lidar com as emoções: “‘A montanha mágica’ (Thomas Mann)
-                para doenças do pulmão e ‘Anna Karenina’ (Leon Tolstói) contra
-                dores de dente”, dizia a manchete.
+                a respeito de médicos que “prescrevem” livros como forma de
+                melhorar a saúde e lidar com as emoções: “‘A montanha mágica’
+                (Thomas Mann) para doenças do pulmão e ‘Anna Karenina’ (Liev
+                Tolstói) contra dores de dente”, dizia a manchete.
               </p>
 
               <p>

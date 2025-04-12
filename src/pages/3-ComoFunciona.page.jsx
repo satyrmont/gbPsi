@@ -53,7 +53,7 @@ function ComoFunciona() {
                   pensamentos:
                 </h3>
                 <p>
-                  fundado em tradição filosófica milenar e décadas de observação
+                  fundada em tradição filosófica milenar e décadas de observação
                   científica e pesquisa de ponta. A combinação de técnicas da
                   psicologia comportamental e cognitiva em consultório é a
                   referência adotada internacionalmente por mais de 40 anos.
@@ -64,8 +64,8 @@ function ComoFunciona() {
                   consciente:
                 </h3>
                 <p>
-                  recursos e ferramentas passados com transparência convidam o
-                  paciente ao aprendizado e participação em seu tratamento,
+                  recursos e ferramentas oferecidos com transparência convidam o
+                  paciente ao aprendizado e participação em próprio tratamento,
                   sentindo conquistar independência e finalmente transformar-se
                   em terapeuta de si próprio.
                 </p>

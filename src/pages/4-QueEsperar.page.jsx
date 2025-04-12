@@ -27,10 +27,10 @@ function QueEsperar() {
           <h2>Capacidade de nomear</h2>
 
           <p>
-            O sofrimento e confusão são maiores quando incapazes de denominar e
-            verbalmente descrever. Trazer incômodos para a conversa pode iniciar
-            processos de mudança, perspectivas desmotivadoras serão ventiladas e
-            você se sentirá acompanhado pelo percurso.
+            O sofrimento e confusão são maiores quando somos incapazes de
+            denominar e descrever verbalmente. Trazer incômodos para a conversa
+            pode iniciar processos de mudança, perspectivas desmotivadoras serão
+            ventiladas e você se sentirá acompanhado pelo percurso.
           </p>
         </Card>
 
@@ -58,7 +58,7 @@ function QueEsperar() {
           <h2>Luto</h2>
           <p>
             A ausência de um ente querido é algo para que não nos preparamos.
-            Vamos adquirir dimensão do trabalho de luto e o respeito por sua
+            Vamos adquirir dimensão do trabalho de luto e respeito por sua
             duração. E recobrar controle de sua vida em respeito a si próprio e
             à memória de conhecidos.
           </p>
@@ -69,7 +69,7 @@ function QueEsperar() {
           <p>
             Uma promoção no trabalho, uma mudança de país ou de endereço são
             iniciadores de consequências e resultados que não previmos
-            inicialmente. Teremos em conta riscos calculados e decisões
+            inicialmente. Tenhamos em conta riscos calculados e decisões
             ponderadas.
           </p>
         </Card>
@@ -87,7 +87,7 @@ function QueEsperar() {
           <h2>Comportamento Obsessivo-compulsivo (TOC)</h2>
           <p>
             Pensamentos intrusivos, busca de alívio por meio de compras ou
-            limpeza, acumular objetos: aprenda a desprender-se.
+            limpeza e acumular objetos: aprenda a desprender-se.
           </p>
         </Card>
       </ContentContainer_QueEsperar>
