@@ -21,7 +21,7 @@ function Contato() {
             <div>
               <h2>Contato:</h2>
               <LinkContainer>
-                <a href="mailto: psc.guido@gmail.com">
+                <a href="mailto:psc.guido@gmail.com">
                   <OutgoingMailOutlineRounded />
                   psc.guido@gmail.com
                 </a>
@@ -78,10 +78,10 @@ const Section_Contato = styled(Section)`
   box-sizing: border-box;
   line-height: 1.5rem;
   filter: drop-shadow(10px -10px 6px #00000016);
-  overflow-x: hidden;
+  overflow-x: hidden; /* Already present, good */
+  width: 100%; /* Ensure it fits viewport */
 
   h2 {
-    white-space: nowrap;
     font-family: var(--title-font);
     font-style: normal;
     text-decoration-line: underline;
@@ -89,15 +89,19 @@ const Section_Contato = styled(Section)`
     text-underline-offset: 5px;
     font-size: calc(var(--title-font-size) * 0.6);
     margin-bottom: 12px;
+    white-space: normal; /* Allow wrapping to prevent overflow */
   }
 
   svg {
     transform: scale(1.2);
     margin-right: 8px;
+    flex-shrink: 0; /* Prevent SVG from shrinking */
   }
 
   a {
     text-decoration: underline;
+    white-space: normal; /* Ensure email/phone wrap */
+    word-break: break-word; /* Break long words if needed */
   }
 `;
 
@@ -105,12 +109,14 @@ const LinkContainer = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 8px;
+  width: 100%; /* Ensure links don’t exceed container */
 `;
 
 const Address = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
+  box-sizing: border-box; /* Include padding/margins in width */
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -124,21 +130,16 @@ const AddressText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    white-space: normal; /* Allow text wrapping */
-  }
+  box-sizing: border-box;
 
   @media (max-width: 768px) {
-    margin: 5px;
-    width: 100%;
+    margin: 10px; /* Increased for better spacing */
+    width: calc(100% - 20px); /* Account for margins */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
+    flex-wrap: nowrap; /* Ensure columns stay side by side */
   }
 `;
 
@@ -150,6 +151,7 @@ const ContactHoursColumn = styled.div`
   @media (max-width: 768px) {
     flex: 1;
     min-width: 0;
+    max-width: 50%; /* Cap width to prevent overflow */
   }
 `;
 
@@ -157,15 +159,22 @@ const AddressColumn = styled.div`
   @media (max-width: 768px) {
     flex: 1;
     min-width: 0;
+    max-width: 50%; /* Cap width to prevent overflow */
   }
 `;
 
 const Section_Map = styled.div`
   width: 100%;
+  box-sizing: border-box;
+
   @media (max-width: 768px) {
     width: 100%;
     height: 500px;
     overflow: hidden;
+  }
+
+  iframe {
+    max-width: 100%; /* Ensure iframe doesn’t exceed container */
   }
 `;
 
@@ -173,7 +182,8 @@ const Endereco = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  white-space: normal; /* Allow text wrapping */
+  white-space: normal;
+  word-break: break-word; /* Break long address lines if needed */
 `;
 
 export default Contato;
