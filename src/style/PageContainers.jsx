@@ -61,9 +61,6 @@ const Title = styled.h1`
   white-space: nowrap;
   font-family: var(--title-font);
   font-weight: 300;
-  /* text-decoration-line: underline;
-  text-decoration-thickness: 1.6px;
-  text-underline-offset: 5px; */
 
   font-size: var(--title-font-size);
 

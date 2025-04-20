@@ -78,6 +78,7 @@ const Section_Contato = styled(Section)`
   box-sizing: border-box;
   line-height: 1.5rem;
   filter: drop-shadow(10px -10px 6px #00000016);
+  overflow-x: hidden;
 
   h2 {
     white-space: nowrap;

@@ -138,6 +138,7 @@ const ContentContainer_Metodo = styled.div`
   @media (max-width: 1024px) {
     max-width: 90%;
     overflow: none;
+    padding: 40px 0px;
   }
 `;
 
@@ -146,10 +147,6 @@ const ContentWrapper_Metodo = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: start;
-
-  @media (max-width: 768px) {
-    padding: 40px 0px;
-  }
 
   /* background-color: aliceblue; */
 `;
@@ -166,6 +163,9 @@ const SectionText_Metodo = styled(SectionText)`
 
 const Title_Metodo = styled(Title)`
   font-size: calc(var(--title-font-size) * var(--title-small-factor));
+  @media (max-width: 1024px) {
+    font-size: calc(var(--title-font-size) * var(--title-small-factor) * 0.9);
+  }
   overflow-wrap: break-word;
 `;
 
