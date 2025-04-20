@@ -26,9 +26,9 @@ function Contato() {
               </a>
             </LinkContainer>
             <LinkContainer>
-              <a href="tel:+5511943580695">
+              <a href="tel:+5511920900068">
                 <TelephoneOutbound />
-                (11) 94358-0695
+                (11) 92090-0068
               </a>
             </LinkContainer>
           </div>

@@ -9,7 +9,7 @@ class GBCarousel extends Component {
       <StyledCarousel
         showThumbs={false}
         dynamicHeight={false} // Prevents height issues
-        emulateTouch={true}
+        emulateTouch={false}
         infiniteLoop={false}
         centerMode={true}
         centerSlidePercentage={100 / 3}

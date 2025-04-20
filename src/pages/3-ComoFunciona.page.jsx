@@ -130,7 +130,6 @@ const Title_ComoFunciona = styled(Title)`
 
 const ContentContainer_Metodo = styled.div`
   background-color: white;
-  overflow: hidden;
   h3 {
     font-weight: 400;
     /* background-color: antiquewhite; */
@@ -138,6 +137,7 @@ const ContentContainer_Metodo = styled.div`
   /* max-width: 50%; */
   @media (max-width: 1024px) {
     max-width: 90%;
+    overflow: none;
   }
 `;
 
