@@ -13,7 +13,7 @@ import { MobileProvider } from "./context/mobileContext.jsx";
 
 function App() {
   return (
-    <React.Fragment>
+    <OverflowContainer>
       <MobileProvider>
         <Nav />
         <MainLayout>
@@ -24,11 +24,9 @@ function App() {
           <QueEsperar />
           <PerguntasFrequentes />
         </MainLayout>
-        <OverflowContainer>
-          <Contato />
-        </OverflowContainer>
+        <Contato />
       </MobileProvider>
-    </React.Fragment>
+    </OverflowContainer>
   );
 }
 
