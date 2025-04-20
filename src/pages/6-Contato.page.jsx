@@ -152,6 +152,7 @@ const AddressText = styled.div`
     gap: 4px; /* Minimal gap */
     flex-wrap: nowrap;
     overflow-x: hidden;
+    padding: 10px;
   }
 `;
 
