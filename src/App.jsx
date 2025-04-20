@@ -16,8 +16,8 @@ function App() {
   return (
     <React.Fragment>
       <MobileProvider>
+        <Nav />
         <MainLayout>
-          <Nav />
           <Logo />
           <Intro />
           <Experiencia />
