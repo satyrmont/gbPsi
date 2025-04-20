@@ -79,7 +79,7 @@ const StyledCarousel = styled(Carousel)`
     touch-action: pan-y pinch-zoom; /* Allow vertical scroll and zoom, restrict horizontal */
 
     .carousel .slide {
-      padding: 0 5px; /* Add spacing between slides */
+      padding: 0 0px; /* Add spacing between slides */
     }
 
     .carousel-slider {
