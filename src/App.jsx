@@ -8,6 +8,7 @@ import ComoFunciona from "./pages/3-ComoFunciona.page.jsx";
 import QueEsperar from "./pages/4-QueEsperar.page.jsx";
 import PerguntasFrequentes from "./pages/5-PerguntasFrequentes.page.jsx";
 import Contato from "./pages/6-Contato.page.jsx";
+import MainLayout from "./components/MainLayout.component.jsx";
 
 import { MobileProvider } from "./context/mobileContext.jsx";
 
@@ -15,15 +16,16 @@ function App() {
   return (
     <React.Fragment>
       <MobileProvider>
-        <Nav />
-        <Logo />
-        <Intro />
-        <Experiencia />
-        <ComoFunciona />
-        <QueEsperar />
-        <PerguntasFrequentes />
+        <MainLayout>
+          <Nav />
+          <Logo />
+          <Intro />
+          <Experiencia />
+          <ComoFunciona />
+          <QueEsperar />
+          <PerguntasFrequentes />
+        </MainLayout>
         <Contato />
-        {/* <Mapa /> */}
       </MobileProvider>
     </React.Fragment>
   );

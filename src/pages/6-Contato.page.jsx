@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useContext } from "react";
+import React, { useContext } from "react";
 import { styled } from "styled-components";
 import {
   Section,
@@ -17,37 +17,42 @@ function Contato() {
     <Section_Contato id="contato">
       <Address>
         <AddressText>
-          <div>
-            <h2>Contato:</h2>
-            <LinkContainer>
-              <a href="mailto: psc.guido@gmail.com">
-                <OutgoingMailOutlineRounded />
-                psc.guido@gmail.com
-              </a>
-            </LinkContainer>
-            <LinkContainer>
-              <a href="tel:+5511920900068">
-                <TelephoneOutbound />
-                (11) 92090-0068
-              </a>
-            </LinkContainer>
-          </div>
-          <div>
-            <h2>Horários:</h2> Segunda-feira a Sábado
-            <br />
-            14:00 às 21:00.
-          </div>
-          <div>
-            <h2>Endereço:</h2>
-            <Endereco>
-              Rua Alexandre Dumas, 495
-              <br /> Santo Amaro
+          <ContactHoursColumn>
+            <div>
+              <h2>Contato:</h2>
+              <LinkContainer>
+                <a href="mailto: psc.guido@gmail.com">
+                  <OutgoingMailOutlineRounded />
+                  psc.guido@gmail.com
+                </a>
+              </LinkContainer>
+              <LinkContainer>
+                <a href="tel:+5511920900068">
+                  <TelephoneOutbound />
+                  (11) 92090-0068
+                </a>
+              </LinkContainer>
+            </div>
+            <div>
+              <h2>Horários:</h2>
+              Segunda-feira a Sábado
               <br />
-              São Paulo
-              <br />
-              SP, 04717-000
-            </Endereco>
-          </div>
+              14:00 às 21:00.
+            </div>
+          </ContactHoursColumn>
+          <AddressColumn>
+            <div>
+              <h2>Endereço:</h2>
+              <Endereco>
+                Rua Alexandre Dumas, 495
+                <br /> Santo Amaro
+                <br />
+                São Paulo
+                <br />
+                SP, 04717-000
+              </Endereco>
+            </div>
+          </AddressColumn>
         </AddressText>
         <Section_Map>
           <iframe
@@ -67,13 +72,10 @@ function Contato() {
 
 const Section_Contato = styled(Section)`
   background-color: var(--color_0);
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   box-sizing: border-box;
-
   line-height: 1.5rem;
   filter: drop-shadow(10px -10px 6px #00000016);
 
@@ -85,7 +87,6 @@ const Section_Contato = styled(Section)`
     text-decoration-thickness: 1px;
     text-underline-offset: 5px;
     font-size: calc(var(--title-font-size) * 0.6);
-
     margin-bottom: 12px;
   }
 
@@ -106,9 +107,7 @@ const LinkContainer = styled.div`
 `;
 
 const Address = styled.div`
-  /* margin-right: 40px; */
   width: 100%;
-
   display: flex;
   flex-direction: row;
 
@@ -121,9 +120,6 @@ const AddressText = styled.div`
   margin: 20px;
   width: 30%;
   max-width: 600px;
-  min-width: 300px;
-  white-space: nowrap;
-
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -132,26 +128,50 @@ const AddressText = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    white-space: normal; /* Allow text wrapping */
   }
 
   @media (max-width: 768px) {
-    width: 100dvw;
+    margin: 10px;
+    width: 100%;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+`;
+
+const ContactHoursColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    flex: 1; /* Take available space */
+    min-width: 0; /* Prevent overflow */
+  }
+`;
+
+const AddressColumn = styled.div`
+  @media (max-width: 768px) {
+    flex: 1; /* Take available space */
+    min-width: 0; /* Prevent overflow */
   }
 `;
 
 const Section_Map = styled.div`
   width: 100%;
   @media (max-width: 768px) {
-    width: 100dvw;
+    width: 100%;
     height: 500px;
   }
 `;
 
 const Endereco = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: start;
-  justify-content: space-between;
+  white-space: normal; /* Allow text wrapping */
 `;
+
 export default Contato;

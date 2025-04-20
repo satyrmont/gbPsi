@@ -88,7 +88,7 @@ function Nav() {
               Resultados
             </DrpDwnNavBtn>
             <DrpDwnNavBtn onClick={() => scrollToSection("perguntas")}>
-              Perguntas Frequentes
+              Perguntas
             </DrpDwnNavBtn>
             <DrpDwnNavBtn onClick={() => scrollToSection("contato")}>
               Contato
@@ -136,10 +136,10 @@ const ButtonMenu = styled.div`
 `;
 
 const MenuContent = styled.div`
-  min-width: 180px;
+  /* min-width: 180px; */
   height: fit-content;
   position: absolute;
-  top: 50px;
+  top: 70px;
   right: 0;
   background-color: white;
   flex-direction: column;

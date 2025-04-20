@@ -78,14 +78,6 @@ function Intro() {
             </p>
           </IntroText_Wrapper>
         </IntroText>
-        <a
-          target="_blank"
-          href="https://wa.me/5511943580695"
-          class="whatsapp-button"
-        >
-          <WhatsappIcon />
-          <i class="fab fa-whatsapp"></i>
-        </a>
       </ContentContainer_Intro>
       <GBCarousel />
     </IntroSection>
@@ -109,33 +101,6 @@ const ContentContainer_Intro = styled(ContentContainer)`
   align-items: start;
   margin-bottom: 40px;
   margin-top: 40px;
-
-  /* background-color: aliceblue; */
-
-  .whatsapp-button {
-    position: fixed;
-    bottom: 15px;
-
-    right: 15px;
-    z-index: 99;
-    background-color: #25d366;
-    border-radius: 50px;
-    color: #ffffff;
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 1);
-    animation: effect 5s infinite ease-in;
-  }
-
-  /* background-color: #ffe4c43a; */
 `;
 
 const IntroText_Wrapper = styled.div`
