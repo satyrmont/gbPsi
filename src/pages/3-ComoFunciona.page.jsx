@@ -65,9 +65,9 @@ function ComoFunciona() {
                 </h3>
                 <p>
                   recursos e ferramentas oferecidos com transparência convidam o
-                  paciente ao aprendizado e participação em próprio tratamento,
-                  sentindo conquistar independência e finalmente transformar-se
-                  em terapeuta de si próprio.
+                  paciente ao aprendizado e participação em seu próprio
+                  tratamento, sentindo conquistar independência e finalmente
+                  transformar-se em terapeuta de si próprio.
                 </p>
               </SectionText_Metodo>
             </ContentWrapper_Metodo>
