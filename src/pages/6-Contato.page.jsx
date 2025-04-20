@@ -165,6 +165,7 @@ const Section_Map = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     height: 500px;
+    overflow: hidden;
   }
 `;
 
