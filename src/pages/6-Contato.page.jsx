@@ -133,7 +133,7 @@ const AddressText = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin: 10px;
+    margin: 5px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -148,15 +148,15 @@ const ContactHoursColumn = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    flex: 1; /* Take available space */
-    min-width: 0; /* Prevent overflow */
+    flex: 1;
+    min-width: 0;
   }
 `;
 
 const AddressColumn = styled.div`
   @media (max-width: 768px) {
-    flex: 1; /* Take available space */
-    min-width: 0; /* Prevent overflow */
+    flex: 1;
+    min-width: 0;
   }
 `;
 

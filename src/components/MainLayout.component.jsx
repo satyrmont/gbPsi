@@ -58,7 +58,7 @@ const WhatsAppButton = styled.a`
   position: fixed;
   bottom: 15px;
   right: 15px;
-  z-index: 99;
+  z-index: 0;
   background-color: #25d366;
   border-radius: 50px;
   color: #ffffff;

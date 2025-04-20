@@ -16,6 +16,7 @@ const Section = styled.section`
     flex-direction: column;
     justify-content: start;
     overflow-y: hidden;
+    overflow-x: hidden;
     width: 100dvw;
   }
 `;
