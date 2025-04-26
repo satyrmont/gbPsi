@@ -138,7 +138,7 @@ const Card = styled.div`
   height: 150px;
   width: 40%;
   background-color: var(--color_D1);
-  min-height: fit-content;
+  /* min-height: fit-content; */
 
   h2 {
     font-size: calc(var(--title-font-size) * 0.45);
@@ -159,7 +159,7 @@ const Card = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 100px;
+    height: 150px;
   }
 `;
 export default QueEsperar;
