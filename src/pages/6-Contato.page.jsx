@@ -95,12 +95,12 @@ const Section_Contato = styled(Section)`
     white-space: normal;
     word-break: break-word;
     @media (max-width: 768px) {
-      font-size: calc(var(--title-font-size) * 0.5); /* Smaller on mobile */
+      font-size: calc(var(--title-font-size) * 0.5);
     }
   }
 
   svg {
-    width: 20px; /* Smaller to fit narrow viewports */
+    width: 20px;
     height: 20px;
     margin-right: 6px;
     flex-shrink: 0;
@@ -110,7 +110,6 @@ const Section_Contato = styled(Section)`
     text-decoration: underline;
     white-space: normal;
     word-break: break-word;
-    font-size: 0.85rem; /* Even smaller for mobile */
   }
 `;
 
@@ -207,7 +206,7 @@ const Endereco = styled.div`
   align-items: start;
   white-space: normal;
   word-break: break-word;
-  font-size: 0.85rem; /* Smaller for mobile */
+  /* font-size: 0.85rem; */
 `;
 
 export default Contato;

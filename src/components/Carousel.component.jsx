@@ -19,10 +19,16 @@ class GBCarousel extends Component {
         swipeScrollTolerance={10} // Reduce sensitivity to prevent overscroll
       >
         <ImgHolder>
-          <img src="/img01.jpg" alt="Image 1" />
+          <img
+            src="https://images.pexels.com/photos/931887/pexels-photo-931887.jpeg?cs=srgb&dl=pexels-exnl-931887.jpg&fm=jpg&w=1280&h=853"
+            alt="Image 1"
+          />
         </ImgHolder>
         <ImgHolder>
-          <img src="/img02.jpg" alt="Image 2" />
+          <img
+            src="https://images.pexels.com/photos/221537/pexels-photo-221537.jpeg?cs=srgb&dl=pexels-pixabay-221537.jpg&fm=jpg&w=1280&h=857.jpg"
+            alt="Image 2"
+          />
         </ImgHolder>
         <ImgHolder>
           <img
