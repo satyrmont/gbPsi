@@ -157,7 +157,7 @@ const Card = styled.div`
     color: var(--color_F1);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 810px) {
     width: 100%;
     height: 150px;
   }

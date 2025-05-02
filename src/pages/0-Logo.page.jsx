@@ -13,7 +13,7 @@ function Logo() {
       ".logo",
       { width: 200, opacity: 0 },
       {
-        width: 400,
+        width: 320,
         opacity: 1,
         duration: 2,
         ease: "back",
@@ -70,7 +70,6 @@ const LogoPage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
   /* height: 100vh; // Adjust height to viewport height */
   /* z-index: 1; // Set a higher z-index to ensure it's above the following section */
 
