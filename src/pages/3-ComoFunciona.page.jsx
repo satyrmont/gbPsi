@@ -48,27 +48,32 @@ function ComoFunciona() {
             <ContentWrapper_Metodo>
               <Title_Metodo>Terapia cognitivo-comportamental</Title_Metodo>
               <SectionText_Metodo>
-                <h3>
-                  Saúde e bem-estar que ressoam pelo corpo, emoções e
-                  pensamentos:
-                </h3>
-                <p>
-                  fundada em tradição filosófica milenar e décadas de observação
-                  científica e pesquisa de ponta. A combinação de técnicas da
-                  psicologia comportamental e cognitiva em consultório é a
-                  referência adotada internacionalmente por mais de 40 anos.
-                </p>
-
-                <h3>
-                  Revigore o espírito por enfrentamento racional e pensamento
-                  consciente:
-                </h3>
-                <p>
-                  recursos e ferramentas oferecidos com transparência convidam o
-                  paciente ao aprendizado e participação em seu próprio
-                  tratamento, sentindo conquistar independência e finalmente
-                  transformar-se em terapeuta de si próprio.
-                </p>
+                <div>
+                  <h2>
+                    Saúde e bem-estar que ressoam pelo corpo, emoções e
+                    pensamentos:
+                  </h2>
+                  <p>
+                    fundada em tradição filosófica milenar e décadas de
+                    observação científica e pesquisa de ponta. A combinação de
+                    técnicas da psicologia comportamental e cognitiva em
+                    consultório é a referência adotada internacionalmente por
+                    mais de 40 anos.
+                  </p>
+                </div>
+                <br />
+                <div>
+                  <h2>
+                    Revigore o espírito por enfrentamento racional e pensamento
+                    consciente:
+                  </h2>
+                  <p>
+                    recursos e ferramentas oferecidos com transparência convidam
+                    o paciente ao aprendizado e participação em seu próprio
+                    tratamento, sentindo conquistar independência e finalmente
+                    transformar-se em terapeuta de si próprio.
+                  </p>
+                </div>
               </SectionText_Metodo>
             </ContentWrapper_Metodo>
           </Container_ComoFunciona>
@@ -130,11 +135,10 @@ const Title_ComoFunciona = styled(Title)`
 
 const ContentContainer_Metodo = styled.div`
   background-color: white;
-  h3 {
+  h2 {
     font-weight: 400;
     /* background-color: antiquewhite; */
   }
-
   /* max-width: 50%; */
   @media (max-width: 1024px) {
     max-width: 90%;
@@ -148,15 +152,25 @@ const ContentWrapper_Metodo = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: start;
-  h3,
-  p {
-    display: inline-block;
-  }
+
   /* background-color: aliceblue; */
 `;
 
 const SectionText_Metodo = styled(SectionText)`
   width: 90%;
+  div {
+    display: inline; /* Ensure divs are inline to prevent breaks */
+    background-color: transparent; /* Remove background for clarity */
+  }
+
+  h2,
+  p {
+    display: inline; /* Make h2 and p inline to flow together */
+  }
+
+  h2 {
+    margin-right: 5px;
+  }
 
   @media (max-width: 1024px) {
     width: 100%;
