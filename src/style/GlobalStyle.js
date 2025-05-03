@@ -48,8 +48,11 @@ const GlobalStyle = createGlobalStyle`
             --content-width: 90%;
             
         }
-
-        --color_0: #eee1b4;
+        
+        @media (max-width: 400px) {
+            --title-font-size: clamp(28px, 65dvw, 28px);
+        }
+            --color_0: #eee1b4;
         --color_1: #e9b977;
 
         --color_A1:rgba(5, 15, 31, 0.31);

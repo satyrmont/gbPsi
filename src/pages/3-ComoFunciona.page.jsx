@@ -92,7 +92,7 @@ const SectionWrapper = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -106,7 +106,11 @@ const Container_ComoFunciona = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  width: 50dvw;
+  @media (max-width: 768px) {
+    padding: 40px 0px;
+    width: 100dvw;
+  }
   /* background-color: aliceblue; */
 `;
 
@@ -118,9 +122,6 @@ const ContentContainer_ComoFunciona = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  @media (max-width: 768px) {
-    padding: 40px 0px;
-  }
 `;
 
 const SectionText_ComoFunciona = styled(SectionText)`
@@ -135,15 +136,15 @@ const Title_ComoFunciona = styled(Title)`
 
 const ContentContainer_Metodo = styled.div`
   background-color: white;
+
   h2 {
     font-weight: 400;
     /* background-color: antiquewhite; */
   }
   /* max-width: 50%; */
   @media (max-width: 1024px) {
-    max-width: 90%;
     overflow: none;
-    padding: 40px 0px;
+    /* padding: 40px 0px; */
   }
 `;
 
@@ -152,11 +153,10 @@ const ContentWrapper_Metodo = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: start;
-
-  /* background-color: aliceblue; */
 `;
 
 const SectionText_Metodo = styled(SectionText)`
+  max-width: 90%;
   width: 90%;
   div {
     display: inline; /* Ensure divs are inline to prevent breaks */

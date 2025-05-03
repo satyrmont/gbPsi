@@ -97,7 +97,7 @@ const LogoSection = styled(Section)`
   margin-top: calc(var(--nav-height));
   @media (max-width: 768px) {
     margin-top: 0px;
-    height: 120px;
+    height: 140px;
     /* align-items: start; */
   }
 

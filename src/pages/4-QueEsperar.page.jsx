@@ -117,14 +117,14 @@ const ContentContainer_QueEsperar = styled(ContentContainer)`
   flex-flow: wrap;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   box-sizing: border-box;
   padding: 10px 0px 10px 0px;
   gap: 10px;
   /* background-color: #0000ff56; */
 
-  @media (max-width: 768px) {
-    width: var(--content-width);
+  @media (max-width: 1024px) {
+    width: 100dvw;
   }
 `;
 
@@ -135,14 +135,14 @@ const Title_QueEsperar = styled(Title)`
 const Card = styled.div`
   box-sizing: border-box;
   padding: 10px;
-  min-width: 400px;
+  min-width: 360px;
+  max-width: 500px;
   height: 150px;
-  width: 40%;
   background-color: var(--color_D1);
   /* min-height: fit-content; */
 
   h2 {
-    font-size: calc(var(--title-font-size) * 0.45);
+    font-size: calc(var(--title-font-size) * 0.55);
     color: black;
     /* color: white; */
     color: var(--color04);
@@ -164,7 +164,7 @@ const Card = styled.div`
   }
   @media (max-width: 400px) {
     width: 200px;
-    height: 150px;
+    height: fit-content;
   }
 `;
 export default QueEsperar;

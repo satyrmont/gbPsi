@@ -285,7 +285,7 @@ const QuestionsContainer = styled.div`
   min-width: 400px;
 
   @media (max-width: 768px) {
-    min-width: 350px;
+    min-width: 320px;
   }
 `;
 
@@ -336,12 +336,12 @@ const Answer = styled.div`
   font-size: var(--text-font-size);
   display: none;
 
-  min-width: 400px;
+  min-width: 320px;
   border-bottom: solid;
   border-width: 1.2px;
 
   @media (max-width: 768px) {
-    min-width: 350px;
+    min-width: 320px;
   }
 `;
 
