@@ -39,7 +39,7 @@ function MainLayout({ children }) {
       <WhatsAppButton
         ref={buttonRef}
         target="_blank"
-        href="https://wa.me/5511943580695"
+        href="https://wa.me/5511920900068"
         className="whatsapp-button"
       >
         <WhatsappIcon />
