@@ -162,5 +162,9 @@ const Card = styled.div`
     width: 100%;
     height: 150px;
   }
+  @media (max-width: 400px) {
+    width: 200px;
+    height: 150px;
+  }
 `;
 export default QueEsperar;
