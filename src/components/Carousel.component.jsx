@@ -21,25 +21,25 @@ class GBCarousel extends Component {
         <ImgHolder>
           <img
             src="https://images.pexels.com/photos/931887/pexels-photo-931887.jpeg?cs=srgb&dl=pexels-exnl-931887.jpg&fm=jpg&w=1280&h=853"
-            alt="Image 1"
+            alt="Uma sala moderna com grandes janelas inclinadas, uma planta tropical em um vaso preto, cadeiras brancas com bases escuras e uma pessoa sentada olhando pela janela."
           />
         </ImgHolder>
         <ImgHolder>
           <img
             src="https://images.pexels.com/photos/221537/pexels-photo-221537.jpeg?cs=srgb&dl=pexels-pixabay-221537.jpg&fm=jpg&w=1280&h=857.jpg"
-            alt="Image 2"
+            alt="Uma sala de reuniões com grandes janelas, mesas brancas com cadeiras, plantas tropicais e um extintor de incêndio na parede."
           />
         </ImgHolder>
         <ImgHolder>
           <img
             src="https://images.pexels.com/photos/2846814/pexels-photo-2846814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Image 3"
+            alt="Um livro aberto com óculos sobre ele, uma xícara de café e uma planta ao lado, tudo sobre uma mesa escura."
           />
         </ImgHolder>
         <ImgHolder>
           <img
             src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Image 4"
+            alt="Uma pilha de pedras lisas empilhadas em equilíbrio sobre uma praia de seixos, com o mar azul e o céu claro ao fundo."
           />
         </ImgHolder>
       </StyledCarousel>

@@ -19,7 +19,10 @@ function Experiencia() {
           <PortraitSection>
             <ContainerPortraitAndLinks>
               <PortraitContainer>
-                <Portrait src="portrait01.jpeg" />
+                <Portrait
+                  src="portrait01.jpeg"
+                  alt="Foto retrato de Guido Bittencourt sorrindo em frente a uma parede de plantas."
+                />
               </PortraitContainer>
               <Links>
                 <a href="http://lattes.cnpq.br/7444613524162568">
