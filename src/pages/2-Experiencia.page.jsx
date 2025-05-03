@@ -24,7 +24,7 @@ function Experiencia() {
               <Links>
                 <a href="http://lattes.cnpq.br/7444613524162568">
                   <LinkButton>
-                    <h2>Currículo de pesquisador</h2>
+                    Currículo de pesquisador
                     <Icon_ExteriorLink />
                   </LinkButton>
                 </a>
@@ -172,6 +172,7 @@ const LinkButton = styled.button`
   &:hover {
     cursor: pointer;
     background-color: white;
+    color: black;
   }
 
   h2 {

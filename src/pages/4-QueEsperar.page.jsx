@@ -84,7 +84,8 @@ function QueEsperar() {
         </Card>
 
         <Card>
-          <h2>Comportamento Obsessivo-compulsivo (TOC)</h2>
+          <h2>Comportamento Obsessivo-compulsivo </h2>
+          <h3>"TOC"</h3>
           <p>
             Pensamentos intrusivos, busca de alívio por meio de compras ou
             limpeza e acumular objetos: aprenda a desprender-se.
@@ -134,7 +135,7 @@ const Title_QueEsperar = styled(Title)`
 const Card = styled.div`
   box-sizing: border-box;
   padding: 10px;
-  min-width: 360px;
+  min-width: 400px;
   height: 150px;
   width: 40%;
   background-color: var(--color_D1);
@@ -157,7 +158,7 @@ const Card = styled.div`
     color: var(--color_F1);
   }
 
-  @media (max-width: 810px) {
+  @media (max-width: 768px) {
     width: 100%;
     height: 150px;
   }

@@ -134,6 +134,7 @@ const ContentContainer_Metodo = styled.div`
     font-weight: 400;
     /* background-color: antiquewhite; */
   }
+
   /* max-width: 50%; */
   @media (max-width: 1024px) {
     max-width: 90%;
@@ -147,7 +148,10 @@ const ContentWrapper_Metodo = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: start;
-
+  h3,
+  p {
+    display: inline-block;
+  }
   /* background-color: aliceblue; */
 `;
 
