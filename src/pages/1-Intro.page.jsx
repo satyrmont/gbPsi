@@ -66,11 +66,11 @@ function Intro() {
               curso, já notou a diferença em contar com alguém de confiança?
             </p>
 
-            <p>
+            {/* <p>
               Quando é necessária uma mudança de curso ou em momentos de
               hesitação, já percebeu a diferença em contar com alguém de
               confiança?
-            </p>
+            </p> */}
             <p>
               Espero traduzir seu interesse em um ato de motivação, otimismo e
               amor-próprio. Enxergue com clareza, sinta-se confiante e
