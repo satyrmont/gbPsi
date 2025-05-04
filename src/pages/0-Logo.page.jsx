@@ -101,7 +101,8 @@ const LogoSection = styled(Section)`
     /* align-items: start; */
   }
 
-  background: var(--color_A3);
+  /* background: var(--color_A3); */
+  background: black;
 
   justify-content: center;
 `;
