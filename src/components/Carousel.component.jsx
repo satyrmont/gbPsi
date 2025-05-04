@@ -54,10 +54,12 @@ const ImgHolder = styled.div`
   width: 100%;
   max-height: 300px;
 
+  gap: 10px;
   img {
-    height: 300px;
-    width: 100%;
+    position: relative;
+    /* scale: 0.95; */
     object-fit: cover;
+    transform: translateY(-40px);
     @media (max-width: 768px) {
       height: 200px;
     }
