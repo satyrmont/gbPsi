@@ -24,7 +24,7 @@ function Intro() {
             <p>
               Desconhecer o trabalho do psicólogo leva muitos a se conformarem
               com a aflição em silêncio e sustentar uma fachada de positividade
-              que aprendemos imitando outros. Mesmo que não for o seu caso, é
+              que aprendemos imitando outros. Mesmo que não seja o seu caso, é
               bom lembrarmos que:
             </p>
             <ul>

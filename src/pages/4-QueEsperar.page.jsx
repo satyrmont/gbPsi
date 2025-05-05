@@ -48,7 +48,7 @@ function QueEsperar() {
           <h2>Detox tecnológico</h2>
           <p>
             Gastamos com as telas, celulares e computadores, tempo de qualidade
-            que passávamos reunidos. Porque repetimos um hábito de que
+            que passávamos reunidos. Por que repetimos um hábito de que
             gostaríamos de nos livrar? Quanto tempo é demais para se passar
             conectado?
           </p>
